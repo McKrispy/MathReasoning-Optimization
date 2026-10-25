@@ -1,0 +1,44 @@
+{
+  "parity": {
+    "runs": [
+      {
+        "official": {
+          "correct": 743,
+          "n": 798,
+          "accuracy": 93.10776942355889
+        },
+        "counts": {
+          "hard_correct": 300,
+          "hard_n": 355,
+          "easy_correct": 443,
+          "easy_n": 443
+        }
+      },
+      {
+        "official": {
+          "correct": 743,
+          "n": 798,
+          "accuracy": 93.10776942355889
+        },
+        "counts": {
+          "hard_correct": 300,
+          "hard_n": 355,
+          "easy_correct": 443,
+          "easy_n": 443
+        }
+      }
+    ],
+    "original_replay_match": true
+  },
+  "archived_counts": {
+    "hard_correct": 300,
+    "hard_n": 355,
+    "easy_correct": 443,
+    "easy_n": 443
+  },
+  "relocation": {
+    "validation_match": true,
+    "audit_match": true,
+    "original_source_denied": true
+  }
+}

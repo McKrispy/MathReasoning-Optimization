@@ -1,0 +1,738 @@
+{
+  "experiment": "EXP-B26",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "reference_system": "B25 fold-local locked three-view decoder",
+  "validation_queries": 0,
+  "validation_opened": false,
+  "test_references_opened": false,
+  "written_to_model_bundle": false,
+  "candidate_submission_updated": false,
+  "validation_confirmation": null,
+  "verdict": "STOPPED_INTERNAL_GATE",
+  "environment": {
+    "python": "3.12.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.7.1+cu126",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1",
+    "device_train": "cuda",
+    "cuda": "12.6",
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": true,
+    "conda_env": "base",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "lightgbm": "4.7.0",
+    "executable": "<user-home>\\.conda\\envs\\mp1\\python.exe"
+  },
+  "source_drift": [
+    {
+      "file": "development/runs/audit_logs/seed_registry.json",
+      "expected": "ecd942a1c16505f3e4f3b1f9e5ab44027ce016926c1a0fe314379be95db76354",
+      "actual": "adaf89ac5e54b5c0c889561051a3279470ded78686ef16d466aa7f4ecb8191b6"
+    }
+  ],
+  "b25_oof_sha256": "05a3713fb1b3dc248d23b08be0f313f86026d9289c3186b3eff714c6a847b0d9",
+  "training": {
+    "nested_centroid_fits": 40,
+    "outer_centroid_fits": 5,
+    "nested_fit_seconds": {
+      "C0": 2.1363299999975425,
+      "C1": 12.658888600006321
+    },
+    "new_attention_models": 0,
+    "kmeans_random_state": 42
+  },
+  "outer_folds": [
+    {
+      "outer_fold": 0,
+      "decoder": {
+        "arm": "D2",
+        "normalization": "fold_OOF_global_scale",
+        "temperature": 1.0,
+        "rho": 0.0,
+        "name": "D2/fold_OOF_global_scale/T=1.00/rho=0.0"
+      },
+      "selected_arm": "C1",
+      "selection": [
+        {
+          "name": "C0",
+          "arm": "C0",
+          "hard_correct": 1332,
+          "hard_total": 1670,
+          "all_correct": 3466,
+          "all_total": 3804,
+          "nll_sum": 816.6588255745062,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        },
+        {
+          "name": "C1",
+          "arm": "C1",
+          "hard_correct": 1332,
+          "hard_total": 1670,
+          "all_correct": 3466,
+          "all_total": 3804,
+          "nll_sum": 816.6583806678037,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        }
+      ],
+      "standalone_inner": [
+        {
+          "arm": "C0",
+          "hard_correct": 1167,
+          "hard_total": 1670,
+          "all_correct": 3301,
+          "all_total": 3804
+        },
+        {
+          "arm": "C1",
+          "hard_correct": 1171,
+          "hard_total": 1670,
+          "all_correct": 3305,
+          "all_total": 3804
+        }
+      ],
+      "weights": [
+        0.8110324994588305,
+        0.17367341129239755,
+        0.015294089248771956,
+        2.236166980751353e-18
+      ],
+      "scales": [
+        1.3276500868639323,
+        2.089455563259499,
+        1.4968873312759092,
+        0.03097731508386505
+      ],
+      "fit_loss": 0.4882230812403257,
+      "reference": {
+        "hard_correct": 353,
+        "hard_total": 444,
+        "all_correct": 860,
+        "all_total": 951
+      },
+      "selected": {
+        "hard_correct": 353,
+        "hard_total": 444,
+        "all_correct": 860,
+        "all_total": 951
+      },
+      "standalone_outer": {
+        "hard_correct": 303,
+        "hard_total": 444,
+        "all_correct": 810,
+        "all_total": 951
+      },
+      "arm_a_standalone_outer": {
+        "hard_correct": 353,
+        "hard_total": 444,
+        "all_correct": 860,
+        "all_total": 951
+      },
+      "flips_vs_reference": {
+        "corrected_old_errors": 0,
+        "spoiled_old_correct": 0,
+        "both_correct": 860,
+        "both_wrong": 91
+      },
+      "geometry_vs_arm_a": {
+        "corrected_old_errors": 22,
+        "spoiled_old_correct": 72,
+        "both_correct": 788,
+        "both_wrong": 69
+      },
+      "score_correlation_with_arm_a": 0.38632474714553194,
+      "class_counts": {
+        "questions": {
+          "wrong": 1670,
+          "correct": 1670
+        },
+        "candidates": {
+          "wrong": 2990,
+          "correct": 3383
+        },
+        "distinct_vectors": {
+          "wrong": 2990,
+          "correct": 3381
+        },
+        "skipped_unparsed": {
+          "wrong": 307,
+          "correct": 0
+        }
+      },
+      "requested_k": {
+        "correct": 4,
+        "wrong": 4
+      },
+      "actual_k": {
+        "correct": 4,
+        "wrong": 4
+      },
+      "tau": 0.12214396568928437,
+      "centroid_fit_seconds": 0.7849815000008675
+    },
+    {
+      "outer_fold": 1,
+      "decoder": {
+        "arm": "D2",
+        "normalization": "fold_OOF_global_scale",
+        "temperature": 0.5,
+        "rho": 0.0,
+        "name": "D2/fold_OOF_global_scale/T=0.50/rho=0.0"
+      },
+      "selected_arm": "C0",
+      "selection": [
+        {
+          "name": "C0",
+          "arm": "C0",
+          "hard_correct": 1340,
+          "hard_total": 1690,
+          "all_correct": 3454,
+          "all_total": 3804,
+          "nll_sum": 918.6486422808767,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        },
+        {
+          "name": "C1",
+          "arm": "C1",
+          "hard_correct": 1336,
+          "hard_total": 1690,
+          "all_correct": 3450,
+          "all_total": 3804,
+          "nll_sum": 919.0793172592322,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        }
+      ],
+      "standalone_inner": [
+        {
+          "arm": "C0",
+          "hard_correct": 1135,
+          "hard_total": 1690,
+          "all_correct": 3249,
+          "all_total": 3804
+        },
+        {
+          "arm": "C1",
+          "hard_correct": 1133,
+          "hard_total": 1690,
+          "all_correct": 3247,
+          "all_total": 3804
+        }
+      ],
+      "weights": [
+        0.6670857792686435,
+        0.19808633893939348,
+        0.06608759791160128,
+        0.06874028388036175
+      ],
+      "scales": [
+        1.3087843496523675,
+        2.1009724035727073,
+        1.498436863079511,
+        0.0034003316025014146
+      ],
+      "fit_loss": 0.5381435207941663,
+      "reference": {
+        "hard_correct": 337,
+        "hard_total": 424,
+        "all_correct": 864,
+        "all_total": 951
+      },
+      "selected": {
+        "hard_correct": 338,
+        "hard_total": 424,
+        "all_correct": 865,
+        "all_total": 951
+      },
+      "standalone_outer": {
+        "hard_correct": 297,
+        "hard_total": 424,
+        "all_correct": 824,
+        "all_total": 951
+      },
+      "arm_a_standalone_outer": {
+        "hard_correct": 336,
+        "hard_total": 424,
+        "all_correct": 863,
+        "all_total": 951
+      },
+      "flips_vs_reference": {
+        "corrected_old_errors": 4,
+        "spoiled_old_correct": 3,
+        "both_correct": 861,
+        "both_wrong": 83
+      },
+      "geometry_vs_arm_a": {
+        "corrected_old_errors": 32,
+        "spoiled_old_correct": 71,
+        "both_correct": 792,
+        "both_wrong": 56
+      },
+      "score_correlation_with_arm_a": 0.3168021735115633,
+      "class_counts": {
+        "questions": {
+          "wrong": 1690,
+          "correct": 1690
+        },
+        "candidates": {
+          "wrong": 3040,
+          "correct": 3433
+        },
+        "distinct_vectors": {
+          "wrong": 3040,
+          "correct": 3431
+        },
+        "skipped_unparsed": {
+          "wrong": 287,
+          "correct": 0
+        }
+      },
+      "requested_k": {
+        "correct": 1,
+        "wrong": 1
+      },
+      "actual_k": {
+        "correct": 1,
+        "wrong": 1
+      },
+      "tau": null,
+      "centroid_fit_seconds": 0.14346260000093025
+    },
+    {
+      "outer_fold": 2,
+      "decoder": {
+        "arm": "D2",
+        "normalization": "fold_OOF_global_scale",
+        "temperature": 1.0,
+        "rho": 0.0,
+        "name": "D2/fold_OOF_global_scale/T=1.00/rho=0.0"
+      },
+      "selected_arm": "C0",
+      "selection": [
+        {
+          "name": "C0",
+          "arm": "C0",
+          "hard_correct": 1388,
+          "hard_total": 1722,
+          "all_correct": 3470,
+          "all_total": 3804,
+          "nll_sum": 805.5024260626451,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        },
+        {
+          "name": "C1",
+          "arm": "C1",
+          "hard_correct": 1388,
+          "hard_total": 1722,
+          "all_correct": 3470,
+          "all_total": 3804,
+          "nll_sum": 805.5035821615375,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        }
+      ],
+      "standalone_inner": [
+        {
+          "arm": "C0",
+          "hard_correct": 1200,
+          "hard_total": 1722,
+          "all_correct": 3282,
+          "all_total": 3804
+        },
+        {
+          "arm": "C1",
+          "hard_correct": 1206,
+          "hard_total": 1722,
+          "all_correct": 3288,
+          "all_total": 3804
+        }
+      ],
+      "weights": [
+        0.842537469346178,
+        0.15746253065382199,
+        0.0,
+        0.0
+      ],
+      "scales": [
+        1.3924980848242656,
+        2.118357445093282,
+        1.4914500138095415,
+        0.0035606792972236725
+      ],
+      "fit_loss": 0.4673294209646591,
+      "reference": {
+        "hard_correct": 297,
+        "hard_total": 392,
+        "all_correct": 856,
+        "all_total": 951
+      },
+      "selected": {
+        "hard_correct": 297,
+        "hard_total": 392,
+        "all_correct": 856,
+        "all_total": 951
+      },
+      "standalone_outer": {
+        "hard_correct": 265,
+        "hard_total": 392,
+        "all_correct": 824,
+        "all_total": 951
+      },
+      "arm_a_standalone_outer": {
+        "hard_correct": 295,
+        "hard_total": 392,
+        "all_correct": 854,
+        "all_total": 951
+      },
+      "flips_vs_reference": {
+        "corrected_old_errors": 0,
+        "spoiled_old_correct": 0,
+        "both_correct": 856,
+        "both_wrong": 95
+      },
+      "geometry_vs_arm_a": {
+        "corrected_old_errors": 32,
+        "spoiled_old_correct": 62,
+        "both_correct": 792,
+        "both_wrong": 65
+      },
+      "score_correlation_with_arm_a": 0.31771447932404173,
+      "class_counts": {
+        "questions": {
+          "wrong": 1722,
+          "correct": 1722
+        },
+        "candidates": {
+          "wrong": 3089,
+          "correct": 3496
+        },
+        "distinct_vectors": {
+          "wrong": 3089,
+          "correct": 3494
+        },
+        "skipped_unparsed": {
+          "wrong": 303,
+          "correct": 0
+        }
+      },
+      "requested_k": {
+        "correct": 1,
+        "wrong": 1
+      },
+      "actual_k": {
+        "correct": 1,
+        "wrong": 1
+      },
+      "tau": null,
+      "centroid_fit_seconds": 0.14880400000038208
+    },
+    {
+      "outer_fold": 3,
+      "decoder": {
+        "arm": "D2",
+        "normalization": "fold_OOF_global_scale",
+        "temperature": 0.5,
+        "rho": 0.0,
+        "name": "D2/fold_OOF_global_scale/T=0.50/rho=0.0"
+      },
+      "selected_arm": "C0",
+      "selection": [
+        {
+          "name": "C0",
+          "arm": "C0",
+          "hard_correct": 1329,
+          "hard_total": 1698,
+          "all_correct": 3435,
+          "all_total": 3804,
+          "nll_sum": 936.4827621258589,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        },
+        {
+          "name": "C1",
+          "arm": "C1",
+          "hard_correct": 1327,
+          "hard_total": 1698,
+          "all_correct": 3433,
+          "all_total": 3804,
+          "nll_sum": 937.2385540188815,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        }
+      ],
+      "standalone_inner": [
+        {
+          "arm": "C0",
+          "hard_correct": 1158,
+          "hard_total": 1698,
+          "all_correct": 3264,
+          "all_total": 3804
+        },
+        {
+          "arm": "C1",
+          "hard_correct": 1155,
+          "hard_total": 1698,
+          "all_correct": 3261,
+          "all_total": 3804
+        }
+      ],
+      "weights": [
+        0.6669597901553278,
+        0.1899877619327177,
+        0.05915463502043966,
+        0.0838978128915149
+      ],
+      "scales": [
+        1.3666920886609804,
+        2.094010075529188,
+        1.5126203208828357,
+        0.0034680114934071394
+      ],
+      "fit_loss": 0.5454036873343773,
+      "reference": {
+        "hard_correct": 342,
+        "hard_total": 416,
+        "all_correct": 877,
+        "all_total": 951
+      },
+      "selected": {
+        "hard_correct": 347,
+        "hard_total": 416,
+        "all_correct": 882,
+        "all_total": 951
+      },
+      "standalone_outer": {
+        "hard_correct": 275,
+        "hard_total": 416,
+        "all_correct": 810,
+        "all_total": 951
+      },
+      "arm_a_standalone_outer": {
+        "hard_correct": 335,
+        "hard_total": 416,
+        "all_correct": 870,
+        "all_total": 951
+      },
+      "flips_vs_reference": {
+        "corrected_old_errors": 6,
+        "spoiled_old_correct": 1,
+        "both_correct": 876,
+        "both_wrong": 68
+      },
+      "geometry_vs_arm_a": {
+        "corrected_old_errors": 21,
+        "spoiled_old_correct": 81,
+        "both_correct": 789,
+        "both_wrong": 60
+      },
+      "score_correlation_with_arm_a": 0.3298161746131966,
+      "class_counts": {
+        "questions": {
+          "wrong": 1698,
+          "correct": 1698
+        },
+        "candidates": {
+          "wrong": 3064,
+          "correct": 3425
+        },
+        "distinct_vectors": {
+          "wrong": 3064,
+          "correct": 3425
+        },
+        "skipped_unparsed": {
+          "wrong": 303,
+          "correct": 0
+        }
+      },
+      "requested_k": {
+        "correct": 1,
+        "wrong": 1
+      },
+      "actual_k": {
+        "correct": 1,
+        "wrong": 1
+      },
+      "tau": null,
+      "centroid_fit_seconds": 0.14619759999914095
+    },
+    {
+      "outer_fold": 4,
+      "decoder": {
+        "arm": "D2",
+        "normalization": "fold_OOF_global_scale",
+        "temperature": 0.5,
+        "rho": 0.0,
+        "name": "D2/fold_OOF_global_scale/T=0.50/rho=0.0"
+      },
+      "selected_arm": "C0",
+      "selection": [
+        {
+          "name": "C0",
+          "arm": "C0",
+          "hard_correct": 1320,
+          "hard_total": 1676,
+          "all_correct": 3448,
+          "all_total": 3804,
+          "nll_sum": 931.3658290987696,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        },
+        {
+          "name": "C1",
+          "arm": "C1",
+          "hard_correct": 1319,
+          "hard_total": 1676,
+          "all_correct": 3447,
+          "all_total": 3804,
+          "nll_sum": 930.4986327498721,
+          "nll_count": 3804,
+          "absent_gold_clusters": 0
+        }
+      ],
+      "standalone_inner": [
+        {
+          "arm": "C0",
+          "hard_correct": 1127,
+          "hard_total": 1676,
+          "all_correct": 3255,
+          "all_total": 3804
+        },
+        {
+          "arm": "C1",
+          "hard_correct": 1117,
+          "hard_total": 1676,
+          "all_correct": 3245,
+          "all_total": 3804
+        }
+      ],
+      "weights": [
+        0.6528412377259963,
+        0.15642753417957847,
+        0.11014800889655686,
+        0.08058321919786834
+      ],
+      "scales": [
+        1.3228886047819555,
+        2.0965928948930745,
+        1.522040984955393,
+        0.0034646346586925973
+      ],
+      "fit_loss": 0.5516676553092671,
+      "reference": {
+        "hard_correct": 358,
+        "hard_total": 438,
+        "all_correct": 871,
+        "all_total": 951
+      },
+      "selected": {
+        "hard_correct": 356,
+        "hard_total": 438,
+        "all_correct": 869,
+        "all_total": 951
+      },
+      "standalone_outer": {
+        "hard_correct": 301,
+        "hard_total": 438,
+        "all_correct": 814,
+        "all_total": 951
+      },
+      "arm_a_standalone_outer": {
+        "hard_correct": 358,
+        "hard_total": 438,
+        "all_correct": 871,
+        "all_total": 951
+      },
+      "flips_vs_reference": {
+        "corrected_old_errors": 4,
+        "spoiled_old_correct": 6,
+        "both_correct": 865,
+        "both_wrong": 76
+      },
+      "geometry_vs_arm_a": {
+        "corrected_old_errors": 26,
+        "spoiled_old_correct": 83,
+        "both_correct": 788,
+        "both_wrong": 54
+      },
+      "score_correlation_with_arm_a": 0.31905637676119913,
+      "class_counts": {
+        "questions": {
+          "wrong": 1676,
+          "correct": 1676
+        },
+        "candidates": {
+          "wrong": 3001,
+          "correct": 3407
+        },
+        "distinct_vectors": {
+          "wrong": 3001,
+          "correct": 3405
+        },
+        "skipped_unparsed": {
+          "wrong": 296,
+          "correct": 0
+        }
+      },
+      "requested_k": {
+        "correct": 1,
+        "wrong": 1
+      },
+      "actual_k": {
+        "correct": 1,
+        "wrong": 1
+      },
+      "tau": null,
+      "centroid_fit_seconds": 0.14672870000140392
+    }
+  ],
+  "diagnostics": {
+    "fusion_vs_locked_three_view": {
+      "corrected_old_errors": 14,
+      "spoiled_old_correct": 10,
+      "both_correct": 4318,
+      "both_wrong": 413
+    },
+    "standalone_geometry_vs_arm_a": {
+      "corrected_old_errors": 133,
+      "spoiled_old_correct": 369,
+      "both_correct": 3949,
+      "both_wrong": 304
+    },
+    "mean_score_correlation_with_arm_a": 0.33394279027110657
+  },
+  "internal_gate": {
+    "passed": false,
+    "mean_hard_gain_percentage_points": 0.19623022579213512,
+    "pooled_hard_gain_percentage_points": 0.18921475875117721,
+    "positive_outer_folds": 2,
+    "pooled_all_delta": 4,
+    "reference_hard_mean_percent": 79.73952819626304,
+    "selected_hard_mean_percent": 79.93575842205517,
+    "reference_pooled_hard": {
+      "correct": 1687,
+      "total": 2114
+    },
+    "selected_pooled_hard": {
+      "correct": 1691,
+      "total": 2114
+    },
+    "reference_pooled_all": {
+      "correct": 4328,
+      "total": 4755
+    },
+    "selected_pooled_all": {
+      "correct": 4332,
+      "total": 4755
+    },
+    "minimum_mean_fold_hard_gain_percentage_points": 0.5,
+    "minimum_pooled_hard_gain_percentage_points": 0.5,
+    "minimum_positive_outer_folds": 3,
+    "validation_opened": false
+  },
+  "execution_seconds": 28.179620400000204,
+  "finished_utc": "2026-10-25T08:19:04Z"
+}

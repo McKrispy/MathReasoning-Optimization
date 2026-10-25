@@ -1,0 +1,53 @@
+{
+  "experiment": "EXP-B29",
+  "finished_utc": "2026-10-25T10:09:17Z",
+  "phase": "P7",
+  "overall": "LOCAL_VERIFIED_REFERENCE_PENDING",
+  "error": null,
+  "freeze_id": "94d35105b57620254489c4e325cc0a1691951cff94a2a1ac6e362664152ee27d",
+  "sealed_utc": "2026-10-25T10:08:53Z",
+  "test_accuracy_percent": 80.08565310492506,
+  "test_correct": 374,
+  "test_n": 467,
+  "primary_timing": {
+    "predict_wall_ns": 11094216600,
+    "score_wall_ns": 515523800,
+    "sum_process_wall_ns": 11609740400,
+    "continuous_pair_wall_ns": 11625482200,
+    "parent_gap_ns": 15741800,
+    "runner_prediction_seconds": 9.970271400001366,
+    "runner_scoring_seconds": 0.02132290000008652,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "prediction_sha256": "f754adc41f65ca5046dc71081a5e8d9b85812944779e3e632946a7cae5406671",
+    "within_limit": true
+  },
+  "reproduction_timing": {
+    "predict_wall_ns": 11078439000,
+    "score_wall_ns": 512950000,
+    "sum_process_wall_ns": 11591389000,
+    "continuous_pair_wall_ns": 11606121200,
+    "parent_gap_ns": 14732200,
+    "runner_prediction_seconds": 9.966341200000898,
+    "runner_scoring_seconds": 0.02139320000060252,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "prediction_sha256": "960185f7b27d7d9478639e59b7a0a4bb0c8ec03fc6ca8edd487b05d1bc310e37",
+    "within_limit": true
+  },
+  "asset_decision_bytes": 7158695,
+  "offline_evidence_level": "software_guarded_offline_with_native_IO_review",
+  "local_resource_verdict": "LOCAL_WITHIN_LIMIT",
+  "reference_machine_verdict": "PENDING_NOT_RUN",
+  "reproducibility_verdict": "EXACT_MATCH",
+  "test_inputs_opened_by_controller_hash": true,
+  "test_references_opened_by_official_tools": true,
+  "controller_parsed_test_labels": false,
+  "written_outside_dev": false,
+  "official_repository_unchanged": true,
+  "traceback": null
+}

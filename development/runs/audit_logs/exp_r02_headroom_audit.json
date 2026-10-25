@@ -1,0 +1,17 @@
+{
+  "experiment": "EXP-R02",
+  "reference_only": true,
+  "judge": "REF-R01a",
+  "ours": "development/runs/predictions/EXP-B12_embeddings_only_seed42_post_predictions.json",
+  "ours_counts": {
+    "val_hard": 292,
+    "val_all": 730
+  },
+  "val_hard_2x2": {
+    "both_correct": 283,
+    "only_judge_correct": 59,
+    "only_ours_correct": 9,
+    "both_wrong": 4
+  },
+  "residual_review": "development/runs/ref/residual_review.json"
+}

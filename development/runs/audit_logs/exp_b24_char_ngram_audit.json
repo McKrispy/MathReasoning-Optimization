@@ -1,0 +1,144 @@
+{
+  "experiment": "EXP-B24",
+  "description": "Character n-gram hashed TF-IDF logistic view with a train-internal fusion gate",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "timestamp": "2026-10-24T13:26:19Z",
+  "environment": {
+    "python": "3.12.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.7.1+cu126",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1",
+    "device_train": "cuda",
+    "cuda": "12.6",
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": true,
+    "conda_env": "base",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "lightgbm": "4.7.0",
+    "interpreter": "<user-home>\\.conda\\envs\\mp1\\python.exe"
+  },
+  "model_id": "MOD-M07b",
+  "temperature_if_validation_opened": 0.5,
+  "normalization_check": {
+    "total_speed": "the total is 0 km/h.",
+    "decimal_line": "wait 0 more",
+    "comma_and_fraction": "0 apples and 0/0."
+  },
+  "internal_gate": {
+    "passed": false,
+    "gain_percentage_points": -0.04807692307693401,
+    "minimum_percentage_points": 1.0,
+    "folds": [
+      {
+        "outer_fold": 0,
+        "held_questions": 951,
+        "old_hard_correct": 349,
+        "new_hard_correct": 349,
+        "text_only_hard_correct": 281,
+        "hard_total": 444,
+        "weights_old": [
+          0.6062161452207009,
+          0.2963551444400719,
+          0.0974287103392273
+        ],
+        "weights_new": [
+          0.6063891609035126,
+          0.2963238725297794,
+          0.09728696656670816,
+          1.7076184216646697e-18
+        ]
+      },
+      {
+        "outer_fold": 1,
+        "held_questions": 951,
+        "old_hard_correct": 331,
+        "new_hard_correct": 331,
+        "text_only_hard_correct": 259,
+        "hard_total": 424,
+        "weights_old": [
+          0.6460007948982532,
+          0.3118212943844163,
+          0.04217791071733043
+        ],
+        "weights_new": [
+          0.6461571477445749,
+          0.3119690693640462,
+          0.041873782891378906,
+          9.540979531462745e-18
+        ]
+      },
+      {
+        "outer_fold": 2,
+        "held_questions": 951,
+        "old_hard_correct": 298,
+        "new_hard_correct": 298,
+        "text_only_hard_correct": 241,
+        "hard_total": 392,
+        "weights_old": [
+          0.6885869244832077,
+          0.21988365350691452,
+          0.09152942200987778
+        ],
+        "weights_new": [
+          0.6889257784013874,
+          0.21978576466629512,
+          0.09128845693231757,
+          9.21572260202985e-19
+        ]
+      },
+      {
+        "outer_fold": 3,
+        "held_questions": 951,
+        "old_hard_correct": 341,
+        "new_hard_correct": 340,
+        "text_only_hard_correct": 262,
+        "hard_total": 416,
+        "weights_old": [
+          0.6576536643431062,
+          0.2605096080161131,
+          0.08183672764078069
+        ],
+        "weights_new": [
+          0.6407588237603757,
+          0.2562992030719972,
+          0.07593479514745925,
+          0.0270071780201679
+        ]
+      },
+      {
+        "outer_fold": 4,
+        "held_questions": 951,
+        "old_hard_correct": 358,
+        "new_hard_correct": 358,
+        "text_only_hard_correct": 260,
+        "hard_total": 438,
+        "weights_old": [
+          0.636414906497496,
+          0.23879381356779114,
+          0.12479127993471287
+        ],
+        "weights_new": [
+          0.6364834002538529,
+          0.23846027137455086,
+          0.12505632837159628,
+          0.0
+        ]
+      }
+    ],
+    "old_hard_mean_percent": 79.27927263324469,
+    "new_hard_mean_percent": 79.23119571016775,
+    "text_only_hard_mean_percent": 61.63885712195537,
+    "attention_fit_seconds": 73.48628980001376,
+    "elapsed_seconds": 190.27493919999688,
+    "gate_seed": 42,
+    "nested_seed_formula": "warmup = 100000 + 100*outer + inner; finetune = warmup + 1000",
+    "validation_opened": false
+  },
+  "validation_queries": 0,
+  "test_references_opened": false,
+  "written_to_model_bundle": false,
+  "verdict": "STOPPED_INTERNAL_GATE",
+  "validation_confirmation": null,
+  "execution_seconds": 201.59793809999974
+}

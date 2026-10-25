@@ -1,0 +1,41 @@
+{
+  "m03": {
+    "weights": "development/runs/exp_b08/arm_embeddings_plus_g01_g03.npz",
+    "temperature": 1.100612062106365,
+    "gamma": 1.0
+  },
+  "m04": {
+    "train_rows": "train_hard",
+    "columns": [
+      "is_valid",
+      "cluster_ratio",
+      "is_unique_majority",
+      "is_tied_majority",
+      "num_equations",
+      "num_correct_equations",
+      "num_wrong_equations",
+      "has_arithmetic_error",
+      "candidate_number_count",
+      "question_condition_coverage",
+      "missing_condition_count",
+      "has_missing_condition",
+      "wrong_eq_diff_mean",
+      "wrong_eq_rank",
+      "condition_coverage_diff_mean",
+      "condition_coverage_rank"
+    ],
+    "tree_params": {
+      "max_iter": 100,
+      "max_depth": 5,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0,
+      "random_state": 42
+    },
+    "sklearn": "1.7.2"
+  },
+  "selected_gate": {
+    "name": "m03_only",
+    "threshold": null
+  },
+  "selection_rule": "max val_hard among gates whose val_all is at least MOD-M03; ties keep higher val_all, then lower priority, and m03_only has priority 0"
+}

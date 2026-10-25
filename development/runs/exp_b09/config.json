@@ -1,0 +1,40 @@
+{
+  "base_weights": "development/runs/exp_b08/arm_embeddings_plus_g01_g03.npz",
+  "probability": "sigmoid(logit / T)",
+  "temperature": 1.100612062106365,
+  "gamma": 1.0,
+  "gamma_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    4.0,
+    5.0
+  ],
+  "selection_rule": "max val_hard correct among calibrated gammas whose val_all correct is at least the argmax count; ties use higher val_all, then smaller gamma",
+  "g01_columns": [
+    "is_valid",
+    "cluster_ratio",
+    "is_unique_majority",
+    "is_tied_majority"
+  ],
+  "g03_columns": [
+    "num_equations",
+    "num_correct_equations",
+    "num_wrong_equations",
+    "has_arithmetic_error",
+    "candidate_number_count",
+    "question_condition_coverage",
+    "missing_condition_count",
+    "has_missing_condition",
+    "wrong_eq_diff_mean",
+    "wrong_eq_rank",
+    "condition_coverage_diff_mean",
+    "condition_coverage_rank"
+  ]
+}

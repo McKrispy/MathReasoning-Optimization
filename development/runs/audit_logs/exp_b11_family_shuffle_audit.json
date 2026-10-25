@@ -1,0 +1,80 @@
+{
+  "experiment": "EXP-B11",
+  "model": "development/runs/exp_b10/gbdt.pkl",
+  "rows": "val_hard",
+  "shuffle": "question blocks within val_hard; one family at a time; other columns unchanged",
+  "repeats": 20,
+  "seed": 42,
+  "split_gain_used": false,
+  "baseline_val_hard": {
+    "acc": 0.7352112676056338,
+    "correct": 261,
+    "total": 355
+  },
+  "baseline_val_all": {
+    "acc": 0.8822055137844611,
+    "correct": 704,
+    "total": 798
+  },
+  "official_validation_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "validation",
+    "correct": 704,
+    "n": 798,
+    "accuracy": 88.22055137844612,
+    "scoring_seconds": 0.027195417031180114
+  },
+  "families": [
+    {
+      "family": "FEAT-G01",
+      "n_columns": 4,
+      "columns": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority"
+      ],
+      "repeats": 20,
+      "baseline_correct": 261,
+      "mean_correct": 223.35,
+      "std_correct": 8.10108017489026,
+      "min_correct": 205,
+      "max_correct": 238,
+      "mean_drop_questions": 37.650000000000006,
+      "mean_accuracy": 0.6291549295774648,
+      "mean_drop_accuracy": 0.10605633802816904
+    },
+    {
+      "family": "FEAT-G03",
+      "n_columns": 12,
+      "columns": [
+        "num_equations",
+        "num_correct_equations",
+        "num_wrong_equations",
+        "has_arithmetic_error",
+        "candidate_number_count",
+        "question_condition_coverage",
+        "missing_condition_count",
+        "has_missing_condition",
+        "wrong_eq_diff_mean",
+        "wrong_eq_rank",
+        "condition_coverage_diff_mean",
+        "condition_coverage_rank"
+      ],
+      "repeats": 20,
+      "baseline_correct": 261,
+      "mean_correct": 244.4,
+      "std_correct": 4.42040722106007,
+      "min_correct": 235,
+      "max_correct": 251,
+      "mean_drop_questions": 16.599999999999994,
+      "mean_accuracy": 0.6884507042253522,
+      "mean_drop_accuracy": 0.04676056338028167
+    }
+  ],
+  "shuffle_seconds": 0.0570286670117639,
+  "files": {
+    "predictions": "development/runs/predictions/EXP-B11_tree_baseline_predictions.json",
+    "score": "development/runs/scores/EXP-B11_tree_baseline_score.json"
+  }
+}

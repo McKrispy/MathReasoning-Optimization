@@ -1,0 +1,9 @@
+{
+  "split": "validation",
+  "total": 798,
+  "correct": 709,
+  "accuracy": 0.8884711779448622,
+  "val_hard_total": 355,
+  "val_hard_correct": 279,
+  "val_hard_accuracy": 0.7859154929577464
+}

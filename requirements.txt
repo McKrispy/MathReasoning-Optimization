@@ -1,0 +1,2 @@
+# Frozen score reproduction. Development-only tools are listed separately.
+-r frozen/requirements.txt

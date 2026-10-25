@@ -1,0 +1,54 @@
+{
+  "hardware": {
+    "cpu_name": "AMD Ryzen 9 7940HX with Radeon Graphics",
+    "physical_cores": "16",
+    "logical_processors": "32",
+    "ram_bytes": "33520275456",
+    "os": "Microsoft Windows NT 10.0.26200.0",
+    "architecture": "AMD64",
+    "python_cpu_count": 32,
+    "affinity_restricted": false,
+    "requested_numeric_threads": 1,
+    "gpu_hidden_by_env": "CUDA_VISIBLE_DEVICES=-1"
+  },
+  "asset_decision_bytes": 7158695,
+  "asset_limit_bytes": 16777216,
+  "requested_numeric_threads": 1,
+  "max_compute_threads_cap": 4,
+  "primary": {
+    "predict_wall_ns": 11094216600,
+    "score_wall_ns": 515523800,
+    "sum_process_wall_ns": 11609740400,
+    "continuous_pair_wall_ns": 11625482200,
+    "parent_gap_ns": 15741800,
+    "runner_prediction_seconds": 9.970271400001366,
+    "runner_scoring_seconds": 0.02132290000008652,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "prediction_sha256": "f754adc41f65ca5046dc71081a5e8d9b85812944779e3e632946a7cae5406671",
+    "within_limit": true
+  },
+  "reproduction": {
+    "predict_wall_ns": 11078439000,
+    "score_wall_ns": 512950000,
+    "sum_process_wall_ns": 11591389000,
+    "continuous_pair_wall_ns": 11606121200,
+    "parent_gap_ns": 14732200,
+    "runner_prediction_seconds": 9.966341200000898,
+    "runner_scoring_seconds": 0.02139320000060252,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "prediction_sha256": "960185f7b27d7d9478639e59b7a0a4bb0c8ec03fc6ca8edd487b05d1bc310e37",
+    "within_limit": true
+  },
+  "maximum_sum_process_wall_ns": 11609740400,
+  "maximum_continuous_pair_wall_ns": 11625482200,
+  "local_verdict": "LOCAL_WITHIN_LIMIT",
+  "reference_machine_verdict": "PENDING_NOT_RUN",
+  "reference_cpu": "Xeon Platinum 8457C",
+  "timing_note": "Local Windows timing only. B20 validation timing is not reused."
+}

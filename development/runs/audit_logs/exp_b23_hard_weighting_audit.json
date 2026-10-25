@@ -1,0 +1,215 @@
+{
+  "experiment": "EXP-B23",
+  "description": "Arm A loss reweighting from nested OOF mining, with a train-internal gate",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "timestamp": "2026-10-24T16:08:53Z",
+  "environment": {
+    "python": "3.12.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.7.1+cu126",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1",
+    "device_train": "cuda",
+    "cuda": "12.6",
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": true,
+    "conda_env": "base",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "lightgbm": "4.7.0",
+    "interpreter": "<user-home>\\.conda\\envs\\mp1\\python.exe"
+  },
+  "model_id": "MOD-M03",
+  "sampling_loss_weights": {
+    "training_prediction_incorrect": 2.0,
+    "training_prediction_correct_and_not_hard": 0.5,
+    "other": 1.0
+  },
+  "internal_gate": {
+    "passed": false,
+    "gain_percentage_points": 0.4491359817810121,
+    "minimum_percentage_points": 1.0,
+    "selection": "arm A argmax on held-out hard questions",
+    "hard_definition": "train.hard disagreement flag",
+    "mining_prediction": "inner OOF argmax hits a correct candidate",
+    "loss": "per-question weighted mean of listwise plus lambda_bce times summed BCE",
+    "uniform_weights_match_the_unweighted_mean": true,
+    "comparison_seed_formula": "fold_model_seeds(seed, outer), same initialization as the saved B12 fold model",
+    "mining_seed_formula": "warmup = 200000 + 10000*(seed-42) + 100*outer + inner; finetune = warmup + 1000",
+    "baseline_source": "development/runs/exp_b12/seed_42/arm_embeddings_only_fold{k}.npz",
+    "old_hard_mean_percent": 77.50387349584724,
+    "new_hard_mean_percent": 77.95300947762826,
+    "old_pooled": {
+      "correct": 1640,
+      "total": 2114
+    },
+    "new_pooled": {
+      "correct": 1650,
+      "total": 2114
+    },
+    "baseline_folds": [
+      {
+        "fold": 0,
+        "correct": 345,
+        "total": 444
+      },
+      {
+        "fold": 1,
+        "correct": 330,
+        "total": 424
+      },
+      {
+        "fold": 2,
+        "correct": 289,
+        "total": 392
+      },
+      {
+        "fold": 3,
+        "correct": 325,
+        "total": 416
+      },
+      {
+        "fold": 4,
+        "correct": 351,
+        "total": 438
+      }
+    ],
+    "weighted_folds": [
+      {
+        "outer_fold": 0,
+        "weighted_hard": {
+          "correct": 352,
+          "total": 444
+        },
+        "question_weights": {
+          "questions": 3804,
+          "incorrect": 440,
+          "correct_not_hard": 2100,
+          "other_correct_hard": 1264,
+          "weight_sum": 3194.0,
+          "mean_weight": 0.8396424815983176
+        },
+        "finetune_weight_sum": 2076.0,
+        "finetune_rows": 1670,
+        "warmup_optimizer_steps": 150,
+        "finetune_optimizer_steps": 56,
+        "mining_optimizer_steps": 640,
+        "mining_fit_seconds": 6.751178800004709,
+        "weighted_fit_seconds": 1.9283782999991672,
+        "checkpoint": "development/runs/exp_b23/seed_42/arm_a_weighted_fold0.npz",
+        "sha256": "f2b161fe6d09d75d78042e84f954cd6a24d6dd49219370888b7d6d0e2c9b4acb"
+      },
+      {
+        "outer_fold": 1,
+        "weighted_hard": {
+          "correct": 327,
+          "total": 424
+        },
+        "question_weights": {
+          "questions": 3804,
+          "incorrect": 427,
+          "correct_not_hard": 2085,
+          "other_correct_hard": 1292,
+          "weight_sum": 3188.5,
+          "mean_weight": 0.8381966351209253
+        },
+        "finetune_weight_sum": 2088.0,
+        "finetune_rows": 1690,
+        "warmup_optimizer_steps": 150,
+        "finetune_optimizer_steps": 56,
+        "mining_optimizer_steps": 648,
+        "mining_fit_seconds": 5.255312999994203,
+        "weighted_fit_seconds": 1.8052806999985478,
+        "checkpoint": "development/runs/exp_b23/seed_42/arm_a_weighted_fold1.npz",
+        "sha256": "99fc3819c2e3f2c1ba6cbf7c394bae6539745be7b9d72c18f8137c9d715036cc"
+      },
+      {
+        "outer_fold": 2,
+        "weighted_hard": {
+          "correct": 287,
+          "total": 392
+        },
+        "question_weights": {
+          "questions": 3804,
+          "incorrect": 413,
+          "correct_not_hard": 2055,
+          "other_correct_hard": 1336,
+          "weight_sum": 3189.5,
+          "mean_weight": 0.838459516298633
+        },
+        "finetune_weight_sum": 2108.0,
+        "finetune_rows": 1722,
+        "warmup_optimizer_steps": 150,
+        "finetune_optimizer_steps": 56,
+        "mining_optimizer_steps": 664,
+        "mining_fit_seconds": 5.428053300005558,
+        "weighted_fit_seconds": 1.845279200002551,
+        "checkpoint": "development/runs/exp_b23/seed_42/arm_a_weighted_fold2.npz",
+        "sha256": "1895fbe69bcddb339e36c4fdea83762d5c28e67334b318d42eef772619730ca8"
+      },
+      {
+        "outer_fold": 3,
+        "weighted_hard": {
+          "correct": 330,
+          "total": 416
+        },
+        "question_weights": {
+          "questions": 3804,
+          "incorrect": 444,
+          "correct_not_hard": 2069,
+          "other_correct_hard": 1291,
+          "weight_sum": 3213.5,
+          "mean_weight": 0.8447686645636172
+        },
+        "finetune_weight_sum": 2105.0,
+        "finetune_rows": 1698,
+        "warmup_optimizer_steps": 150,
+        "finetune_optimizer_steps": 56,
+        "mining_optimizer_steps": 648,
+        "mining_fit_seconds": 5.36590379998961,
+        "weighted_fit_seconds": 1.7805317000020295,
+        "checkpoint": "development/runs/exp_b23/seed_42/arm_a_weighted_fold3.npz",
+        "sha256": "253881c4658b5c3c2c165b6b104c0dea05bae9f97e6c7f047cfc01fa5b9ca4f8"
+      },
+      {
+        "outer_fold": 4,
+        "weighted_hard": {
+          "correct": 354,
+          "total": 438
+        },
+        "question_weights": {
+          "questions": 3804,
+          "incorrect": 449,
+          "correct_not_hard": 2092,
+          "other_correct_hard": 1263,
+          "weight_sum": 3207.0,
+          "mean_weight": 0.8430599369085173
+        },
+        "finetune_weight_sum": 2089.0,
+        "finetune_rows": 1676,
+        "warmup_optimizer_steps": 150,
+        "finetune_optimizer_steps": 56,
+        "mining_optimizer_steps": 648,
+        "mining_fit_seconds": 5.494065400009276,
+        "weighted_fit_seconds": 1.7880707000003895,
+        "checkpoint": "development/runs/exp_b23/seed_42/arm_a_weighted_fold4.npz",
+        "sha256": "520f9b5d7a2e2732b4c73dbe17110e1b20011181bff8364501fccd2c4f109ab7"
+      }
+    ],
+    "mining_fit_seconds": 28.294514300003357,
+    "weighted_fit_seconds": 9.147540600002685,
+    "mining_optimizer_steps": 3248,
+    "comparison_optimizer_steps": 1030,
+    "comparison_step_budget_matches_unweighted_recipe": true,
+    "gate_seed": 42,
+    "elapsed_seconds": 38.635543600001256,
+    "validation_opened": false,
+    "oof_logits": "development/runs/exp_b23/seed_42/arm_a_weighted_oof_logits.npy"
+  },
+  "validation_queries": 0,
+  "test_references_opened": false,
+  "written_to_model_bundle": false,
+  "candidate_submission_updated": false,
+  "verdict": "STOPPED_INTERNAL_GATE",
+  "validation_confirmation": null,
+  "execution_seconds": 39.619986400000926
+}

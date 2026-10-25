@@ -1,0 +1,312 @@
+{
+  "experiment": "EXP-B22",
+  "description": "Retain R5 SVD, append FEAT-G05, refit the three-view tree member",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "timestamp": "2026-10-24T13:06:38Z",
+  "environment": {
+    "python": "3.12.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.7.1+cu126",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1",
+    "device_train": "cpu",
+    "cuda": "12.6",
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": false,
+    "conda_env": "base",
+    "lightgbm": "4.7.0"
+  },
+  "model_id": "MOD-M04a",
+  "hyperparameters": {
+    "max_iter": 100,
+    "max_depth": 5,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false
+  },
+  "fit_rows": "train_all",
+  "feature_scale": "raw_structured_plus_svd",
+  "input_dimensions": {
+    "structured": 22,
+    "svd": 128,
+    "total": 150,
+    "old_total": 144
+  },
+  "columns_structured_22": [
+    "is_valid",
+    "cluster_ratio",
+    "is_unique_majority",
+    "is_tied_majority",
+    "num_equations",
+    "num_correct_equations",
+    "num_wrong_equations",
+    "has_arithmetic_error",
+    "candidate_number_count",
+    "question_condition_coverage",
+    "missing_condition_count",
+    "has_missing_condition",
+    "wrong_eq_diff_mean",
+    "wrong_eq_rank",
+    "condition_coverage_diff_mean",
+    "condition_coverage_rank",
+    "final_eq_matches_answer",
+    "equation_chain_continuity",
+    "has_parser_heading_conflict",
+    "cluster_avg_correct_eq_ratio",
+    "cluster_max_condition_coverage",
+    "cluster_min_wrong_eq"
+  ],
+  "svd": {
+    "source": "exp_b15 svd_features",
+    "random_state": 42,
+    "fold_local_for_oof": true
+  },
+  "b21_linear_view_included": false,
+  "temperature": 0.5,
+  "old_r5_feature_gap_max_abs": 0.0,
+  "standalone_argmax": {
+    "old_r5": {
+      "42": {
+        "val_all": 711,
+        "val_hard": 268
+      },
+      "43": {
+        "val_all": 711,
+        "val_hard": 268
+      },
+      "44": {
+        "val_all": 711,
+        "val_hard": 268
+      }
+    },
+    "new_r5": {
+      "42": {
+        "val_all": 714,
+        "val_hard": 271,
+        "fit_seconds": 0.5985078000012436,
+        "bytes": 490575,
+        "sha256": "6a535afc4f7374d44bc7677cfbc64ebf872eef5c79d10cb4fa18471f9da0c1a4"
+      },
+      "43": {
+        "val_all": 714,
+        "val_hard": 271,
+        "fit_seconds": 0.5749556000009761,
+        "bytes": 490574,
+        "sha256": "876f547904d997f5958b63321948364cff8ae2af0feb6cd0a9a2ade309770acd"
+      },
+      "44": {
+        "val_all": 714,
+        "val_hard": 271,
+        "fit_seconds": 0.5703518999944208,
+        "bytes": 490575,
+        "sha256": "db80e1696e537116678d301b66891d3be00467490f933be47e92a4a9c0588202"
+      }
+    },
+    "old_predictions_identical": true,
+    "new_predictions_identical": true,
+    "note": "Identical predictions are required before calling the tree seed-insensitive. File hashes may still differ."
+  },
+  "feature_importance_seed_42": {
+    "available": false
+  },
+  "oof": {
+    "seconds": 17.0788365000044,
+    "folds": 5,
+    "fold_partition_seed": 42,
+    "attention": "per-seed fold models; ensemble weights use the three-seed mean",
+    "tree_member_for_ensemble_weights": 42,
+    "weight_gap_vs_b20_strict_max_abs": 0.002287182862225734,
+    "ensemble_old_weights": [
+      0.6408687688999242,
+      0.29034095924230763,
+      0.06879027185776829
+    ],
+    "ensemble_new_weights": [
+      0.6446982848603843,
+      0.2988928696127734,
+      0.056408845526842305
+    ]
+  },
+  "paired_seed_evaluation": {
+    "seed_42": {
+      "old_system": {
+        "val_all": 739,
+        "val_hard": 296
+      },
+      "new_system": {
+        "val_all": 739,
+        "val_hard": 296
+      },
+      "delta_hard": 0,
+      "delta_all": 0,
+      "weights_old": [
+        0.651755506169398,
+        0.2776399984022434,
+        0.07060449542835863
+      ],
+      "weights_new": [
+        0.6557391073793638,
+        0.28622550659612084,
+        0.05803538602451533
+      ]
+    },
+    "seed_43": {
+      "old_system": {
+        "val_all": 739,
+        "val_hard": 296
+      },
+      "new_system": {
+        "val_all": 738,
+        "val_hard": 295
+      },
+      "delta_hard": -1,
+      "delta_all": -1,
+      "weights_old": [
+        0.636413127220854,
+        0.27995736380832853,
+        0.0836295089708175
+      ],
+      "weights_new": [
+        0.6410235470125908,
+        0.2877278570051517,
+        0.07124859598225751
+      ]
+    },
+    "seed_44": {
+      "old_system": {
+        "val_all": 740,
+        "val_hard": 297
+      },
+      "new_system": {
+        "val_all": 741,
+        "val_hard": 298
+      },
+      "delta_hard": 1,
+      "delta_all": 1,
+      "weights_old": [
+        0.6450835229079052,
+        0.28471817393281407,
+        0.07019830315928091
+      ],
+      "weights_new": [
+        0.6493623241297644,
+        0.2932557633949121,
+        0.05738191247532348
+      ]
+    }
+  },
+  "final_ensemble": {
+    "definition": "three-seed mean of arm A and arm B, plus the seed-42 tree",
+    "historical_old_tree": {
+      "val_all": 743,
+      "val_hard": 300,
+      "weights": [
+        0.6519943983184848,
+        0.2773940600630942,
+        0.07061154161842091
+      ]
+    },
+    "strict_old_tree": {
+      "val_all": 738,
+      "val_hard": 295,
+      "weights": [
+        0.6408687688999242,
+        0.29034095924230763,
+        0.06879027185776829
+      ]
+    },
+    "new_tree": {
+      "val_all": 741,
+      "val_hard": 298,
+      "weights": [
+        0.6446982848603843,
+        0.2988928696127734,
+        0.056408845526842305
+      ]
+    }
+  },
+  "retention_gate": {
+    "gates": {
+      "rule1_paired_hard_mean_ge_3_55": {
+        "value": 0.0,
+        "passed": false
+      },
+      "rule2_paired_hard_positive_ge_2": {
+        "value": 1,
+        "passed": false
+      },
+      "rule3_paired_all_mean_ge_0": {
+        "value": 0.0,
+        "passed": true
+      },
+      "rule4_ensemble_hard_vs_historical_ge_4": {
+        "value": -2,
+        "passed": false
+      },
+      "rule5_ensemble_all_vs_historical_ge_0": {
+        "value": -2,
+        "passed": false
+      },
+      "rule6_ensemble_hard_vs_b20_strict_ge_4": {
+        "value": 3,
+        "passed": false
+      },
+      "rule7_ensemble_all_vs_b20_strict_ge_0": {
+        "value": 3,
+        "passed": true
+      }
+    },
+    "retained": false,
+    "verdict": "REJECTED"
+  },
+  "validation_configuration_ledger": {
+    "pre_registered_selection_configs": 15,
+    "executed_selection_configs": 15,
+    "breakdown": {
+      "old_tree_argmax_seeds": 3,
+      "new_tree_argmax_seeds": 3,
+      "paired_old_systems": 3,
+      "paired_new_systems": 3,
+      "ensembles": 3
+    },
+    "official_score_calls": 1,
+    "oof_weight_fits_train_only": 8,
+    "reruns": 0,
+    "temperature_or_hyperparameter_search_on_validation": 0
+  },
+  "assets": {
+    "files": [
+      {
+        "file": "development/runs/exp_b22/seed_42/M04a_train_all_g05_svd.pkl",
+        "sha256": "6a535afc4f7374d44bc7677cfbc64ebf872eef5c79d10cb4fa18471f9da0c1a4",
+        "bytes": 490575,
+        "seed": 42
+      },
+      {
+        "file": "development/runs/exp_b22/seed_43/M04a_train_all_g05_svd.pkl",
+        "sha256": "876f547904d997f5958b63321948364cff8ae2af0feb6cd0a9a2ade309770acd",
+        "bytes": 490574,
+        "seed": 43
+      },
+      {
+        "file": "development/runs/exp_b22/seed_44/M04a_train_all_g05_svd.pkl",
+        "sha256": "db80e1696e537116678d301b66891d3be00467490f933be47e92a4a9c0588202",
+        "bytes": 490575,
+        "seed": 44
+      }
+    ],
+    "new_tree_pickle_bytes_sum": 1471724,
+    "deployed_old_tree_bytes": 490352,
+    "written_to_model_bundle": false,
+    "resource_note": "Pickle bytes are the candidate tree assets. Full four-thread predict-plus-score wall clock stays with the frozen bundle and was not claimed here."
+  },
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "validation",
+    "correct": 741,
+    "n": 798,
+    "accuracy": 92.85714285714286,
+    "scoring_seconds": 0.0356515000021318
+  },
+  "execution_seconds": 27.170601600002556
+}

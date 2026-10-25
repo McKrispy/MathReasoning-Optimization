@@ -1,0 +1,122 @@
+{
+  "experiment": "EXP-R01",
+  "reference_only": true,
+  "run": {
+    "backend": "openai",
+    "endpoint": "api.openai.com",
+    "model": "gpt-6.1-sol",
+    "model_versions": [
+      "gpt-6.1-sol"
+    ],
+    "reasoning_effort": "high",
+    "temperature": "model default",
+    "tier": "standard (real-time)",
+    "price_per_million_usd": {
+      "input": 2.0,
+      "output": 10.0
+    },
+    "called_between": [
+      "2026-10-19T06:01:28.130770+00:00",
+      "2026-10-19T06:16:48.787270+00:00"
+    ],
+    "calls": 798,
+    "usage_tokens": {
+      "prompt": 795223,
+      "candidates": 189793,
+      "thoughts": 72703
+    },
+    "cost_usd": 4.2154,
+    "mean_seconds_per_question": 8.301068520676711,
+    "cache": "development/runs/ref/exp_r01_judge_cache_openai_gpt-6.1-sol_effort-high.jsonl",
+    "prompt_file": "development/src/reference/prompts/judge_v1.txt"
+  },
+  "scores": {
+    "R01a": {
+      "val_hard": 342,
+      "val_all": 774,
+      "official": {
+        "protocol": "dase7506-mp2-open-hard-verifier-v5",
+        "split": "validation",
+        "correct": 774,
+        "n": 798,
+        "accuracy": 96.99248120300751,
+        "scoring_seconds": 0.032731600000261096
+      },
+      "predictions": "development/runs/ref/exp_r01_R01a_predictions.json"
+    },
+    "R01b": {
+      "val_hard": 351,
+      "val_all": 793,
+      "official": {
+        "protocol": "dase7506-mp2-open-hard-verifier-v5",
+        "split": "validation",
+        "correct": 793,
+        "n": 798,
+        "accuracy": 99.3734335839599,
+        "scoring_seconds": 0.03278119999959017
+      },
+      "predictions": "development/runs/ref/exp_r01_R01b_predictions.json"
+    }
+  },
+  "diagnostics": {
+    "own_answer_correct": {
+      "val_all": 790,
+      "val_hard": 351
+    },
+    "own_answer_unparsed": 0,
+    "R01a_wrong_but_own_correct": {
+      "val_all": 19,
+      "val_hard": 9
+    },
+    "R01a_wrong_and_own_wrong": {
+      "val_all": 5,
+      "val_hard": 4
+    },
+    "R01b_differs_from_R01a": 95,
+    "val_hard_by_correct_candidates": {
+      "1": {
+        "questions": 114,
+        "R01a_correct": 105,
+        "R01b_correct": 112
+      },
+      "2": {
+        "questions": 112,
+        "R01a_correct": 108,
+        "R01b_correct": 110
+      },
+      "3": {
+        "questions": 129,
+        "R01a_correct": 129,
+        "R01b_correct": 129
+      }
+    },
+    "failed_questions": [],
+    "retried_questions": 0
+  },
+  "pilots": {
+    "openai_gpt-6.1-sol_default": {
+      "questions": 20,
+      "R01a_correct": 19,
+      "high_effort_correct_same_questions": 19,
+      "cost_usd": 0.108,
+      "cache": "development/runs/ref/exp_r01_judge_cache_openai_gpt-6.1-sol.jsonl"
+    },
+    "gemini_gemini-3.8-flash_free": {
+      "questions": 18,
+      "R01a_correct": 17,
+      "high_effort_correct_same_questions": 17,
+      "cost_usd": 0.0,
+      "cache": "development/runs/ref/exp_r01_judge_cache_gemini_gemini-3.8-flash.jsonl"
+    }
+  },
+  "ref_r00": {
+    "oracle": {
+      "val_all": 798,
+      "val_hard": 355
+    },
+    "random_expectation": {
+      "val_all": 604.0,
+      "val_hard": 181.25
+    }
+  }
+}

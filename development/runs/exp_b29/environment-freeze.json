@@ -1,0 +1,280 @@
+{
+  "interpreter": "<user-home>\\.conda\\envs\\mp1\\python.exe",
+  "version": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:20:38) [MSC v.1916 64 bit (AMD64)]",
+  "platform": "win32",
+  "clean_install_verified": false,
+  "distributions": [
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.1",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "wheel_tags": [
+        "py2-none-any",
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "filelock",
+      "version": "3.32.3",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.7.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "0.36.2",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "jupytext",
+      "version": "1.19.5",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "lightgbm",
+      "version": "4.7.0",
+      "wheel_tags": [
+        "py3-none-win_amd64"
+      ]
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "narwhals",
+      "version": "2.27.1",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.3",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "pip",
+      "version": "26.2.1",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "8.3.5",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "python-docx",
+      "version": "1.2.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.9.1",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "84.0.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "83.0.0",
+      "wheel_tags": []
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.7.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.21.4",
+      "wheel_tags": [
+        "cp39-abi3-win_amd64"
+      ]
+    },
+    {
+      "name": "torch",
+      "version": "2.7.1+cu126",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "name": "torchaudio",
+      "version": "2.11.0+cu130",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "name": "torchvision",
+      "version": "0.29.0+cu130",
+      "wheel_tags": [
+        "cp312-cp312-win_amd64"
+      ]
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    },
+    {
+      "name": "wheel",
+      "version": "0.47.0",
+      "wheel_tags": [
+        "py3-none-any"
+      ]
+    }
+  ]
+}

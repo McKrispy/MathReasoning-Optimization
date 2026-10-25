@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-17 14:55:35",
+  "exp_id": "EXP-B01",
+  "split": "validation",
+  "method": "<original-workspace>\\development/src/submission.py",
+  "checkpoint": "<original-workspace>\\development/runs/model_bundle",
+  "predictions_file": "<original-workspace>\\development/runs/predictions\\EXP-B01_validation_predictions.json",
+  "scores_file": "<original-workspace>\\development/runs/scores\\EXP-B01_validation_score.json",
+  "metrics": {
+    "val_all_accuracy": 86.2155,
+    "val_all_correct": 688,
+    "val_all_total": 798,
+    "val_hard_accuracy": 69.0141,
+    "val_hard_correct": 245,
+    "val_hard_total": 355
+  },
+  "resources": {
+    "predict_wall_seconds": 0.266,
+    "score_wall_seconds": 0.1885,
+    "total_wall_seconds": 0.4546,
+    "latency_compliant_le_30s": true,
+    "asset_uncompressed_bytes": 0,
+    "asset_uncompressed_mib": 0.0,
+    "asset_compliant_le_16mib": true,
+    "cpu_threads_limited_to": 4
+  },
+  "system": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.0",
+    "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD"
+  }
+}

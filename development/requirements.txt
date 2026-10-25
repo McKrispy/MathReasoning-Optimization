@@ -1,0 +1,11 @@
+# Training/development dependencies verified against the effective mp1 runtime.
+# Includes the frozen inference dependency closure.
+-r ../frozen/requirements.txt
+
+# EXP-B15 tree training and test tools, including their extra dependencies.
+lightgbm==4.7.0
+pytest==8.3.5
+colorama==0.4.6
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0

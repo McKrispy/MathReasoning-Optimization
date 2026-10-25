@@ -1,0 +1,2590 @@
+{
+  "files": [
+    {
+      "path": "development/runs/model_bundle/arm_a_seed_42.npz",
+      "format": "npz",
+      "sha256": "5cf211905df486a1fdbedfe2c4b2dc0013dd8aa3b51d114fa3ebd68283d97bde",
+      "disk_bytes": 1062924,
+      "array_payload_bytes": 1055768,
+      "expanded_bytes_including_headers": 1059224,
+      "members": [
+        {
+          "member": "proj.weight.npy",
+          "file_size": 524416,
+          "compress_size": 524416,
+          "compress_type": 0
+        },
+        {
+          "member": "proj.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.bias.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_heads.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_layers.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_eps.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        }
+      ],
+      "arrays": [
+        {
+          "name": "proj.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            1024
+          ],
+          "nbytes": 524288
+        },
+        {
+          "name": "proj.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.weight",
+          "dtype": "float32",
+          "shape": [
+            1,
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.bias",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        },
+        {
+          "name": "meta_num_heads",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_num_layers",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_eps",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        }
+      ],
+      "decision_bytes": 1062924
+    },
+    {
+      "path": "development/runs/model_bundle/arm_a_seed_43.npz",
+      "format": "npz",
+      "sha256": "f314a56bac5a0af7be55d2c843cfa53c87736b2587b69b088b0c3af18da78b32",
+      "disk_bytes": 1062924,
+      "array_payload_bytes": 1055768,
+      "expanded_bytes_including_headers": 1059224,
+      "members": [
+        {
+          "member": "proj.weight.npy",
+          "file_size": 524416,
+          "compress_size": 524416,
+          "compress_type": 0
+        },
+        {
+          "member": "proj.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.bias.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_heads.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_layers.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_eps.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        }
+      ],
+      "arrays": [
+        {
+          "name": "proj.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            1024
+          ],
+          "nbytes": 524288
+        },
+        {
+          "name": "proj.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.weight",
+          "dtype": "float32",
+          "shape": [
+            1,
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.bias",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        },
+        {
+          "name": "meta_num_heads",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_num_layers",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_eps",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        }
+      ],
+      "decision_bytes": 1062924
+    },
+    {
+      "path": "development/runs/model_bundle/arm_a_seed_44.npz",
+      "format": "npz",
+      "sha256": "05166d643f11e05d8503d012561ab655dc09da48439a32f9a012eb8b24b75ce9",
+      "disk_bytes": 1062924,
+      "array_payload_bytes": 1055768,
+      "expanded_bytes_including_headers": 1059224,
+      "members": [
+        {
+          "member": "proj.weight.npy",
+          "file_size": 524416,
+          "compress_size": 524416,
+          "compress_type": 0
+        },
+        {
+          "member": "proj.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.bias.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_heads.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_layers.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_eps.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        }
+      ],
+      "arrays": [
+        {
+          "name": "proj.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            1024
+          ],
+          "nbytes": 524288
+        },
+        {
+          "name": "proj.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.weight",
+          "dtype": "float32",
+          "shape": [
+            1,
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.bias",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        },
+        {
+          "name": "meta_num_heads",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_num_layers",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_eps",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        }
+      ],
+      "decision_bytes": 1062924
+    },
+    {
+      "path": "development/runs/model_bundle/arm_b_seed_42.npz",
+      "format": "npz",
+      "sha256": "8994aa8163fe67512461de9803430d4c5a806fe0f3b52ce96edebe9909af320f",
+      "disk_bytes": 1072028,
+      "array_payload_bytes": 1064096,
+      "expanded_bytes_including_headers": 1067936,
+      "members": [
+        {
+          "member": "proj.weight.npy",
+          "file_size": 532608,
+          "compress_size": 532608,
+          "compress_type": 0
+        },
+        {
+          "member": "proj.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.bias.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_heads.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_layers.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_eps.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        },
+        {
+          "member": "struct_mean.npy",
+          "file_size": 192,
+          "compress_size": 192,
+          "compress_type": 0
+        },
+        {
+          "member": "struct_std.npy",
+          "file_size": 192,
+          "compress_size": 192,
+          "compress_type": 0
+        },
+        {
+          "member": "struct_column_count.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        }
+      ],
+      "arrays": [
+        {
+          "name": "proj.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            1040
+          ],
+          "nbytes": 532480
+        },
+        {
+          "name": "proj.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.weight",
+          "dtype": "float32",
+          "shape": [
+            1,
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.bias",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        },
+        {
+          "name": "meta_num_heads",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_num_layers",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_eps",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        },
+        {
+          "name": "struct_mean",
+          "dtype": "float32",
+          "shape": [
+            16
+          ],
+          "nbytes": 64
+        },
+        {
+          "name": "struct_std",
+          "dtype": "float32",
+          "shape": [
+            16
+          ],
+          "nbytes": 64
+        },
+        {
+          "name": "struct_column_count",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        }
+      ],
+      "decision_bytes": 1072028
+    },
+    {
+      "path": "development/runs/model_bundle/arm_b_seed_43.npz",
+      "format": "npz",
+      "sha256": "30caf2a1fde9dee9c26778e1dd4aef8ccb8afcd73982c6f27747b8bf142e5791",
+      "disk_bytes": 1072028,
+      "array_payload_bytes": 1064096,
+      "expanded_bytes_including_headers": 1067936,
+      "members": [
+        {
+          "member": "proj.weight.npy",
+          "file_size": 532608,
+          "compress_size": 532608,
+          "compress_type": 0
+        },
+        {
+          "member": "proj.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.bias.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_heads.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_layers.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_eps.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        },
+        {
+          "member": "struct_mean.npy",
+          "file_size": 192,
+          "compress_size": 192,
+          "compress_type": 0
+        },
+        {
+          "member": "struct_std.npy",
+          "file_size": 192,
+          "compress_size": 192,
+          "compress_type": 0
+        },
+        {
+          "member": "struct_column_count.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        }
+      ],
+      "arrays": [
+        {
+          "name": "proj.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            1040
+          ],
+          "nbytes": 532480
+        },
+        {
+          "name": "proj.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.weight",
+          "dtype": "float32",
+          "shape": [
+            1,
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.bias",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        },
+        {
+          "name": "meta_num_heads",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_num_layers",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_eps",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        },
+        {
+          "name": "struct_mean",
+          "dtype": "float32",
+          "shape": [
+            16
+          ],
+          "nbytes": 64
+        },
+        {
+          "name": "struct_std",
+          "dtype": "float32",
+          "shape": [
+            16
+          ],
+          "nbytes": 64
+        },
+        {
+          "name": "struct_column_count",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        }
+      ],
+      "decision_bytes": 1072028
+    },
+    {
+      "path": "development/runs/model_bundle/arm_b_seed_44.npz",
+      "format": "npz",
+      "sha256": "e6ae043126a2e013a3290f7dabe67c3adba04f223f678346632e9c487741a0a2",
+      "disk_bytes": 1072028,
+      "array_payload_bytes": 1064096,
+      "expanded_bytes_including_headers": 1067936,
+      "members": [
+        {
+          "member": "proj.weight.npy",
+          "file_size": 532608,
+          "compress_size": 532608,
+          "compress_type": 0
+        },
+        {
+          "member": "proj.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.0.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_q.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_k.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_v.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.weight.npy",
+          "file_size": 65664,
+          "compress_size": 65664,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.W_o.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "blocks.1.ln.bias.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.weight.npy",
+          "file_size": 640,
+          "compress_size": 640,
+          "compress_type": 0
+        },
+        {
+          "member": "score.bias.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_heads.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_num_layers.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        },
+        {
+          "member": "meta_eps.npy",
+          "file_size": 132,
+          "compress_size": 132,
+          "compress_type": 0
+        },
+        {
+          "member": "struct_mean.npy",
+          "file_size": 192,
+          "compress_size": 192,
+          "compress_type": 0
+        },
+        {
+          "member": "struct_std.npy",
+          "file_size": 192,
+          "compress_size": 192,
+          "compress_type": 0
+        },
+        {
+          "member": "struct_column_count.npy",
+          "file_size": 136,
+          "compress_size": 136,
+          "compress_type": 0
+        }
+      ],
+      "arrays": [
+        {
+          "name": "proj.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            1040
+          ],
+          "nbytes": 532480
+        },
+        {
+          "name": "proj.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.0.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.0.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_q.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_q.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_k.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_k.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_v.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_v.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.W_o.weight",
+          "dtype": "float32",
+          "shape": [
+            128,
+            128
+          ],
+          "nbytes": 65536
+        },
+        {
+          "name": "blocks.1.W_o.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.weight",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "blocks.1.ln.bias",
+          "dtype": "float32",
+          "shape": [
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.weight",
+          "dtype": "float32",
+          "shape": [
+            1,
+            128
+          ],
+          "nbytes": 512
+        },
+        {
+          "name": "score.bias",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        },
+        {
+          "name": "meta_num_heads",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_num_layers",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        },
+        {
+          "name": "meta_eps",
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "nbytes": 4
+        },
+        {
+          "name": "struct_mean",
+          "dtype": "float32",
+          "shape": [
+            16
+          ],
+          "nbytes": 64
+        },
+        {
+          "name": "struct_std",
+          "dtype": "float32",
+          "shape": [
+            16
+          ],
+          "nbytes": 64
+        },
+        {
+          "name": "struct_column_count",
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "nbytes": 8
+        }
+      ],
+      "decision_bytes": 1072028
+    },
+    {
+      "path": "development/runs/model_bundle/config.json",
+      "format": "raw",
+      "sha256": "f32a897509cddc8003b69f77f0a0a2620d742bfbd51faae71ce3e52b5701048a",
+      "disk_bytes": 1069,
+      "array_payload_bytes": 0,
+      "expanded_bytes_including_headers": 1069,
+      "decision_bytes": 1069
+    },
+    {
+      "path": "development/runs/model_bundle/svd_components.npz",
+      "format": "npz",
+      "sha256": "1367ad8c06230b90d66eaaabbab0f951460b9abe18bfba93bcbcd8bb9345e8e5",
+      "disk_bytes": 262418,
+      "array_payload_bytes": 262144,
+      "expanded_bytes_including_headers": 262272,
+      "members": [
+        {
+          "member": "components.npy",
+          "file_size": 262272,
+          "compress_size": 262272,
+          "compress_type": 0
+        }
+      ],
+      "arrays": [
+        {
+          "name": "components",
+          "dtype": "float32",
+          "shape": [
+            64,
+            1024
+          ],
+          "nbytes": 262144
+        }
+      ],
+      "decision_bytes": 262418
+    },
+    {
+      "path": "development/runs/model_bundle/tree_r5.pkl",
+      "format": "pickle",
+      "sha256": "614dbef27692759f4e3c674f579661e44e12c8033f0e825dc446898d3ee1bca2",
+      "disk_bytes": 490352,
+      "array_payload_bytes": 469224,
+      "expanded_bytes_including_headers": 490352,
+      "canonical_reconstructed_state_bytes_if_needed": null,
+      "decision_bytes": 490352,
+      "estimator": "HistGradientBoostingClassifier"
+    }
+  ],
+  "embedded_learned_literals": [],
+  "decision_bytes": 7158695,
+  "limit_bytes": 16777216,
+  "passed": true,
+  "runtime_policy_read_by_prediction": false,
+  "note": "Guard rules live in ordinary source. freeze_manifest.json is controller-only and is not read by predict()."
+}

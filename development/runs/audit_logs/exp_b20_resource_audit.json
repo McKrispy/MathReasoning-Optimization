@@ -1,0 +1,138 @@
+{
+  "experiment": "EXP-B20",
+  "description": "B17 Independent Candidate Replay & Resource Audit",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "timestamp": "2026-10-24T12:29:43Z",
+  "environment": {
+    "python": "3.12.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.7.1+cu126",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1",
+    "device_train": "cpu",
+    "cuda": "12.6",
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": false,
+    "conda_env": "base",
+    "lightgbm": "4.7.0"
+  },
+  "candidate_entrypoint": "development/runs/exp_b20/candidate_submission.py",
+  "checkpoint_dir": "development/runs/exp_b20/model_assets",
+  "assets": {
+    "inventory": [
+      {
+        "file": "arm_a_seed_42.npz",
+        "purpose": "View 1 (Arm A embeddings-only cross-attention weights, seed 42)",
+        "file_bytes": 1062924,
+        "uncompressed_bytes": 1057496,
+        "sha256": "5cf211905df486a1fdbedfe2c4b2dc0013dd8aa3b51d114fa3ebd68283d97bde"
+      },
+      {
+        "file": "arm_a_seed_43.npz",
+        "purpose": "View 1 (Arm A embeddings-only cross-attention weights, seed 43)",
+        "file_bytes": 1062924,
+        "uncompressed_bytes": 1057496,
+        "sha256": "f314a56bac5a0af7be55d2c843cfa53c87736b2587b69b088b0c3af18da78b32"
+      },
+      {
+        "file": "arm_a_seed_44.npz",
+        "purpose": "View 1 (Arm A embeddings-only cross-attention weights, seed 44)",
+        "file_bytes": 1062924,
+        "uncompressed_bytes": 1057496,
+        "sha256": "05166d643f11e05d8503d012561ab655dc09da48439a32f9a012eb8b24b75ce9"
+      },
+      {
+        "file": "arm_b_seed_42.npz",
+        "purpose": "View 2 (Arm B symbolic cross-attention weights & normalization, seed 42)",
+        "file_bytes": 1072028,
+        "uncompressed_bytes": 1066016,
+        "sha256": "8994aa8163fe67512461de9803430d4c5a806fe0f3b52ce96edebe9909af320f"
+      },
+      {
+        "file": "arm_b_seed_43.npz",
+        "purpose": "View 2 (Arm B symbolic cross-attention weights & normalization, seed 43)",
+        "file_bytes": 1072028,
+        "uncompressed_bytes": 1066016,
+        "sha256": "30caf2a1fde9dee9c26778e1dd4aef8ccb8afcd73982c6f27747b8bf142e5791"
+      },
+      {
+        "file": "arm_b_seed_44.npz",
+        "purpose": "View 2 (Arm B symbolic cross-attention weights & normalization, seed 44)",
+        "file_bytes": 1072028,
+        "uncompressed_bytes": 1066016,
+        "sha256": "e6ae043126a2e013a3290f7dabe67c3adba04f223f678346632e9c487741a0a2"
+      },
+      {
+        "file": "config.json",
+        "purpose": "Inference configuration, column schema, stacking weights, and post-processing params",
+        "file_bytes": 1069,
+        "uncompressed_bytes": 1069,
+        "sha256": "f32a897509cddc8003b69f77f0a0a2620d742bfbd51faae71ce3e52b5701048a"
+      },
+      {
+        "file": "svd_components.npz",
+        "purpose": "TruncatedSVD 64-dim projection matrix",
+        "file_bytes": 262418,
+        "uncompressed_bytes": 262208,
+        "sha256": "1367ad8c06230b90d66eaaabbab0f951460b9abe18bfba93bcbcd8bb9345e8e5"
+      },
+      {
+        "file": "tree_r5.pkl",
+        "purpose": "View 3 (Tree R5 HistGradientBoostingClassifier model)",
+        "file_bytes": 490352,
+        "uncompressed_bytes": 490352,
+        "sha256": "614dbef27692759f4e3c674f579661e44e12c8033f0e825dc446898d3ee1bca2"
+      }
+    ],
+    "total_file_bytes": 7158695,
+    "total_uncompressed_bytes": 7124165,
+    "total_uncompressed_mib": 6.794133186340332,
+    "limit_mib": 16.0,
+    "compliant": true
+  },
+  "in_process_replay": {
+    "match_count_vs_historical_b17": 798,
+    "match_percentage": 100.0,
+    "in_process_seconds": 0.728629599998385,
+    "val_all": {
+      "correct": 743,
+      "total": 798,
+      "accuracy": 93.10776942355889
+    },
+    "val_hard": {
+      "correct": 300,
+      "total": 355,
+      "accuracy": 84.50704225352112
+    },
+    "val_easy": {
+      "correct": 443,
+      "total": 443,
+      "accuracy": 100.0
+    }
+  },
+  "external_benchmark_4_threads": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "cpu_count_logical": 32,
+    "threads_configured": 4,
+    "wallclock_predict_seconds": 3.4843774999972084,
+    "wallclock_score_seconds": 0.21661239999957616,
+    "wallclock_total_seconds": 3.7009898999967845,
+    "limit_seconds": 30.0,
+    "compliant": true,
+    "official_score": {
+      "protocol": "dase7506-mp2-open-hard-verifier-v5",
+      "split": "validation",
+      "correct": 743,
+      "n": 798,
+      "accuracy": 93.10776942355889,
+      "scoring_seconds": 0.035260100001323735
+    }
+  },
+  "verdict": {
+    "asset_size_compliant": true,
+    "wallclock_compliant": true,
+    "exact_score_parity": true,
+    "status": "PASSED"
+  }
+}

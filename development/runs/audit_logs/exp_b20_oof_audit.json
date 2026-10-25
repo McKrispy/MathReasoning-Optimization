@@ -1,0 +1,62 @@
+{
+  "experiment": "EXP-B20",
+  "description": "B17 Strict Fold-Contained OOF Baseline Reconstruction",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "timestamp": "2026-10-24T12:29:43Z",
+  "environment": {
+    "python": "3.12.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.7.1+cu126",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1",
+    "device_train": "cpu",
+    "cuda": "12.6",
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": false,
+    "conda_env": "base",
+    "lightgbm": "4.7.0"
+  },
+  "strict_oof": {
+    "generation_time_seconds": 4.315497400002641,
+    "historical_b17_weights": [
+      0.6519943983184848,
+      0.2773940600630942,
+      0.07061154161842091
+    ],
+    "strict_oof_weights": [
+      0.6401443191116853,
+      0.2887782261683207,
+      0.07107745471999402
+    ],
+    "validation_with_strict_weights": {
+      "val_all_correct": 738,
+      "val_all_accuracy": 92.4812030075188,
+      "val_hard_correct": 295,
+      "val_hard_accuracy": 83.09859154929578
+    },
+    "validation_with_historical_weights": {
+      "val_all_correct": 743,
+      "val_all_accuracy": 93.10776942355889,
+      "val_hard_correct": 300,
+      "val_hard_accuracy": 84.50704225352112
+    },
+    "oof_matrix_metadata": {
+      "train_questions": 4755,
+      "folds": 5,
+      "arm_a_seeds": [
+        42,
+        43,
+        44
+      ],
+      "arm_b_seeds": [
+        42,
+        43,
+        44
+      ],
+      "tree_feature_dim": 144,
+      "fold_local_svd_fit": true,
+      "raw_struct_feature_scale": true
+    }
+  },
+  "conclusion": "Strict fold-contained OOF aligns preprocessing scales (raw struct features on tree) and averages fold models across 3 seeds to mirror final inference. Weights and scores provide an unbiased baseline for EXP-B21 and EXP-B22."
+}

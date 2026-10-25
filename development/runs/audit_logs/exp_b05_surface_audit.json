@@ -1,0 +1,102 @@
+{
+  "dataset": "val_hard (355 questions) / val_all (798 questions)",
+  "features": [
+    "char_count",
+    "line_count",
+    "newline_ratio",
+    "digit_ratio",
+    "math_symbol_density",
+    "confidence_count",
+    "step_count",
+    "char_count_diff_mean",
+    "char_count_rank",
+    "word_count_rank",
+    "doubt_diff_mean",
+    "confidence_diff_mean",
+    "math_density_diff_mean"
+  ],
+  "model": "MOD-M04 (HistGradientBoostingClassifier)",
+  "asset_size_bytes": 252216,
+  "asset_size_mib": 0.24053192138671875,
+  "latency_seconds_val_all": 0.0027822000010928605,
+  "accuracy": {
+    "val_hard": {
+      "acc": 0.6,
+      "correct": 213,
+      "total": 355
+    },
+    "val_all": {
+      "acc": 0.8120300751879699,
+      "correct": 648,
+      "total": 798
+    },
+    "train_hard": {
+      "acc": 0.7994323557237465,
+      "correct": 1690,
+      "total": 2114
+    }
+  },
+  "false_positive_analysis": {
+    "total_questions": 355,
+    "false_positives_count": 142,
+    "false_positive_rate": 0.4,
+    "true_positives_count": 213,
+    "surface_comparison": {
+      "false_positive_char_len": 637.0492957746479,
+      "true_positive_char_len": 565.8122065727699,
+      "false_positive_step_count": 2.852112676056338,
+      "true_positive_step_count": 2.455399061032864,
+      "false_positive_confidence_count": 0.6338028169014085,
+      "true_positive_confidence_count": 0.5586854460093896
+    },
+    "symbolic_verification_of_false_positives": {
+      "has_arithmetic_error_count": 29,
+      "has_arithmetic_error_ratio": 0.20422535211267606,
+      "has_missing_condition_count": 16,
+      "has_missing_condition_ratio": 0.11267605633802817,
+      "has_either_flaw_count": 42,
+      "has_either_flaw_ratio": 0.29577464788732394
+    },
+    "representative_case_studies": [
+      {
+        "question_id": "gsm8k:a43ceff49caf15e088df74a262ff9e052dd2007849dae692d80b5056583ef20f",
+        "question_snippet": "Yun had 20 paperclips initially, but then lost 12. Marion has 1/4 more than what Yun currently has, plus 7. How many paperclips does Marion have?",
+        "chosen_candidate_idx": 3,
+        "surface_model_score": 0.6354969431860255,
+        "char_count": 375.0,
+        "confidence_count": 2.0,
+        "step_count": 0.0,
+        "arithmetic_errors": 2.0,
+        "missing_conditions": 1.0,
+        "candidate_text_snippet": "We are given the following:\n\n- Yun had **20 paperclips** initially.\n- Then lost **12**, so **Yun currently has** $ 20 - 12 = 8 $ paperclips.\n\n- Marion has **$ \\frac{1}{4} $ more than what Yun currently has, plus 7**.\n\nSo, we calculate:\n\n$$\n\\text{Mari...",
+        "gold_answer": "Yun has 20-12= <<20-12=8>>8 paperclips.\nMarion has 8/4 + 7 = <<8/4+7=9>>9 paperc"
+      },
+      {
+        "question_id": "gsm8k:f786810eeb3814ef511d6d35ad780d720f852f764c260218e030b01027e64be8",
+        "question_snippet": "Helga went shopping for a new pair of shoes. At the first store, she tried on 7 pairs of shoes. At the second store, she tried on 2 more pairs than at...",
+        "chosen_candidate_idx": 3,
+        "surface_model_score": 0.5244320314817743,
+        "char_count": 461.0,
+        "confidence_count": 1.0,
+        "step_count": 7.0,
+        "arithmetic_errors": 2.0,
+        "missing_conditions": 0.0,
+        "candidate_text_snippet": "Helga tried on:\n\n- 7 pairs of shoes at the first store.\n- 2 more pairs than at the first store at the second store: $ 7 + 2 = 9 $ pairs.\n- 0 pairs at the third store, but she bought a scarf.\n- Twice as many pairs of shoes as the sum of the pairs trie...",
+        "gold_answer": "At the second store, she tried on 7+2=<<7+2=9>>9 pairs of shoes.\nTherefore, at t"
+      },
+      {
+        "question_id": "gsm8k:6aa616001592b165572f8315c3e9c6d0e76467fa1406cb7ca2964791da77eff4",
+        "question_snippet": "Jenna is buying concert tickets for her group of five friends. She's able to get two of the tickets from the concert website for $50 each before they ...",
+        "chosen_candidate_idx": 3,
+        "surface_model_score": 0.6116968413038948,
+        "char_count": 604.0,
+        "confidence_count": 0.0,
+        "step_count": 4.0,
+        "arithmetic_errors": 1.0,
+        "missing_conditions": 0.0,
+        "candidate_text_snippet": "Let's break down the problem step by step:\n\n1. **Normal price for two tickets:**\n   - Each ticket is $50.\n   - Total for two tickets: $ 2 \\times 50 = 100 $.\n\n2. **Scalper offers:**\n   - Each ticket is now $240\\% \\times 50 = 1200 $.\n   - Jenna receive...",
+        "gold_answer": "First calculate the price of the two normally priced tickets by multiplying the "
+      }
+    ]
+  }
+}

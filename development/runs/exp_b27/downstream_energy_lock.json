@@ -1,0 +1,60 @@
+{
+  "experiment": "EXP-B27",
+  "arm": "E1",
+  "config": {
+    "arm": "D2",
+    "normalization": "fold_OOF_global_scale",
+    "temperature": 1.0,
+    "rho": 0.0,
+    "name": "D2/fold_OOF_global_scale/T=1.00/rho=0.0"
+  },
+  "weights": [
+    0.3104212028601496,
+    0.1488713137127215,
+    6.729536318742489e-19,
+    0.5407074834271288
+  ],
+  "scales": [
+    1.4359950923075921,
+    2.198669293402106,
+    1.4907076137127138,
+    1.8451750669799567
+  ],
+  "weight_fit": {
+    "loss": 0.4629440645070174,
+    "iterations": 10,
+    "absent_gold_clusters": 0,
+    "hard_questions": 2114
+  },
+  "selection": [
+    {
+      "name": "E1",
+      "arm": "E1",
+      "hard_correct": 1705,
+      "hard_total": 2114,
+      "all_correct": 4346,
+      "all_total": 4755,
+      "nll_sum": 981.8955682360692,
+      "nll_count": 4755,
+      "absent_gold_clusters": 0
+    },
+    {
+      "name": "E2",
+      "arm": "E2",
+      "hard_correct": 1700,
+      "hard_total": 2114,
+      "all_correct": 4341,
+      "all_total": 4755,
+      "nll_sum": 998.7399250408639,
+      "nll_count": 4755,
+      "absent_gold_clusters": 0
+    }
+  ],
+  "files": [
+    "development/runs/exp_b27/energy_E1_seed_42.npz",
+    "development/runs/exp_b27/energy_E1_seed_43.npz",
+    "development/runs/exp_b27/energy_E1_seed_44.npz"
+  ],
+  "uncompressed_weight_bytes": 3167304,
+  "fit_scope": "full-train inner OOF for the arm choice; energy refit on all train rows"
+}

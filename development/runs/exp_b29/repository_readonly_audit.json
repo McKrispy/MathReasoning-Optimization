@@ -1,0 +1,457 @@
+{
+  "started_utc": "2026-10-25T10:06:15Z",
+  "official_entries": 75,
+  "test_file_contents_read": false,
+  "snapshot": [
+    {
+      "path": ".",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792153151007282000
+    },
+    {
+      "path": ".gitignore",
+      "kind": "file",
+      "size": 62,
+      "mtime_ns": 1792153151007282000
+    },
+    {
+      "path": ".git",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792845140711932800
+    },
+    {
+      "path": ".git/HEAD",
+      "kind": "file",
+      "size": 21,
+      "mtime_ns": 1792141387027730300
+    },
+    {
+      "path": ".git/config",
+      "kind": "file",
+      "size": 366,
+      "mtime_ns": 1792153173602950500
+    },
+    {
+      "path": ".git/description",
+      "kind": "file",
+      "size": 73,
+      "mtime_ns": 1792141381922954700
+    },
+    {
+      "path": ".git/index",
+      "kind": "file",
+      "size": 2223,
+      "mtime_ns": 1792153153833971900
+    },
+    {
+      "path": ".git/packed-refs",
+      "kind": "file",
+      "size": 112,
+      "mtime_ns": 1792141387019747000
+    },
+    {
+      "path": ".git/hooks",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141381969585800
+    },
+    {
+      "path": ".git/hooks/applypatch-msg.sample",
+      "kind": "file",
+      "size": 478,
+      "mtime_ns": 1792141381926014000
+    },
+    {
+      "path": ".git/hooks/commit-msg.sample",
+      "kind": "file",
+      "size": 896,
+      "mtime_ns": 1792141381929020300
+    },
+    {
+      "path": ".git/hooks/fsmonitor-watchman.sample",
+      "kind": "file",
+      "size": 4726,
+      "mtime_ns": 1792141381932892000
+    },
+    {
+      "path": ".git/hooks/post-update.sample",
+      "kind": "file",
+      "size": 189,
+      "mtime_ns": 1792141381936309600
+    },
+    {
+      "path": ".git/hooks/pre-applypatch.sample",
+      "kind": "file",
+      "size": 424,
+      "mtime_ns": 1792141381937307500
+    },
+    {
+      "path": ".git/hooks/pre-commit.sample",
+      "kind": "file",
+      "size": 1649,
+      "mtime_ns": 1792141381941699600
+    },
+    {
+      "path": ".git/hooks/pre-merge-commit.sample",
+      "kind": "file",
+      "size": 416,
+      "mtime_ns": 1792141381943982000
+    },
+    {
+      "path": ".git/hooks/pre-push.sample",
+      "kind": "file",
+      "size": 1374,
+      "mtime_ns": 1792141381946978900
+    },
+    {
+      "path": ".git/hooks/pre-rebase.sample",
+      "kind": "file",
+      "size": 4898,
+      "mtime_ns": 1792141381951979200
+    },
+    {
+      "path": ".git/hooks/pre-receive.sample",
+      "kind": "file",
+      "size": 544,
+      "mtime_ns": 1792141381954978900
+    },
+    {
+      "path": ".git/hooks/prepare-commit-msg.sample",
+      "kind": "file",
+      "size": 1492,
+      "mtime_ns": 1792141381957980900
+    },
+    {
+      "path": ".git/hooks/push-to-checkout.sample",
+      "kind": "file",
+      "size": 2783,
+      "mtime_ns": 1792141381961987400
+    },
+    {
+      "path": ".git/hooks/sendemail-validate.sample",
+      "kind": "file",
+      "size": 2308,
+      "mtime_ns": 1792141381965498200
+    },
+    {
+      "path": ".git/hooks/update.sample",
+      "kind": "file",
+      "size": 3650,
+      "mtime_ns": 1792141381969585800
+    },
+    {
+      "path": ".git/info",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792152971939122600
+    },
+    {
+      "path": ".git/info/attributes",
+      "kind": "file",
+      "size": 136,
+      "mtime_ns": 1792152971949084300
+    },
+    {
+      "path": ".git/info/exclude",
+      "kind": "file",
+      "size": 240,
+      "mtime_ns": 1792141381972935700
+    },
+    {
+      "path": ".git/logs",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387030000800
+    },
+    {
+      "path": ".git/logs/HEAD",
+      "kind": "file",
+      "size": 199,
+      "mtime_ns": 1792141387030000800
+    },
+    {
+      "path": ".git/logs/refs",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387031324200
+    },
+    {
+      "path": ".git/logs/refs/heads",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387031324200
+    },
+    {
+      "path": ".git/logs/refs/heads/main",
+      "kind": "file",
+      "size": 199,
+      "mtime_ns": 1792141387031324200
+    },
+    {
+      "path": ".git/logs/refs/remotes",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387024888100
+    },
+    {
+      "path": ".git/logs/refs/remotes/origin",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387024888100
+    },
+    {
+      "path": ".git/logs/refs/remotes/origin/HEAD",
+      "kind": "file",
+      "size": 199,
+      "mtime_ns": 1792141387025722500
+    },
+    {
+      "path": ".git/objects",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141381987404400
+    },
+    {
+      "path": ".git/objects/info",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141381987404400
+    },
+    {
+      "path": ".git/objects/pack",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387038324500
+    },
+    {
+      "path": ".git/objects/pack/pack-6bb688d10d52993a4465e086dbcf1d64383f78a5.idx",
+      "kind": "file",
+      "size": 2612,
+      "mtime_ns": 1792141386901277600
+    },
+    {
+      "path": ".git/objects/pack/pack-6bb688d10d52993a4465e086dbcf1d64383f78a5.pack",
+      "kind": "file",
+      "size": 95316465,
+      "mtime_ns": 1792141386900277800
+    },
+    {
+      "path": ".git/objects/pack/pack-6bb688d10d52993a4465e086dbcf1d64383f78a5.rev",
+      "kind": "file",
+      "size": 272,
+      "mtime_ns": 1792141386903448600
+    },
+    {
+      "path": ".git/refs",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387023288800
+    },
+    {
+      "path": ".git/refs/heads",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387032325400
+    },
+    {
+      "path": ".git/refs/heads/main",
+      "kind": "file",
+      "size": 41,
+      "mtime_ns": 1792141387030000800
+    },
+    {
+      "path": ".git/refs/remotes",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387023922700
+    },
+    {
+      "path": ".git/refs/remotes/origin",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141387026730100
+    },
+    {
+      "path": ".git/refs/remotes/origin/HEAD",
+      "kind": "file",
+      "size": 30,
+      "mtime_ns": 1792141387025722500
+    },
+    {
+      "path": ".git/refs/tags",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792141383207892600
+    },
+    {
+      "path": "code",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792153700064260900
+    },
+    {
+      "path": "code/PACKAGE_MANIFEST.json",
+      "kind": "file",
+      "size": 2110,
+      "mtime_ns": 1792153151009281400
+    },
+    {
+      "path": "code/README.md",
+      "kind": "file",
+      "size": 6677,
+      "mtime_ns": 1792153151011944800
+    },
+    {
+      "path": "code/check_data.py",
+      "kind": "file",
+      "size": 1288,
+      "mtime_ns": 1792153151012943400
+    },
+    {
+      "path": "code/common.py",
+      "kind": "file",
+      "size": 4192,
+      "mtime_ns": 1792153151014986800
+    },
+    {
+      "path": "code/predict.py",
+      "kind": "file",
+      "size": 1680,
+      "mtime_ns": 1792153151478247400
+    },
+    {
+      "path": "code/requirements.txt",
+      "kind": "file",
+      "size": 13,
+      "mtime_ns": 1792153151479640300
+    },
+    {
+      "path": "code/score_predictions.py",
+      "kind": "file",
+      "size": 1283,
+      "mtime_ns": 1792153151480652200
+    },
+    {
+      "path": "code/submission.py",
+      "kind": "file",
+      "size": 504,
+      "mtime_ns": 1792153151482651000
+    },
+    {
+      "path": "code/__pycache__",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792215864198210300
+    },
+    {
+      "path": "code/__pycache__/common.cpython-312.pyc",
+      "kind": "file",
+      "size": 7867,
+      "mtime_ns": 1792153700064260900
+    },
+    {
+      "path": "code/__pycache__/submission.cpython-312.pyc",
+      "kind": "file",
+      "size": 759,
+      "mtime_ns": 1792215864196928000
+    },
+    {
+      "path": "code/data",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792153151474937700
+    },
+    {
+      "path": "code/data/LICENSE.txt",
+      "kind": "file",
+      "size": 1062,
+      "mtime_ns": 1792153151017050600
+    },
+    {
+      "path": "code/data/NOTICE.txt",
+      "kind": "file",
+      "size": 1066,
+      "mtime_ns": 1792153151019377700
+    },
+    {
+      "path": "code/data/gsm8k_test.jsonl",
+      "kind": "file",
+      "size": 308792,
+      "mtime_ns": 1792153151433973300
+    },
+    {
+      "path": "code/data/gsm8k_train.jsonl",
+      "kind": "file",
+      "size": 2878868,
+      "mtime_ns": 1792153151463669400
+    },
+    {
+      "path": "code/data/gsm8k_validation.jsonl",
+      "kind": "file",
+      "size": 477731,
+      "mtime_ns": 1792153151471669000
+    },
+    {
+      "path": "code/data/manifest.json",
+      "kind": "file",
+      "size": 1732,
+      "mtime_ns": 1792153151474937700
+    },
+    {
+      "path": "code/data/candidates",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792153151414007000
+    },
+    {
+      "path": "code/data/candidates/gsm8k_test.jsonl",
+      "kind": "file",
+      "size": 1335791,
+      "mtime_ns": 1792153151024196000
+    },
+    {
+      "path": "code/data/candidates/gsm8k_test.npz",
+      "kind": "file",
+      "size": 7098623,
+      "mtime_ns": 1792153151062097400
+    },
+    {
+      "path": "code/data/candidates/gsm8k_train.jsonl",
+      "kind": "file",
+      "size": 12061933,
+      "mtime_ns": 1792153151092693100
+    },
+    {
+      "path": "code/data/candidates/gsm8k_train.npz",
+      "kind": "file",
+      "size": 72179363,
+      "mtime_ns": 1792153151405768200
+    },
+    {
+      "path": "code/data/candidates/gsm8k_validation.jsonl",
+      "kind": "file",
+      "size": 2018690,
+      "mtime_ns": 1792153151412000100
+    },
+    {
+      "path": "code/data/candidates/gsm8k_validation.npz",
+      "kind": "file",
+      "size": 12104462,
+      "mtime_ns": 1792153151428688600
+    },
+    {
+      "path": "guide",
+      "kind": "dir",
+      "size": 0,
+      "mtime_ns": 1792153151484025500
+    },
+    {
+      "path": "guide/GUIDE.md",
+      "kind": "file",
+      "size": 11599,
+      "mtime_ns": 1792153151484025500
+    }
+  ]
+}

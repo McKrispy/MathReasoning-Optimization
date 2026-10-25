@@ -1,0 +1,322 @@
+{
+  "dataset": "train_hard / val_hard / val_all",
+  "baseline": {
+    "run_name": "Baseline (Consensus Core)",
+    "num_features": 4,
+    "features": [
+      "is_valid",
+      "cluster_ratio",
+      "is_unique_majority",
+      "is_tied_majority"
+    ],
+    "weights": {
+      "is_valid": 0.9764079451560974,
+      "cluster_ratio": 0.9718620181083679,
+      "is_unique_majority": 0.5324762463569641,
+      "is_tied_majority": 0.2103995382785797
+    },
+    "val_hard": {
+      "acc": 0.6901408450704225,
+      "correct": 245,
+      "total": 355
+    },
+    "val_all": {
+      "acc": 0.8621553884711779,
+      "correct": 688,
+      "total": 798
+    },
+    "train_hard": {
+      "acc": 0.6684011352885525,
+      "correct": 1413,
+      "total": 2114
+    }
+  },
+  "runs": {
+    "FEAT-G02": {
+      "run_name": "Baseline + FEAT-G02 (Surface)",
+      "num_features": 17,
+      "features": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority",
+        "char_count",
+        "line_count",
+        "newline_ratio",
+        "digit_ratio",
+        "math_symbol_density",
+        "confidence_count",
+        "step_count",
+        "char_count_diff_mean",
+        "char_count_rank",
+        "word_count_rank",
+        "doubt_diff_mean",
+        "confidence_diff_mean",
+        "math_density_diff_mean"
+      ],
+      "weights": {
+        "is_valid": 1.0005273818969727,
+        "cluster_ratio": 1.0507487058639526,
+        "is_unique_majority": 0.4882475733757019,
+        "is_tied_majority": 0.1826982945203781,
+        "char_count": 0.13125431537628174,
+        "line_count": 0.0005037832888774574,
+        "newline_ratio": 0.06536837667226791,
+        "digit_ratio": 0.18397431075572968,
+        "math_symbol_density": 0.004957451019436121,
+        "confidence_count": 0.05842484161257744,
+        "step_count": 0.04092653468251228,
+        "char_count_diff_mean": 0.001403703703545034,
+        "char_count_rank": -0.0704553946852684,
+        "word_count_rank": 0.38848647475242615,
+        "doubt_diff_mean": -0.04098377004265785,
+        "confidence_diff_mean": -0.13952375948429108,
+        "math_density_diff_mean": 0.02263958938419819
+      },
+      "val_hard": {
+        "acc": 0.6957746478873239,
+        "correct": 247,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.8646616541353384,
+        "correct": 690,
+        "total": 798
+      },
+      "train_hard": {
+        "acc": 0.7019867549668874,
+        "correct": 1484,
+        "total": 2114
+      }
+    },
+    "FEAT-G03": {
+      "run_name": "Baseline + FEAT-G03 (Symbolic)",
+      "num_features": 16,
+      "features": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority",
+        "num_equations",
+        "num_correct_equations",
+        "num_wrong_equations",
+        "has_arithmetic_error",
+        "candidate_number_count",
+        "question_condition_coverage",
+        "missing_condition_count",
+        "has_missing_condition",
+        "wrong_eq_diff_mean",
+        "wrong_eq_rank",
+        "condition_coverage_diff_mean",
+        "condition_coverage_rank"
+      ],
+      "weights": {
+        "is_valid": 1.018408179283142,
+        "cluster_ratio": 1.0818967819213867,
+        "is_unique_majority": 0.45546624064445496,
+        "is_tied_majority": 0.16413293778896332,
+        "num_equations": 0.09259043633937836,
+        "num_correct_equations": 0.11412213742733002,
+        "num_wrong_equations": -0.025287769734859467,
+        "has_arithmetic_error": 0.01864805445075035,
+        "candidate_number_count": 0.23088377714157104,
+        "question_condition_coverage": -0.1922157108783722,
+        "missing_condition_count": 0.006261914037168026,
+        "has_missing_condition": -0.2528271973133087,
+        "wrong_eq_diff_mean": 0.1257024109363556,
+        "wrong_eq_rank": -0.034418899565935135,
+        "condition_coverage_diff_mean": 0.1832578182220459,
+        "condition_coverage_rank": 0.04599368944764137
+      },
+      "val_hard": {
+        "acc": 0.7267605633802817,
+        "correct": 258,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.8784461152882206,
+        "correct": 701,
+        "total": 798
+      },
+      "train_hard": {
+        "acc": 0.7199621570482497,
+        "correct": 1522,
+        "total": 2114
+      }
+    },
+    "FEAT-G03_reg_safe": {
+      "run_name": "Baseline + FEAT-G03 (Regression-Safe, 11 cols)",
+      "num_features": 15,
+      "features": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority",
+        "num_equations",
+        "num_correct_equations",
+        "num_wrong_equations",
+        "has_arithmetic_error",
+        "candidate_number_count",
+        "question_condition_coverage",
+        "missing_condition_count",
+        "wrong_eq_diff_mean",
+        "wrong_eq_rank",
+        "condition_coverage_diff_mean",
+        "condition_coverage_rank"
+      ],
+      "weights": {
+        "is_valid": 1.0192184448242188,
+        "cluster_ratio": 1.0766923427581787,
+        "is_unique_majority": 0.45820489525794983,
+        "is_tied_majority": 0.16634489595890045,
+        "num_equations": 0.09101001918315887,
+        "num_correct_equations": 0.11472328007221222,
+        "num_wrong_equations": -0.029027661308646202,
+        "has_arithmetic_error": 0.022342737764120102,
+        "candidate_number_count": 0.2280694544315338,
+        "question_condition_coverage": -0.09365026652812958,
+        "missing_condition_count": -0.1261555403470993,
+        "wrong_eq_diff_mean": 0.13076193630695343,
+        "wrong_eq_rank": -0.04123491421341896,
+        "condition_coverage_diff_mean": 0.20057468116283417,
+        "condition_coverage_rank": 0.05479328706860542
+      },
+      "val_hard": {
+        "acc": 0.7267605633802817,
+        "correct": 258,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.8784461152882206,
+        "correct": 701,
+        "total": 798
+      },
+      "train_hard": {
+        "acc": 0.7190160832544938,
+        "correct": 1520,
+        "total": 2114
+      }
+    },
+    "FEAT-G04": {
+      "run_name": "Baseline + FEAT-G04 (Geometry)",
+      "num_features": 8,
+      "features": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority",
+        "sim_other_mean",
+        "has_same_answer_other",
+        "sim_diff_answer_mean",
+        "centroid_sim_rank"
+      ],
+      "weights": {
+        "is_valid": 0.9915450215339661,
+        "cluster_ratio": 1.0091707706451416,
+        "is_unique_majority": 0.5567752718925476,
+        "is_tied_majority": 0.2200247198343277,
+        "sim_other_mean": -0.2743837535381317,
+        "has_same_answer_other": 0.01289516594260931,
+        "sim_diff_answer_mean": 0.2478289157152176,
+        "centroid_sim_rank": -0.11514166742563248
+      },
+      "val_hard": {
+        "acc": 0.6985915492957746,
+        "correct": 248,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.8659147869674185,
+        "correct": 691,
+        "total": 798
+      },
+      "train_hard": {
+        "acc": 0.6863765373699149,
+        "correct": 1451,
+        "total": 2114
+      }
+    },
+    "Morphology": {
+      "run_name": "Baseline + Morphology (5 dims)",
+      "num_features": 9,
+      "features": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority",
+        "log_magnitude",
+        "is_integer",
+        "is_negative",
+        "is_zero",
+        "appears_in_question"
+      ],
+      "weights": {
+        "is_valid": 0.06441571563482285,
+        "cluster_ratio": 0.9529839158058167,
+        "is_unique_majority": 0.5339217782020569,
+        "is_tied_majority": 0.21034814417362213,
+        "log_magnitude": -0.05184714496135712,
+        "is_integer": 1.789255142211914,
+        "is_negative": -0.6929002404212952,
+        "is_zero": -0.8615822792053223,
+        "appears_in_question": -0.029065914452075958
+      },
+      "val_hard": {
+        "acc": 0.7211267605633803,
+        "correct": 256,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.8759398496240601,
+        "correct": 699,
+        "total": 798
+      },
+      "train_hard": {
+        "acc": 0.6939451277199622,
+        "correct": 1467,
+        "total": 2114
+      }
+    }
+  },
+  "gating_records": [
+    {
+      "family": "FEAT-G02 (Surface)",
+      "val_hard_acc": 0.6957746478873239,
+      "val_hard_delta": 0.005633802816901401,
+      "val_all_acc": 0.8646616541353384,
+      "val_all_delta": 0.0025062656641604564,
+      "status": "EXCLUDED_MARGINAL",
+      "decision": "INSUFFICIENT GAIN (< +1.0% gain, excluded from frozen models)"
+    },
+    {
+      "family": "FEAT-G03 (Symbolic)",
+      "val_hard_acc": 0.7267605633802817,
+      "val_hard_delta": 0.03661971830985922,
+      "val_all_acc": 0.8784461152882206,
+      "val_all_delta": 0.01629072681704269,
+      "status": "QUALIFIED",
+      "decision": "QUALIFIED FOR EXP-B09/B10 (Delta >= +1.0% and val_all stable/improved)"
+    },
+    {
+      "family": "FEAT-G04 (Geometry)",
+      "val_hard_acc": 0.6985915492957746,
+      "val_hard_delta": 0.008450704225352101,
+      "val_all_acc": 0.8659147869674185,
+      "val_all_delta": 0.003759398496240629,
+      "status": "EXCLUDED_MARGINAL",
+      "decision": "INSUFFICIENT GAIN (< +1.0% gain, excluded from frozen models)"
+    },
+    {
+      "family": "GSM8K Morphology",
+      "val_hard_acc": 0.7211267605633803,
+      "val_hard_delta": 0.030985915492957816,
+      "val_all_acc": 0.8759398496240601,
+      "val_all_delta": 0.013784461152882233,
+      "status": "CONTRAST_ONLY",
+      "decision": "RETAINED AS LOW-WEIGHT CONTRAST ONLY (Forbidden from becoming core weight per Sec 4.2)"
+    }
+  ],
+  "qualified_families": [
+    "FEAT-G03 (Symbolic)"
+  ]
+}

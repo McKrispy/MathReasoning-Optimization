@@ -1,0 +1,68 @@
+{
+  "chosen_config": {
+    "arm": "D2",
+    "normalization": "fold_OOF_global_scale",
+    "temperature": 1.0,
+    "rho": 0.0,
+    "name": "D2/fold_OOF_global_scale/T=1.00/rho=0.0"
+  },
+  "fit_scope_manifest": "2f977689e74b58c36644689811e2efb99f86f474a3427d6e91cc0a0deefc6d45",
+  "source_sha256": {
+    "DASE7506-MP2/guide/GUIDE.md": "7b4ab87265040f407854cdfb9860887f722008d24e03fffe311f99c2f2065130",
+    "DASE7506-MP2/code/README.md": "4c4218d68818d850fbad2fe38d2b1f3d2b80b7646720f21d2356fe3c0e020bc2",
+    "DASE7506-MP2/code/common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "DASE7506-MP2/code/data/manifest.json": "8b3721d458e48c87eab3a28f660e663981b10617b6e7321123c6ff30b1fbe825",
+    "development/src/submission.py": "8ce59e35a0c7ec236352bdb7b30c4a4018a49c4b9f364b027f9fe3158d9dba1c",
+    "development/src/models/cross_attn_net.py": "aaaede705fbf62ccb115f718d61bab976d4770580c5e37df37888525419d1893",
+    "development/src/postprocessing/soft_stacking.py": "3e2fc3abb4b6f8ebfeb5314aef019520de1a1dbf3b2f6c819778a72f552bd13e",
+    "development/src/postprocessing/masking.py": "aea955f82482c4fd212661aab8cf57377adde46f34040662928c797cc7686da8",
+    "development/src/experiments/exp_b07_cross_attn.py": "366f4d0344fba809fed0e46118ef83276b2994a96e9d013af9b5bde4380ce4d7",
+    "development/src/experiments/multiseed.py": "0506a2c86512c8a19f58cd21ba32c74f99238a48ed4d2d32afdee5ed5dd16868",
+    "development/src/experiments/exp_b20_replay.py": "2d23cb9b609fe2885b5c22598d3fc18f4ca7c9e6e6e823b91c1e5f423cc9a50d",
+    "development/src/experiments/exp_b24_char_ngram.py": "06a088ec0f86132556b7786cbd49ec1949349b529f8001d8a4586f1faf2cad26",
+    "development/runs/audit_logs/seed_registry.json": "ecd942a1c16505f3e4f3b1f9e5ab44027ce016926c1a0fe314379be95db76354",
+    "development/runs/audit_logs/exp_b20_oof_audit.json": "5156c6d4db8bd782f8ed41bbcd7606feed5ca1cc25ca068df06b574be5797cdc",
+    "development/runs/audit_logs/exp_b20_resource_audit.json": "d5380bfaf26c12f540a6947d086a9022f432e446db32114eb6c2b3a0e77b8812",
+    "development/runs/audit_logs/exp_b21_g05_view_audit.json": "ed5513c299f5b937fc0b3e371b1e04290f3e25c75cc9d913592831594e65a168",
+    "development/runs/audit_logs/exp_b22_g05_r5_audit.json": "c75095f7b4098533b79024c96bd8e41be01ba838153743f5f836f4e8fb67e766",
+    "development/runs/audit_logs/exp_b23_hard_weighting_audit.json": "f63d4cdb2fb324df8d1a55fb9a890056fc6810aef7d604e0af27bf2907d53428",
+    "development/runs/audit_logs/exp_b24_char_ngram_audit.json": "484071991a094cf93e0d1a7560d9949baa066d59b3a105f3b4317cea9308c987",
+    "development/runs/exp_b20/candidate_submission.py": "b145642db3699e6b3223cd4d9e9701eab2a9a92e0883341ae703439f6797d8e9",
+    "development/runs/exp_b20/model_assets/config.json": "f32a897509cddc8003b69f77f0a0a2620d742bfbd51faae71ce3e52b5701048a"
+  },
+  "asset_sha256": {
+    "decoder_lock": "71e82538e2b12a280d68391c1eb38e08ac84b2129688a10cc2ee8b59c6b57229",
+    "fold_local_locks": "6129ecb9f3fe3c5dccd605003b03e7457c970f4413bcb48580d96b2ef68f8440",
+    "oof": "05a3713fb1b3dc248d23b08be0f313f86026d9289c3186b3eff714c6a847b0d9"
+  },
+  "internal_gate": {
+    "passed": true,
+    "mean_hard_gain_percentage_points": 0.7521421898983505,
+    "pooled_hard_gain_percentage_points": 0.7568590350047373,
+    "positive_outer_folds": 4,
+    "pooled_all_delta": 16,
+    "reference_hard_mean_percent": 78.98738600636469,
+    "selected_hard_mean_percent": 79.73952819626304,
+    "reference_pooled_hard": {
+      "correct": 1671,
+      "total": 2114
+    },
+    "selected_pooled_hard": {
+      "correct": 1687,
+      "total": 2114
+    },
+    "reference_pooled_all": {
+      "correct": 4312,
+      "total": 4755
+    },
+    "selected_pooled_all": {
+      "correct": 4328,
+      "total": 4755
+    },
+    "minimum_mean_fold_hard_gain_percentage_points": 0.5,
+    "minimum_pooled_hard_gain_percentage_points": 0.5,
+    "minimum_positive_outer_folds": 3,
+    "validation_opened": false
+  },
+  "candidate_prediction_rule": "locked cluster decoder on the three-seed mean views"
+}

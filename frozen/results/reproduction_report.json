@@ -1,0 +1,14 @@
+{
+  "choices_match": true,
+  "score_match": true,
+  "primary_correct": 374,
+  "primary_n": 467,
+  "primary_accuracy": 80.08565310492506,
+  "reproduction_correct": 374,
+  "reproduction_n": 467,
+  "reproduction_accuracy": 80.08565310492506,
+  "prediction_hashes": {
+    "primary": "f754adc41f65ca5046dc71081a5e8d9b85812944779e3e632946a7cae5406671",
+    "reproduction": "960185f7b27d7d9478639e59b7a0a4bb0c8ec03fc6ca8edd487b05d1bc310e37"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "experiment": "EXP-B15 R5 family shuffle",
+  "tree": "development/runs/exp_b15/seed_42/M04a_train_all_plus_svd.pkl",
+  "shuffle": "question blocks within val_hard; one family at a time; other columns unchanged; argmax",
+  "rng_seed": 42,
+  "families": [
+    {
+      "family": "G01_core",
+      "n_columns": 4,
+      "repeats": 20,
+      "baseline_correct": 268,
+      "mean_correct": 248.9,
+      "std_correct": 5.691221310052879,
+      "min_correct": 236,
+      "max_correct": 260,
+      "mean_drop_questions": 19.099999999999994
+    },
+    {
+      "family": "G03",
+      "n_columns": 12,
+      "repeats": 20,
+      "baseline_correct": 268,
+      "mean_correct": 266.5,
+      "std_correct": 1.5,
+      "min_correct": 264,
+      "max_correct": 269,
+      "mean_drop_questions": 1.5
+    },
+    {
+      "family": "G04b_svd",
+      "n_columns": 128,
+      "repeats": 20,
+      "baseline_correct": 268,
+      "mean_correct": 242.95,
+      "std_correct": 4.200892762258993,
+      "min_correct": 236,
+      "max_correct": 250,
+      "mean_drop_questions": 25.05000000000001
+    }
+  ],
+  "note": "trees are seed-invariant in EXP-B15, so seed 42 stands for all three"
+}

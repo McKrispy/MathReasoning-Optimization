@@ -1,0 +1,264 @@
+{
+  "experiment": "EXP-B29",
+  "method": "EXP-B17/EXP-B20 historical three-view Soft Stacking",
+  "sealed_utc": "2026-10-25T10:08:53Z",
+  "sealed_test_status": "SEALED_TEST_NOT_RUN",
+  "runtime_profile": {
+    "id": "conservative_serial_under_four_thread_cap",
+    "requested_numeric_threads": 1,
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "OMP_NUM_THREADS": "1",
+      "OMP_THREAD_LIMIT": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "MKL_DYNAMIC": "FALSE",
+      "OMP_MAX_ACTIVE_LEVELS": "1",
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "HIP_VISIBLE_DEVICES": "-1"
+    }
+  },
+  "commands": {
+    "primary_prediction": [
+      "<user-home>\\.conda\\envs\\mp1\\python.exe",
+      "-B",
+      "DASE7506-MP2/code/predict.py",
+      "--method",
+      "development/src/submission.py",
+      "--checkpoint",
+      "development/runs/model_bundle",
+      "--split",
+      "test",
+      "--data-dir",
+      "DASE7506-MP2/code/data",
+      "--output",
+      "development/runs/exp_b29/primary/test-predictions.json"
+    ],
+    "primary_scoring": [
+      "<user-home>\\.conda\\envs\\mp1\\python.exe",
+      "-B",
+      "DASE7506-MP2/code/score_predictions.py",
+      "--split",
+      "test",
+      "--data-dir",
+      "DASE7506-MP2/code/data",
+      "--predictions",
+      "development/runs/exp_b29/primary/test-predictions.json",
+      "--output",
+      "development/runs/exp_b29/primary/test-score.json"
+    ],
+    "reproduction_prediction": [
+      "<user-home>\\.conda\\envs\\mp1\\python.exe",
+      "-B",
+      "DASE7506-MP2/code/predict.py",
+      "--method",
+      "development/src/submission.py",
+      "--checkpoint",
+      "development/runs/model_bundle",
+      "--split",
+      "test",
+      "--data-dir",
+      "DASE7506-MP2/code/data",
+      "--output",
+      "development/runs/exp_b29/reproduction/test-predictions.json"
+    ],
+    "reproduction_scoring": [
+      "<user-home>\\.conda\\envs\\mp1\\python.exe",
+      "-B",
+      "DASE7506-MP2/code/score_predictions.py",
+      "--split",
+      "test",
+      "--data-dir",
+      "DASE7506-MP2/code/data",
+      "--predictions",
+      "development/runs/exp_b29/reproduction/test-predictions.json",
+      "--output",
+      "development/runs/exp_b29/reproduction/test-score.json"
+    ]
+  },
+  "assets": [
+    {
+      "path": "development/runs/model_bundle/arm_a_seed_42.npz",
+      "sha256": "5cf211905df486a1fdbedfe2c4b2dc0013dd8aa3b51d114fa3ebd68283d97bde",
+      "decision_bytes": 1062924
+    },
+    {
+      "path": "development/runs/model_bundle/arm_a_seed_43.npz",
+      "sha256": "f314a56bac5a0af7be55d2c843cfa53c87736b2587b69b088b0c3af18da78b32",
+      "decision_bytes": 1062924
+    },
+    {
+      "path": "development/runs/model_bundle/arm_a_seed_44.npz",
+      "sha256": "05166d643f11e05d8503d012561ab655dc09da48439a32f9a012eb8b24b75ce9",
+      "decision_bytes": 1062924
+    },
+    {
+      "path": "development/runs/model_bundle/arm_b_seed_42.npz",
+      "sha256": "8994aa8163fe67512461de9803430d4c5a806fe0f3b52ce96edebe9909af320f",
+      "decision_bytes": 1072028
+    },
+    {
+      "path": "development/runs/model_bundle/arm_b_seed_43.npz",
+      "sha256": "30caf2a1fde9dee9c26778e1dd4aef8ccb8afcd73982c6f27747b8bf142e5791",
+      "decision_bytes": 1072028
+    },
+    {
+      "path": "development/runs/model_bundle/arm_b_seed_44.npz",
+      "sha256": "e6ae043126a2e013a3290f7dabe67c3adba04f223f678346632e9c487741a0a2",
+      "decision_bytes": 1072028
+    },
+    {
+      "path": "development/runs/model_bundle/config.json",
+      "sha256": "f32a897509cddc8003b69f77f0a0a2620d742bfbd51faae71ce3e52b5701048a",
+      "decision_bytes": 1069
+    },
+    {
+      "path": "development/runs/model_bundle/svd_components.npz",
+      "sha256": "1367ad8c06230b90d66eaaabbab0f951460b9abe18bfba93bcbcd8bb9345e8e5",
+      "decision_bytes": 262418
+    },
+    {
+      "path": "development/runs/model_bundle/tree_r5.pkl",
+      "sha256": "614dbef27692759f4e3c674f579661e44e12c8033f0e825dc446898d3ee1bca2",
+      "decision_bytes": 490352
+    }
+  ],
+  "asset_decision_bytes": 7158695,
+  "source_closure": [
+    {
+      "path": "development/src/experiments/exp_b29_probe.py",
+      "sha256": "3a258233f7f86db23778ee9be9ab4293864caa6a76c57b2bae7ca80c0d2862b3"
+    },
+    {
+      "path": "development/src/b29_guard.py",
+      "sha256": "aefb1309bc305245d8ebf10e2c72ac6d9fb9ac1d4875a0ee51ef20873427526b"
+    },
+    {
+      "path": "development/src/features/__init__.py",
+      "sha256": "35a0d1a584004dfcbc95799b753928de714ccb0c2560c4a65c35bda7fd10b79d"
+    },
+    {
+      "path": "development/src/features/base.py",
+      "sha256": "b49f03a2510ec74fa1ea299df6cacc7291b254c63fc60e8a6a3e3cf700d95746"
+    },
+    {
+      "path": "development/src/features/char_hash.py",
+      "sha256": "a34634a7f105215e5ef143ef32108fe59d310cb7542b891be853cfc5a0e93353"
+    },
+    {
+      "path": "development/src/features/consensus.py",
+      "sha256": "1c0435f6c1ef2b44cfe7d2b0a7bf11010e24b4ce3970ca6250d47b994f9acb48"
+    },
+    {
+      "path": "development/src/features/finegrained.py",
+      "sha256": "8108ad3f0c8ee8aad9f0624c27a650079525053103a132b61da487989ba24424"
+    },
+    {
+      "path": "development/src/features/geometry.py",
+      "sha256": "1350982691de1926f73e9962868e4f5ddf4c2b8aff093f0ccb8c7b279b4900d6"
+    },
+    {
+      "path": "development/src/features/surface.py",
+      "sha256": "a818ce9bf4863071f30d5f1c41ad6dafa274f5f1f5587b5302c8dcd98cfe9734"
+    },
+    {
+      "path": "development/src/features/symbolic.py",
+      "sha256": "1057a690dbf0fce5da6029d59f35467db7e7274f519eee56c46693076ba88ecc"
+    },
+    {
+      "path": "development/src/models/__init__.py",
+      "sha256": "a5adf3e314cb5bf5a1202a7b9f6915f7a6f091bcbcd59e59d2c0a0fb8156ad93"
+    },
+    {
+      "path": "development/src/models/baseline_mv.py",
+      "sha256": "d1ee44a66fddf23b2b3da955ca764ccc67627daa965f64554aaafbbd1b7288a2"
+    },
+    {
+      "path": "development/src/models/cross_attn_net.py",
+      "sha256": "aaaede705fbf62ccb115f718d61bab976d4770580c5e37df37888525419d1893"
+    },
+    {
+      "path": "development/src/models/dual_tower.py",
+      "sha256": "c911427cd9f0809526e087799846cc66808f887736920fc6a8097c630e9b86fe"
+    },
+    {
+      "path": "development/src/models/linear_view.py",
+      "sha256": "f263280958c9fb04994b1ab96f5347998c517fbc8a2de93ea94a441dc6b84cbf"
+    },
+    {
+      "path": "development/src/postprocessing/__init__.py",
+      "sha256": "12567e24132a1e3ae4aff74ba3337b5adf34a40ad02fda5d8c4f6f2e2bfcf94f"
+    },
+    {
+      "path": "development/src/postprocessing/aggregation.py",
+      "sha256": "c30474b7858f38c494690c3700776befba21af84f40a8ea907df9ce5b9319d7c"
+    },
+    {
+      "path": "development/src/postprocessing/calibration.py",
+      "sha256": "679260ac279765253f9f21ebb4f6ebcb7e2928c54a607c6ae12a7599e00b7b57"
+    },
+    {
+      "path": "development/src/postprocessing/masking.py",
+      "sha256": "aea955f82482c4fd212661aab8cf57377adde46f34040662928c797cc7686da8"
+    },
+    {
+      "path": "development/src/postprocessing/soft_stacking.py",
+      "sha256": "3e2fc3abb4b6f8ebfeb5314aef019520de1a1dbf3b2f6c819778a72f552bd13e"
+    },
+    {
+      "path": "development/src/b29_sitecustomize/sitecustomize.py",
+      "sha256": "4dc5e48e2ebffa8187585aa3f2bb663f7f76abef2262f92ec5c9d3bacba24726"
+    },
+    {
+      "path": "development/src/submission.py",
+      "sha256": "bc11fa50b3763637e66b3771fdc3973914ddb10250b281ed76544ec0efb55e96"
+    },
+    {
+      "path": "development/src/experiments/exp_b29_direct_predict.py",
+      "sha256": "2b92110cd05ae26da51aea5c9da26a0e6861bae7b2e5334f7c89cda52b296b58"
+    }
+  ],
+  "dependency_lock_sha256": "9e2d1dd96cf11521c0ae89e54aaaf1d0f84aa66e44aa4ad0f6c5d8228c8d2eaf",
+  "environment_sha256": "a848c37c405219a0ef261a74218ca025f6c3a6d4b690294874ed711b5bc03500",
+  "preseal": {
+    "validation_official_correct": 743,
+    "validation_hard_correct": 300,
+    "validation_runs": 2,
+    "audit_sizes": [
+      1,
+      17,
+      137
+    ],
+    "relocation_validation_match": true,
+    "evidence_sha256": {
+      "validation_parity": "81104d6485b9d720b901b79d26bc72e8a532649086ada46a319eae35a5a6d0cb",
+      "audit_bank": "45a159c922e3e94e05e580c0ce2df0397c5197d21975bc28686462b3d2626d62",
+      "offline": "6590e15bf5db44c61f122c636a2f4e4251acfc67776b9ebde58f857bcb08fce8",
+      "assets": "fa1eb004a04f2404a0b24023f42105034eb90902334899b67ab4af7547da20b3",
+      "closure": "53d8b262a01068b4c37356d15e021d3d406f2d7dbee35601c305d6cf49ef5572"
+    }
+  },
+  "provenance": {
+    "weights": [
+      0.6519943983184848,
+      0.2773940600630942,
+      0.07061154161842091
+    ],
+    "temperature": 0.5,
+    "mask_penalty": 1000000000.0,
+    "members": "A/B seeds 42,43,44 and one R5 tree plus one SVD",
+    "rejected_alternatives": [
+      "B20 strict refit",
+      "B25 decoder",
+      "B26 centroid",
+      "B27 energy",
+      "B28 joint"
+    ]
+  },
+  "freeze_id": "94d35105b57620254489c4e325cc0a1691951cff94a2a1ac6e362664152ee27d"
+}

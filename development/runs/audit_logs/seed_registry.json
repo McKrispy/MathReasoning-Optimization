@@ -1,0 +1,880 @@
+{
+  "seed_set": [
+    42,
+    43,
+    44
+  ],
+  "fold_partition_seed": 42,
+  "derivation": {
+    "full_model": "warmup = s, finetune = s + 1000",
+    "fold_model": "warmup = 100*s + k, finetune = 100*s + k + 1000, k = 0..4",
+    "tree": "random_state = s"
+  },
+  "batches": {
+    "EXP-B12": [
+      {
+        "arm": "embeddings_only",
+        "seed": 42,
+        "member": "full",
+        "derived": {
+          "warmup": 42,
+          "finetune": 1042
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_only_full.npz",
+        "sha256": "5cf211905df486a1fdbedfe2c4b2dc0013dd8aa3b51d114fa3ebd68283d97bde"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 42,
+        "member": "fold0",
+        "derived": {
+          "warmup": 4200,
+          "finetune": 5200
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_only_fold0.npz",
+        "sha256": "786573054ff90b6221420e3e0157a8cc33f7f866dbc794873cdd6e88b501fcd3"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 42,
+        "member": "fold1",
+        "derived": {
+          "warmup": 4201,
+          "finetune": 5201
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_only_fold1.npz",
+        "sha256": "847411381a2b916d23290226646ffc6f7155c56eac0c2328364379dac8ac8fce"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 42,
+        "member": "fold2",
+        "derived": {
+          "warmup": 4202,
+          "finetune": 5202
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_only_fold2.npz",
+        "sha256": "357a79f02a900c8fa05c1cf35a33c3ad475acdccd6b9b12653bf64a358a57050"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 42,
+        "member": "fold3",
+        "derived": {
+          "warmup": 4203,
+          "finetune": 5203
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_only_fold3.npz",
+        "sha256": "82bb0a5c788c4c0cc067985d8e88fe4b4c51418c08de3904c3e0adbda60f97e4"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 42,
+        "member": "fold4",
+        "derived": {
+          "warmup": 4204,
+          "finetune": 5204
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_only_fold4.npz",
+        "sha256": "3edccd54b717ff9aa33cd0b9ce4d8e873f06ffd130f7cdaac587a2e7d728988f"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 43,
+        "member": "full",
+        "derived": {
+          "warmup": 43,
+          "finetune": 1043
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_only_full.npz",
+        "sha256": "f314a56bac5a0af7be55d2c843cfa53c87736b2587b69b088b0c3af18da78b32"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 43,
+        "member": "fold0",
+        "derived": {
+          "warmup": 4300,
+          "finetune": 5300
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_only_fold0.npz",
+        "sha256": "a4a262ddbb5a68dc9080acb1fd7e70837ca8f5b28c5af2d025da08793c53c7e1"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 43,
+        "member": "fold1",
+        "derived": {
+          "warmup": 4301,
+          "finetune": 5301
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_only_fold1.npz",
+        "sha256": "2ca3d0c458d9903b912123bafba659f59bbe7422b8141fa343f9c27912c05671"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 43,
+        "member": "fold2",
+        "derived": {
+          "warmup": 4302,
+          "finetune": 5302
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_only_fold2.npz",
+        "sha256": "27bb0c485e1fdc8da1d09e52a71bde368603b75046c872a449090137cd0ec138"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 43,
+        "member": "fold3",
+        "derived": {
+          "warmup": 4303,
+          "finetune": 5303
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_only_fold3.npz",
+        "sha256": "470734169ef7ba279bee7822f1d0fab83969253199361cce4f18a1e67e0390e7"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 43,
+        "member": "fold4",
+        "derived": {
+          "warmup": 4304,
+          "finetune": 5304
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_only_fold4.npz",
+        "sha256": "2a261ac207580f75b148d4e1efc254a239e69099c08e5d8863420bdef9856e9a"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 44,
+        "member": "full",
+        "derived": {
+          "warmup": 44,
+          "finetune": 1044
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_only_full.npz",
+        "sha256": "05166d643f11e05d8503d012561ab655dc09da48439a32f9a012eb8b24b75ce9"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 44,
+        "member": "fold0",
+        "derived": {
+          "warmup": 4400,
+          "finetune": 5400
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_only_fold0.npz",
+        "sha256": "054cea8d48ccf5d5745afc1d7881bff044627eea66879428614fc559833dc5b1"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 44,
+        "member": "fold1",
+        "derived": {
+          "warmup": 4401,
+          "finetune": 5401
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_only_fold1.npz",
+        "sha256": "082da181868dbebbb16e49c879e6d363bfccd01bedbe9f618cc1575b03ce9bdf"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 44,
+        "member": "fold2",
+        "derived": {
+          "warmup": 4402,
+          "finetune": 5402
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_only_fold2.npz",
+        "sha256": "c8ca3f6745acbe98e5847fd6f9ad3cbe87466f974188325d68bce50b424b9ed8"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 44,
+        "member": "fold3",
+        "derived": {
+          "warmup": 4403,
+          "finetune": 5403
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_only_fold3.npz",
+        "sha256": "914d1857ef4c543868e46a65c1054f7aafcd8d1a9b46de7b1d357572fa1e2a81"
+      },
+      {
+        "arm": "embeddings_only",
+        "seed": 44,
+        "member": "fold4",
+        "derived": {
+          "warmup": 4404,
+          "finetune": 5404
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_only_fold4.npz",
+        "sha256": "cae6a57602d1f3008002f453ef2f31e5cebb7ce29cd9be14eb9ab617edd140ed"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 42,
+        "member": "full",
+        "derived": {
+          "warmup": 42,
+          "finetune": 1042
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_plus_g01_g03_full.npz",
+        "sha256": "8994aa8163fe67512461de9803430d4c5a806fe0f3b52ce96edebe9909af320f"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 42,
+        "member": "fold0",
+        "derived": {
+          "warmup": 4200,
+          "finetune": 5200
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_plus_g01_g03_fold0.npz",
+        "sha256": "c6902bca570d9143f4c41a2cecfb22c45071ba8b0adb14550b87130cd776bb44"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 42,
+        "member": "fold1",
+        "derived": {
+          "warmup": 4201,
+          "finetune": 5201
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_plus_g01_g03_fold1.npz",
+        "sha256": "0f77d17b8ef9789c8766f0c0ef1adfd597c66461841d129411c962c7b840f4d6"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 42,
+        "member": "fold2",
+        "derived": {
+          "warmup": 4202,
+          "finetune": 5202
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_plus_g01_g03_fold2.npz",
+        "sha256": "7a5235fabd7635338a875eeb985d8c305b2103c75b2e1c569afc75ca2530b8d7"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 42,
+        "member": "fold3",
+        "derived": {
+          "warmup": 4203,
+          "finetune": 5203
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_plus_g01_g03_fold3.npz",
+        "sha256": "666209b1bc70cdcf95c999c73feeaab61d4dc4757f913cd48e6515d3450a67d9"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 42,
+        "member": "fold4",
+        "derived": {
+          "warmup": 4204,
+          "finetune": 5204
+        },
+        "file": "development/runs/exp_b12/seed_42/arm_embeddings_plus_g01_g03_fold4.npz",
+        "sha256": "7f7b4d49adde9af6b82059b8b13c94d6a3c106801aab8da68e6dc24c046e499b"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 43,
+        "member": "full",
+        "derived": {
+          "warmup": 43,
+          "finetune": 1043
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_plus_g01_g03_full.npz",
+        "sha256": "30caf2a1fde9dee9c26778e1dd4aef8ccb8afcd73982c6f27747b8bf142e5791"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 43,
+        "member": "fold0",
+        "derived": {
+          "warmup": 4300,
+          "finetune": 5300
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_plus_g01_g03_fold0.npz",
+        "sha256": "6ebe58eedbdc8322f60893d5315a96635cbaab7333c365780ab2be6a875e6fca"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 43,
+        "member": "fold1",
+        "derived": {
+          "warmup": 4301,
+          "finetune": 5301
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_plus_g01_g03_fold1.npz",
+        "sha256": "97a221af709d32bec82e43dc6412128d5b3d3d383782aefbccf91356ef9d3c9b"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 43,
+        "member": "fold2",
+        "derived": {
+          "warmup": 4302,
+          "finetune": 5302
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_plus_g01_g03_fold2.npz",
+        "sha256": "9cee6267c4fb0b2aa52106446d1c2061b543bff68f355e591b89f9a6c9939171"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 43,
+        "member": "fold3",
+        "derived": {
+          "warmup": 4303,
+          "finetune": 5303
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_plus_g01_g03_fold3.npz",
+        "sha256": "046dbad6fca5972bc6a277ae840a7ee1a5d17d84105b333a5d2a111a4e84df1a"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 43,
+        "member": "fold4",
+        "derived": {
+          "warmup": 4304,
+          "finetune": 5304
+        },
+        "file": "development/runs/exp_b12/seed_43/arm_embeddings_plus_g01_g03_fold4.npz",
+        "sha256": "cbc924cde4db096ea26497cb0cf8333ea0b4fb7f354326a410e01bd50c1ec655"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 44,
+        "member": "full",
+        "derived": {
+          "warmup": 44,
+          "finetune": 1044
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_plus_g01_g03_full.npz",
+        "sha256": "e6ae043126a2e013a3290f7dabe67c3adba04f223f678346632e9c487741a0a2"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 44,
+        "member": "fold0",
+        "derived": {
+          "warmup": 4400,
+          "finetune": 5400
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_plus_g01_g03_fold0.npz",
+        "sha256": "1e31a7834653f4dc4e1edc7aaf38841bb948702d78503f450e416e533de9f692"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 44,
+        "member": "fold1",
+        "derived": {
+          "warmup": 4401,
+          "finetune": 5401
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_plus_g01_g03_fold1.npz",
+        "sha256": "759c1034f1910d2e420398dd1aa9c9f205b2100100c6c495ceb928e4f08dbb13"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 44,
+        "member": "fold2",
+        "derived": {
+          "warmup": 4402,
+          "finetune": 5402
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_plus_g01_g03_fold2.npz",
+        "sha256": "9551965c64bc639ac8219d087c4998a812dbe2e8577a1d2ebdb3bb77e7c6fed1"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 44,
+        "member": "fold3",
+        "derived": {
+          "warmup": 4403,
+          "finetune": 5403
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_plus_g01_g03_fold3.npz",
+        "sha256": "c6350936896cc69da6f383921e0acd337faac50b1fa014f6606406f5f89016a5"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03",
+        "seed": 44,
+        "member": "fold4",
+        "derived": {
+          "warmup": 4404,
+          "finetune": 5404
+        },
+        "file": "development/runs/exp_b12/seed_44/arm_embeddings_plus_g01_g03_fold4.npz",
+        "sha256": "fc48fd1fd603041c7a6b30fff557175d3995510789772660700062239f9602c7"
+      }
+    ],
+    "EXP-B13": [
+      {
+        "arm": "centered_only",
+        "seed": 42,
+        "member": "full",
+        "derived": {
+          "warmup": 42,
+          "finetune": 1042
+        },
+        "file": "development/runs/exp_b13/seed_42/arm_centered_only_full.npz",
+        "sha256": "276bc55a0ef978daac7c5e1c74043b2b30420b73597c7f55c35219fc737c3cf6"
+      },
+      {
+        "arm": "centered_only",
+        "seed": 43,
+        "member": "full",
+        "derived": {
+          "warmup": 43,
+          "finetune": 1043
+        },
+        "file": "development/runs/exp_b13/seed_43/arm_centered_only_full.npz",
+        "sha256": "ad182d810baa3ef5d95e9bfe84bd533ba4568887cb18462dc283fb27014efc4f"
+      },
+      {
+        "arm": "centered_only",
+        "seed": 44,
+        "member": "full",
+        "derived": {
+          "warmup": 44,
+          "finetune": 1044
+        },
+        "file": "development/runs/exp_b13/seed_44/arm_centered_only_full.npz",
+        "sha256": "f4bf19e572d79c9c24d4bc2304cef946eaa5011646c5ba2027bf480029c59651"
+      },
+      {
+        "arm": "normalized_plus_centered",
+        "seed": 42,
+        "member": "full",
+        "derived": {
+          "warmup": 42,
+          "finetune": 1042
+        },
+        "file": "development/runs/exp_b13/seed_42/arm_normalized_plus_centered_full.npz",
+        "sha256": "331112cb3b75f95dc26b175d532a15614d3f96b0aef329d9b879ac0bebe7fc94"
+      },
+      {
+        "arm": "normalized_plus_centered",
+        "seed": 43,
+        "member": "full",
+        "derived": {
+          "warmup": 43,
+          "finetune": 1043
+        },
+        "file": "development/runs/exp_b13/seed_43/arm_normalized_plus_centered_full.npz",
+        "sha256": "d8d349ea083e4de02b34caef615c46144d32c3e28069ac5200b00a58cdca73f9"
+      },
+      {
+        "arm": "normalized_plus_centered",
+        "seed": 44,
+        "member": "full",
+        "derived": {
+          "warmup": 44,
+          "finetune": 1044
+        },
+        "file": "development/runs/exp_b13/seed_44/arm_normalized_plus_centered_full.npz",
+        "sha256": "bd99c1ed3732cf970cb8b32ceb52f8909366903811893336d2bd4f34a7274c20"
+      },
+      {
+        "arm": "normalized_plus_centered_plus_g01_g03",
+        "seed": 42,
+        "member": "full",
+        "derived": {
+          "warmup": 42,
+          "finetune": 1042
+        },
+        "file": "development/runs/exp_b13/seed_42/arm_normalized_plus_centered_plus_g01_g03_full.npz",
+        "sha256": "57e8db78f345e97df9dfded5f395f43e46cdc39e4503d2bf63383014ad09084f"
+      },
+      {
+        "arm": "normalized_plus_centered_plus_g01_g03",
+        "seed": 43,
+        "member": "full",
+        "derived": {
+          "warmup": 43,
+          "finetune": 1043
+        },
+        "file": "development/runs/exp_b13/seed_43/arm_normalized_plus_centered_plus_g01_g03_full.npz",
+        "sha256": "18e63c239d313ba8af911a396ecf8322a347f49a2c3d907d19e3fa23a332bcf4"
+      },
+      {
+        "arm": "normalized_plus_centered_plus_g01_g03",
+        "seed": 44,
+        "member": "full",
+        "derived": {
+          "warmup": 44,
+          "finetune": 1044
+        },
+        "file": "development/runs/exp_b13/seed_44/arm_normalized_plus_centered_plus_g01_g03_full.npz",
+        "sha256": "0e59b901ad86c297fa9a39f3cab2159d30a937a2758336fffa4ca28cec51dc1e"
+      }
+    ],
+    "EXP-B14": [
+      {
+        "arm": "embeddings_only_answer_aware",
+        "seed": 42,
+        "member": "full",
+        "derived": {
+          "warmup": 42,
+          "finetune": 1042
+        },
+        "file": "development/runs/exp_b14/seed_42/arm_embeddings_only_answer_aware_full.npz",
+        "sha256": "7157e1e60df24831067c3b0d1728a9f9c282fcfd25c0939cc8e489c869828a6a"
+      },
+      {
+        "arm": "embeddings_only_answer_aware",
+        "seed": 43,
+        "member": "full",
+        "derived": {
+          "warmup": 43,
+          "finetune": 1043
+        },
+        "file": "development/runs/exp_b14/seed_43/arm_embeddings_only_answer_aware_full.npz",
+        "sha256": "06ceae766508085210fc568d2256c7ed198b844fa10bfb03b4b2e4fb3e597266"
+      },
+      {
+        "arm": "embeddings_only_answer_aware",
+        "seed": 44,
+        "member": "full",
+        "derived": {
+          "warmup": 44,
+          "finetune": 1044
+        },
+        "file": "development/runs/exp_b14/seed_44/arm_embeddings_only_answer_aware_full.npz",
+        "sha256": "e879b1cb82c10f5ef43d0352d87229319cd30bcc69b676b0fc9921f16858ebc6"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03_answer_aware",
+        "seed": 42,
+        "member": "full",
+        "derived": {
+          "warmup": 42,
+          "finetune": 1042
+        },
+        "file": "development/runs/exp_b14/seed_42/arm_embeddings_plus_g01_g03_answer_aware_full.npz",
+        "sha256": "e2f3f469786b576026dd0e09d516a2ed021158643237725c720514dc5b5e45d6"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03_answer_aware",
+        "seed": 43,
+        "member": "full",
+        "derived": {
+          "warmup": 43,
+          "finetune": 1043
+        },
+        "file": "development/runs/exp_b14/seed_43/arm_embeddings_plus_g01_g03_answer_aware_full.npz",
+        "sha256": "ffbf12c742a6e22a0fa20c35290d57a3c0124b7689a70ec433a06c0b878535a3"
+      },
+      {
+        "arm": "embeddings_plus_g01_g03_answer_aware",
+        "seed": 44,
+        "member": "full",
+        "derived": {
+          "warmup": 44,
+          "finetune": 1044
+        },
+        "file": "development/runs/exp_b14/seed_44/arm_embeddings_plus_g01_g03_answer_aware_full.npz",
+        "sha256": "16a3a093a8e8d654c70935d20155773462fd88c843d840f2d9c112baa3f2c239"
+      }
+    ],
+    "EXP-B15": [
+      {
+        "arm": "M04a_train_hard",
+        "seed": 42,
+        "member": "tree",
+        "derived": {
+          "random_state": 42
+        },
+        "file": "development/runs/exp_b15/seed_42/M04a_train_hard.pkl",
+        "sha256": "706439151d72a6bb44eafa68dc465f52a3b5d22feddfc3d71297f7444b576da1"
+      },
+      {
+        "arm": "M04a_train_hard",
+        "seed": 43,
+        "member": "tree",
+        "derived": {
+          "random_state": 43
+        },
+        "file": "development/runs/exp_b15/seed_43/M04a_train_hard.pkl",
+        "sha256": "a152016fee592be21647404429624d294e7aa298a316940c8e834a8308779194"
+      },
+      {
+        "arm": "M04a_train_hard",
+        "seed": 44,
+        "member": "tree",
+        "derived": {
+          "random_state": 44
+        },
+        "file": "development/runs/exp_b15/seed_44/M04a_train_hard.pkl",
+        "sha256": "ada51ff8f461f2c66745a4699f27580fcd52d9d3eab46d99bbd3a352f5496f80"
+      },
+      {
+        "arm": "M04a_train_all",
+        "seed": 42,
+        "member": "tree",
+        "derived": {
+          "random_state": 42
+        },
+        "file": "development/runs/exp_b15/seed_42/M04a_train_all.pkl",
+        "sha256": "bc2099f9da28935d3485251252790a57ee084da85ff1fc38e88cf5a44729c0ae"
+      },
+      {
+        "arm": "M04a_train_all",
+        "seed": 43,
+        "member": "tree",
+        "derived": {
+          "random_state": 43
+        },
+        "file": "development/runs/exp_b15/seed_43/M04a_train_all.pkl",
+        "sha256": "5e4e246e40e661851840af789638717005a9e3eae7df52b007150064fa39d92f"
+      },
+      {
+        "arm": "M04a_train_all",
+        "seed": 44,
+        "member": "tree",
+        "derived": {
+          "random_state": 44
+        },
+        "file": "development/runs/exp_b15/seed_44/M04a_train_all.pkl",
+        "sha256": "035d125041af72ef3cf37add190e9dbbb6a42c0fb173f573bc4b55b630e7a147"
+      },
+      {
+        "arm": "M04b_train_hard",
+        "seed": 42,
+        "member": "tree",
+        "derived": {
+          "random_state": 42
+        },
+        "file": "development/runs/exp_b15/seed_42/M04b_train_hard.txt",
+        "sha256": "d746e156b22df45c9bc2b2d0ffb4c2eeb4881c9710124d12ed1f08b14ad4c587"
+      },
+      {
+        "arm": "M04b_train_hard",
+        "seed": 43,
+        "member": "tree",
+        "derived": {
+          "random_state": 43
+        },
+        "file": "development/runs/exp_b15/seed_43/M04b_train_hard.txt",
+        "sha256": "02fc017a63ef75593e031b8d568f50257dfc9bac50be6b591d627311e97319d1"
+      },
+      {
+        "arm": "M04b_train_hard",
+        "seed": 44,
+        "member": "tree",
+        "derived": {
+          "random_state": 44
+        },
+        "file": "development/runs/exp_b15/seed_44/M04b_train_hard.txt",
+        "sha256": "0c72c987b159d3dd5210b46768d5d5b504d42f9ae78cb71fea7a6779a98e10fa"
+      },
+      {
+        "arm": "M04b_train_all",
+        "seed": 42,
+        "member": "tree",
+        "derived": {
+          "random_state": 42
+        },
+        "file": "development/runs/exp_b15/seed_42/M04b_train_all.txt",
+        "sha256": "5ad3d988ba4e70575dace6ab06e45446435cd66fd5f5442d708f70febeb6dc41"
+      },
+      {
+        "arm": "M04b_train_all",
+        "seed": 43,
+        "member": "tree",
+        "derived": {
+          "random_state": 43
+        },
+        "file": "development/runs/exp_b15/seed_43/M04b_train_all.txt",
+        "sha256": "61bc9bb83575464156659ddff3a90158b5b2577bf087423f0649bbd99454f020"
+      },
+      {
+        "arm": "M04b_train_all",
+        "seed": 44,
+        "member": "tree",
+        "derived": {
+          "random_state": 44
+        },
+        "file": "development/runs/exp_b15/seed_44/M04b_train_all.txt",
+        "sha256": "e5969e0c7541f36e745f81d9fa20bc04a9e2255e47171b2e5bf8229e03f26528"
+      },
+      {
+        "arm": "M04a_train_all_plus_svd",
+        "seed": 42,
+        "member": "tree",
+        "derived": {
+          "random_state": 42
+        },
+        "file": "development/runs/exp_b15/seed_42/M04a_train_all_plus_svd.pkl",
+        "sha256": "614dbef27692759f4e3c674f579661e44e12c8033f0e825dc446898d3ee1bca2"
+      },
+      {
+        "arm": "M04a_train_all_plus_svd",
+        "seed": 43,
+        "member": "tree",
+        "derived": {
+          "random_state": 43
+        },
+        "file": "development/runs/exp_b15/seed_43/M04a_train_all_plus_svd.pkl",
+        "sha256": "5e218c749a239794c5ef420f5e739ddc296bde2675f139715309caa46a8cd93e"
+      },
+      {
+        "arm": "M04a_train_all_plus_svd",
+        "seed": 44,
+        "member": "tree",
+        "derived": {
+          "random_state": 44
+        },
+        "file": "development/runs/exp_b15/seed_44/M04a_train_all_plus_svd.pkl",
+        "sha256": "42f07b121a958921f28dc5ba40a12f655234a390217fd31d4b401244c7bcd33a"
+      }
+    ],
+    "EXP-B22": [
+      {
+        "arm": "M04a_train_all_g05_svd",
+        "seed": 42,
+        "member": "full",
+        "derived": {
+          "random_state": 42
+        },
+        "file": "development/runs/exp_b22/seed_42/M04a_train_all_g05_svd.pkl",
+        "sha256": "6a535afc4f7374d44bc7677cfbc64ebf872eef5c79d10cb4fa18471f9da0c1a4"
+      },
+      {
+        "arm": "M04a_train_all_g05_svd",
+        "seed": 43,
+        "member": "full",
+        "derived": {
+          "random_state": 43
+        },
+        "file": "development/runs/exp_b22/seed_43/M04a_train_all_g05_svd.pkl",
+        "sha256": "876f547904d997f5958b63321948364cff8ae2af0feb6cd0a9a2ade309770acd"
+      },
+      {
+        "arm": "M04a_train_all_g05_svd",
+        "seed": 44,
+        "member": "full",
+        "derived": {
+          "random_state": 44
+        },
+        "file": "development/runs/exp_b22/seed_44/M04a_train_all_g05_svd.pkl",
+        "sha256": "db80e1696e537116678d301b66891d3be00467490f933be47e92a4a9c0588202"
+      }
+    ],
+    "EXP-B23": [
+      {
+        "arm": "embeddings_only_weighted",
+        "seed": 42,
+        "member": "fold0",
+        "derived": {
+          "warmup": 4200,
+          "finetune": 5200
+        },
+        "file": "development/runs/exp_b23/seed_42/arm_a_weighted_fold0.npz",
+        "sha256": "f2b161fe6d09d75d78042e84f954cd6a24d6dd49219370888b7d6d0e2c9b4acb",
+        "role": "outer-fold weighted arm A; loss weights mined without this fold"
+      },
+      {
+        "arm": "embeddings_only_weighted",
+        "seed": 42,
+        "member": "fold1",
+        "derived": {
+          "warmup": 4201,
+          "finetune": 5201
+        },
+        "file": "development/runs/exp_b23/seed_42/arm_a_weighted_fold1.npz",
+        "sha256": "99fc3819c2e3f2c1ba6cbf7c394bae6539745be7b9d72c18f8137c9d715036cc",
+        "role": "outer-fold weighted arm A; loss weights mined without this fold"
+      },
+      {
+        "arm": "embeddings_only_weighted",
+        "seed": 42,
+        "member": "fold2",
+        "derived": {
+          "warmup": 4202,
+          "finetune": 5202
+        },
+        "file": "development/runs/exp_b23/seed_42/arm_a_weighted_fold2.npz",
+        "sha256": "1895fbe69bcddb339e36c4fdea83762d5c28e67334b318d42eef772619730ca8",
+        "role": "outer-fold weighted arm A; loss weights mined without this fold"
+      },
+      {
+        "arm": "embeddings_only_weighted",
+        "seed": 42,
+        "member": "fold3",
+        "derived": {
+          "warmup": 4203,
+          "finetune": 5203
+        },
+        "file": "development/runs/exp_b23/seed_42/arm_a_weighted_fold3.npz",
+        "sha256": "253881c4658b5c3c2c165b6b104c0dea05bae9f97e6c7f047cfc01fa5b9ca4f8",
+        "role": "outer-fold weighted arm A; loss weights mined without this fold"
+      },
+      {
+        "arm": "embeddings_only_weighted",
+        "seed": 42,
+        "member": "fold4",
+        "derived": {
+          "warmup": 4204,
+          "finetune": 5204
+        },
+        "file": "development/runs/exp_b23/seed_42/arm_a_weighted_fold4.npz",
+        "sha256": "520f9b5d7a2e2732b4c73dbe17110e1b20011181bff8364501fccd2c4f109ab7",
+        "role": "outer-fold weighted arm A; loss weights mined without this fold"
+      }
+    ],
+    "EXP-B25": [
+      {
+        "arm": "nested_decoder_oof",
+        "seed": "42/43/44",
+        "member": "nested_and_outer_oof",
+        "derived": {
+          "nested_formula": "warmup=1000000+100000*variant+10000*s+10*outer+inner; finetune=warmup+1000",
+          "attention_models": 120,
+          "nested_trees": 20,
+          "outer_trees": 5,
+          "unique_nested_seed_values": 300,
+          "b12_fold_models_reused": true
+        },
+        "file": "development/runs/exp_b25/oof_logits.npz",
+        "sha256": "05a3713fb1b3dc248d23b08be0f313f86026d9289c3186b3eff714c6a847b0d9"
+      }
+    ],
+    "EXP-B27": [
+      {
+        "arm": "E1",
+        "seed": 42,
+        "member": "energy",
+        "derived": {
+          "warmup": 42,
+          "finetune": 1042
+        },
+        "file": "development/runs/exp_b27/energy_E1_seed_42.npz",
+        "sha256": "9c5d3ed968e75822b34b399cadcab9119186fd13746dac5f4babf8b226ae4261"
+      },
+      {
+        "arm": "E1",
+        "seed": 43,
+        "member": "energy",
+        "derived": {
+          "warmup": 43,
+          "finetune": 1043
+        },
+        "file": "development/runs/exp_b27/energy_E1_seed_43.npz",
+        "sha256": "a2ba1f8cd78218dc552a2717e233162bc83c938e9a75f7bfe7ebfa239e0659be"
+      },
+      {
+        "arm": "E1",
+        "seed": 44,
+        "member": "energy",
+        "derived": {
+          "warmup": 44,
+          "finetune": 1044
+        },
+        "file": "development/runs/exp_b27/energy_E1_seed_44.npz",
+        "sha256": "7cec214f9350397c0d79e559b04e7920c623462b3fcf280dc5aa8450f87a4e1c"
+      }
+    ]
+  }
+}

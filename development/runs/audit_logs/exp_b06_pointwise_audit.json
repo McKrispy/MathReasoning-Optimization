@@ -1,0 +1,57 @@
+{
+  "dataset": "val_hard (355 questions) / val_all (798 questions)",
+  "features": "Raw [1024] Candidate Embeddings (Pointwise, zero cross-candidate features)",
+  "best_model": "Pointwise Logistic Regression (C=10.0)",
+  "asset_size_bytes": 4761,
+  "asset_size_mib": 0.004540443420410156,
+  "latency_seconds_val_all": 0.002036099998804275,
+  "lr_sweep": [
+    {
+      "C": 0.01,
+      "val_hard_acc": 0.6563380281690141
+    },
+    {
+      "C": 0.1,
+      "val_hard_acc": 0.7014084507042253
+    },
+    {
+      "C": 1.0,
+      "val_hard_acc": 0.7352112676056338
+    },
+    {
+      "C": 10.0,
+      "val_hard_acc": 0.7859154929577464
+    }
+  ],
+  "mlp_results": {
+    "val_hard_acc": 0.7605633802816901,
+    "val_all_acc": 0.87468671679198,
+    "train_hard_acc": 0.7691579943235572
+  },
+  "accuracy": {
+    "val_hard": {
+      "acc": 0.7859154929577464,
+      "correct": 279,
+      "total": 355
+    },
+    "val_all": {
+      "acc": 0.8884711779448622,
+      "correct": 709,
+      "total": 798
+    },
+    "train_hard": {
+      "acc": 0.7776726584673604,
+      "correct": 1644,
+      "total": 2114
+    }
+  },
+  "rq3_comparisons": {
+    "random_baseline": 0.25,
+    "surface_b05": 0.6,
+    "pointwise_b06": 0.7859154929577464,
+    "majority_voting_b01": 0.690141,
+    "full_listwise_b03": 0.732394,
+    "pointwise_gap_to_majority_voting": 0.09577449295774643,
+    "pointwise_gap_to_listwise": 0.05352149295774644
+  }
+}

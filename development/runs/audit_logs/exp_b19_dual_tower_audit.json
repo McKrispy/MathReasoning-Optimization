@@ -1,0 +1,273 @@
+{
+  "experiment": "EXP-B19",
+  "description": "Decoupled Dual-Tower Late Fusion Network (MOD-M06)",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "execution_seconds": 19.71,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "hparams": {
+    "hidden_dim": 128,
+    "aux_hidden_dim": 32,
+    "num_layers": 2,
+    "num_heads": 4,
+    "input_dropout": 0.3,
+    "attn_dropout": 0.1,
+    "layernorm_eps": 1e-05,
+    "lambda_bce": 1.0,
+    "weight_decay": 0.01,
+    "lr_warmup": 0.001,
+    "lr_finetune": 0.0003,
+    "warmup_epochs": 10,
+    "finetune_epochs": 8,
+    "batch_size": 256,
+    "grad_clip": 1.0
+  },
+  "architecture": {
+    "main_tower_input_dim": 1036,
+    "aux_tower_input_dim": 22,
+    "hidden_dim": 128,
+    "aux_hidden_dim": 32,
+    "in_layer_groupnorm_centering": true,
+    "late_residual_fusion": true
+  },
+  "per_seed_results": {
+    "42": {
+      "raw": {
+        "val_hard": {
+          "correct": 277,
+          "total": 355,
+          "accuracy": 78.02816901408451
+        },
+        "val_all": {
+          "correct": 720,
+          "total": 798,
+          "accuracy": 90.22556390977444
+        }
+      },
+      "m1": {
+        "val_hard": {
+          "correct": 277,
+          "total": 355,
+          "accuracy": 78.02816901408451
+        },
+        "val_all": {
+          "correct": 720,
+          "total": 798,
+          "accuracy": 90.22556390977444
+        }
+      },
+      "m2": {
+        "val_hard": {
+          "correct": 277,
+          "total": 355,
+          "accuracy": 78.02816901408451
+        },
+        "val_all": {
+          "correct": 720,
+          "total": 798,
+          "accuracy": 90.22556390977444
+        }
+      },
+      "best_m4": {
+        "temperature": 0.5,
+        "val_hard": {
+          "correct": 277,
+          "total": 355,
+          "accuracy": 78.02816901408451
+        },
+        "val_all": {
+          "correct": 720,
+          "total": 798,
+          "accuracy": 90.22556390977444
+        }
+      }
+    },
+    "43": {
+      "raw": {
+        "val_hard": {
+          "correct": 276,
+          "total": 355,
+          "accuracy": 77.74647887323944
+        },
+        "val_all": {
+          "correct": 719,
+          "total": 798,
+          "accuracy": 90.10025062656642
+        }
+      },
+      "m1": {
+        "val_hard": {
+          "correct": 276,
+          "total": 355,
+          "accuracy": 77.74647887323944
+        },
+        "val_all": {
+          "correct": 719,
+          "total": 798,
+          "accuracy": 90.10025062656642
+        }
+      },
+      "m2": {
+        "val_hard": {
+          "correct": 276,
+          "total": 355,
+          "accuracy": 77.74647887323944
+        },
+        "val_all": {
+          "correct": 719,
+          "total": 798,
+          "accuracy": 90.10025062656642
+        }
+      },
+      "best_m4": {
+        "temperature": 0.5,
+        "val_hard": {
+          "correct": 274,
+          "total": 355,
+          "accuracy": 77.1830985915493
+        },
+        "val_all": {
+          "correct": 717,
+          "total": 798,
+          "accuracy": 89.84962406015038
+        }
+      }
+    },
+    "44": {
+      "raw": {
+        "val_hard": {
+          "correct": 277,
+          "total": 355,
+          "accuracy": 78.02816901408451
+        },
+        "val_all": {
+          "correct": 720,
+          "total": 798,
+          "accuracy": 90.22556390977444
+        }
+      },
+      "m1": {
+        "val_hard": {
+          "correct": 277,
+          "total": 355,
+          "accuracy": 78.02816901408451
+        },
+        "val_all": {
+          "correct": 720,
+          "total": 798,
+          "accuracy": 90.22556390977444
+        }
+      },
+      "m2": {
+        "val_hard": {
+          "correct": 277,
+          "total": 355,
+          "accuracy": 78.02816901408451
+        },
+        "val_all": {
+          "correct": 720,
+          "total": 798,
+          "accuracy": 90.22556390977444
+        }
+      },
+      "best_m4": {
+        "temperature": 0.8,
+        "val_hard": {
+          "correct": 275,
+          "total": 355,
+          "accuracy": 77.46478873239437
+        },
+        "val_all": {
+          "correct": 718,
+          "total": 798,
+          "accuracy": 89.97493734335839
+        }
+      }
+    }
+  },
+  "seed_ensemble_results": {
+    "m2": {
+      "val_hard": {
+        "correct": 279,
+        "total": 355,
+        "accuracy": 78.59154929577464
+      },
+      "val_all": {
+        "correct": 722,
+        "total": 798,
+        "accuracy": 90.47619047619048
+      }
+    },
+    "best_m4": {
+      "temperature": 0.5,
+      "val_hard": {
+        "correct": 274,
+        "total": 355,
+        "accuracy": 77.1830985915493
+      },
+      "val_all": {
+        "correct": 717,
+        "total": 798,
+        "accuracy": 89.84962406015038
+      }
+    }
+  },
+  "retention_evaluation": {
+    "b12_arm_a_single_baseline": {
+      "single_mean_val_hard": 292.67,
+      "single_mean_val_all": 728.33,
+      "ensemble_val_hard": 296,
+      "ensemble_val_all": 739
+    },
+    "mod_m06_single_hard_counts": [
+      277,
+      276,
+      277
+    ],
+    "mod_m06_single_hard_mean": 276.6666666666667,
+    "mod_m06_single_all_mean": 719.6666666666666,
+    "mean_val_hard_gain_questions": -16.00333333333333,
+    "mean_val_all_gain_questions": -8.663333333333412,
+    "rule_1_hard_gain_ge_3.55": false,
+    "rule_2_all_non_decreasing": false,
+    "decision": "REJECTED"
+  },
+  "official_scores": {
+    "dual_tower_seed42_m2": {
+      "protocol": "dase7506-mp2-open-hard-verifier-v5",
+      "split": "validation",
+      "correct": 720,
+      "n": 798,
+      "accuracy": 90.22556390977444,
+      "scoring_seconds": 0.036989899999753106
+    },
+    "dual_tower_seed_ensemble_m2": {
+      "protocol": "dase7506-mp2-open-hard-verifier-v5",
+      "split": "validation",
+      "correct": 722,
+      "n": 798,
+      "accuracy": 90.47619047619048,
+      "scoring_seconds": 0.03704719999950612
+    },
+    "dual_tower_seed_ensemble_m4": {
+      "protocol": "dase7506-mp2-open-hard-verifier-v5",
+      "split": "validation",
+      "correct": 717,
+      "n": 798,
+      "accuracy": 89.84962406015038,
+      "scoring_seconds": 0.03804930000114837
+    }
+  },
+  "resource_audit": {
+    "per_seed_weight_bytes": {
+      "42": 1067052,
+      "43": 1067052,
+      "44": 1067052
+    },
+    "total_bundle_bytes": 3201156,
+    "total_bundle_mib": 3.05,
+    "max_bundle_mib_limit": 16.0,
+    "cpu_inference_seconds_val_all": 0.05,
+    "max_inference_seconds_limit": 30.0
+  }
+}

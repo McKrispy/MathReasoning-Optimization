@@ -1,0 +1,46 @@
+{
+  "model_id": "MOD-M03+MOD-M04a+POST-P06",
+  "description": "EXP-B17 3-View Soft Stacking Inference Bundle",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "weights": [
+    0.6519943983184848,
+    0.2773940600630942,
+    0.07061154161842091
+  ],
+  "temperature": 0.5,
+  "mask_penalty": 1000000000.0,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "views": [
+    "arm_a_ensemble",
+    "arm_b_ensemble",
+    "tree_r5"
+  ],
+  "features": {
+    "consensus_core": [
+      "is_valid",
+      "cluster_ratio",
+      "is_unique_majority",
+      "is_tied_majority"
+    ],
+    "symbolic": [
+      "num_equations",
+      "num_correct_equations",
+      "num_wrong_equations",
+      "has_arithmetic_error",
+      "candidate_number_count",
+      "question_condition_coverage",
+      "missing_condition_count",
+      "has_missing_condition",
+      "wrong_eq_diff_mean",
+      "wrong_eq_rank",
+      "condition_coverage_diff_mean",
+      "condition_coverage_rank"
+    ],
+    "svd_dimensions": 64,
+    "svd_total_dimensions": 128
+  }
+}

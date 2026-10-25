@@ -1,0 +1,284 @@
+{
+  "experiment": "EXP-B18",
+  "description": "Fine-Grained Symbolic Chain and Cluster Evidence Feature Extractor Ablation (FEAT-G05)",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "execution_seconds": 5.15,
+  "feature_definitions": {
+    "final_eq_matches_answer": "1.0 if RHS of last verified equation matches parsed answer, else 0.0",
+    "equation_chain_continuity": "fraction of operands in eq k>=2 originating from question stem or prior RHS",
+    "has_parser_heading_conflict": "1.0 if candidate contains Markdown heading conflict trap, else 0.0",
+    "cluster_avg_correct_eq_ratio": "mean correct equation ratio across candidates in same answer cluster",
+    "cluster_max_condition_coverage": "max question condition coverage across candidates in same answer cluster",
+    "cluster_min_wrong_eq": "min wrong equation count across candidates in same answer cluster"
+  },
+  "dataset_splits": {
+    "train_hard_questions": 2114,
+    "val_hard_questions": 355,
+    "val_all_questions": 798
+  },
+  "ablation_matrix": {
+    "run_0_consensus_core_4col": {
+      "name": "Run 0 (Consensus Core, 4 cols)",
+      "feature_dim": 4,
+      "features": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority"
+      ],
+      "val_hard": {
+        "correct": 245,
+        "total": 355,
+        "accuracy": 69.01408450704226
+      },
+      "val_all": {
+        "correct": 688,
+        "total": 798,
+        "accuracy": 86.2155388471178
+      },
+      "coefficients": {
+        "is_valid": 0.9764079451560974,
+        "cluster_ratio": 0.9718620181083679,
+        "is_unique_majority": 0.5324762463569641,
+        "is_tied_majority": 0.2103995382785797
+      },
+      "intercept": -0.1818031370639801
+    },
+    "run_1_core_plus_feat_g05_10col": {
+      "name": "Run 1 (Core + FEAT-G05, 10 cols)",
+      "feature_dim": 10,
+      "features": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority",
+        "final_eq_matches_answer",
+        "equation_chain_continuity",
+        "has_parser_heading_conflict",
+        "cluster_avg_correct_eq_ratio",
+        "cluster_max_condition_coverage",
+        "cluster_min_wrong_eq"
+      ],
+      "val_hard": {
+        "correct": 251,
+        "total": 355,
+        "accuracy": 70.70422535211267
+      },
+      "val_all": {
+        "correct": 694,
+        "total": 798,
+        "accuracy": 86.96741854636592
+      },
+      "coefficients": {
+        "is_valid": 0.9951218962669373,
+        "cluster_ratio": 0.9735578298568726,
+        "is_unique_majority": 0.5278406739234924,
+        "is_tied_majority": 0.21510562300682068,
+        "final_eq_matches_answer": 0.009758207947015762,
+        "equation_chain_continuity": -0.0996151715517044,
+        "has_parser_heading_conflict": -0.18671168386936188,
+        "cluster_avg_correct_eq_ratio": -0.028346316888928413,
+        "cluster_max_condition_coverage": 0.13584209978580475,
+        "cluster_min_wrong_eq": 0.021531211212277412
+      },
+      "intercept": -0.1924181878566742
+    },
+    "run_2_core_plus_feat_g03_16col": {
+      "name": "Run 2 (Core + FEAT-G03, 16 cols)",
+      "feature_dim": 16,
+      "features": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority",
+        "num_equations",
+        "num_correct_equations",
+        "num_wrong_equations",
+        "has_arithmetic_error",
+        "candidate_number_count",
+        "question_condition_coverage",
+        "missing_condition_count",
+        "has_missing_condition",
+        "wrong_eq_diff_mean",
+        "wrong_eq_rank",
+        "condition_coverage_diff_mean",
+        "condition_coverage_rank"
+      ],
+      "val_hard": {
+        "correct": 258,
+        "total": 355,
+        "accuracy": 72.67605633802818
+      },
+      "val_all": {
+        "correct": 701,
+        "total": 798,
+        "accuracy": 87.84461152882206
+      },
+      "coefficients": {
+        "is_valid": 1.018408179283142,
+        "cluster_ratio": 1.0818967819213867,
+        "is_unique_majority": 0.45546624064445496,
+        "is_tied_majority": 0.16413293778896332,
+        "num_equations": 0.09259043633937836,
+        "num_correct_equations": 0.11412213742733002,
+        "num_wrong_equations": -0.025287769734859467,
+        "has_arithmetic_error": 0.01864805445075035,
+        "candidate_number_count": 0.23088377714157104,
+        "question_condition_coverage": -0.1922157108783722,
+        "missing_condition_count": 0.006261914037168026,
+        "has_missing_condition": -0.2528271973133087,
+        "wrong_eq_diff_mean": 0.1257024109363556,
+        "wrong_eq_rank": -0.034418899565935135,
+        "condition_coverage_diff_mean": 0.1832578182220459,
+        "condition_coverage_rank": 0.04599368944764137
+      },
+      "intercept": -0.1942276954650879
+    },
+    "run_3_full_stack_22col": {
+      "name": "Run 3 (Core + G03 + FEAT-G05, 22 cols)",
+      "feature_dim": 22,
+      "features": [
+        "is_valid",
+        "cluster_ratio",
+        "is_unique_majority",
+        "is_tied_majority",
+        "num_equations",
+        "num_correct_equations",
+        "num_wrong_equations",
+        "has_arithmetic_error",
+        "candidate_number_count",
+        "question_condition_coverage",
+        "missing_condition_count",
+        "has_missing_condition",
+        "wrong_eq_diff_mean",
+        "wrong_eq_rank",
+        "condition_coverage_diff_mean",
+        "condition_coverage_rank",
+        "final_eq_matches_answer",
+        "equation_chain_continuity",
+        "has_parser_heading_conflict",
+        "cluster_avg_correct_eq_ratio",
+        "cluster_max_condition_coverage",
+        "cluster_min_wrong_eq"
+      ],
+      "val_hard": {
+        "correct": 262,
+        "total": 355,
+        "accuracy": 73.80281690140845
+      },
+      "val_all": {
+        "correct": 705,
+        "total": 798,
+        "accuracy": 88.34586466165413
+      },
+      "coefficients": {
+        "is_valid": 1.0163465738296509,
+        "cluster_ratio": 1.0671563148498535,
+        "is_unique_majority": 0.44693443179130554,
+        "is_tied_majority": 0.16178108751773834,
+        "num_equations": 0.1488664448261261,
+        "num_correct_equations": 0.13994723558425903,
+        "num_wrong_equations": 0.030574863776564598,
+        "has_arithmetic_error": -0.12303624302148819,
+        "candidate_number_count": 0.2171238511800766,
+        "question_condition_coverage": -0.3897085189819336,
+        "missing_condition_count": 0.009132604114711285,
+        "has_missing_condition": -0.28873127698898315,
+        "wrong_eq_diff_mean": 0.1513531357049942,
+        "wrong_eq_rank": -0.017081821337342262,
+        "condition_coverage_diff_mean": 0.2178918719291687,
+        "condition_coverage_rank": 0.031233081594109535,
+        "final_eq_matches_answer": -0.09000009298324585,
+        "equation_chain_continuity": 0.0003123517381027341,
+        "has_parser_heading_conflict": -0.21608132123947144,
+        "cluster_avg_correct_eq_ratio": -0.20883731544017792,
+        "cluster_max_condition_coverage": 0.17805500328540802,
+        "cluster_min_wrong_eq": -0.1403990089893341
+      },
+      "intercept": -0.19545617699623108
+    },
+    "incremental_deltas": {
+      "run1_vs_run0_val_hard_delta_pct": 1.6901408450704167,
+      "run1_vs_run0_val_hard_delta_questions": 6,
+      "run1_vs_run0_val_all_delta_pct": 0.7518796992481214,
+      "run1_vs_run0_val_all_delta_questions": 6,
+      "run3_vs_run2_val_hard_delta_pct": 1.126760563380273,
+      "run3_vs_run2_val_hard_delta_questions": 4,
+      "run3_vs_run2_val_all_delta_pct": 0.5012531328320762,
+      "run3_vs_run2_val_all_delta_questions": 4
+    }
+  },
+  "gbdt_comparison": {
+    "lightgbm_16col": {
+      "val_hard": {
+        "correct": 261,
+        "total": 355,
+        "accuracy": 73.52112676056338
+      },
+      "val_all": {
+        "correct": 704,
+        "total": 798,
+        "accuracy": 88.22055137844612
+      }
+    },
+    "lightgbm_22col": {
+      "val_hard": {
+        "correct": 263,
+        "total": 355,
+        "accuracy": 74.08450704225352
+      },
+      "val_all": {
+        "correct": 706,
+        "total": 798,
+        "accuracy": 88.47117794486215
+      }
+    }
+  },
+  "postprocessing_synergy": {
+    "run_3_with_post_p05": {
+      "val_hard": {
+        "correct": 262,
+        "total": 355,
+        "accuracy": 73.80281690140845
+      },
+      "val_all": {
+        "correct": 705,
+        "total": 798,
+        "accuracy": 88.34586466165413
+      }
+    }
+  },
+  "gate_verification": {
+    "rule_1_run1_val_hard_ge_1pct": true,
+    "rule_2_run1_val_all_ge_0pct": true,
+    "rule_1b_run3_val_hard_ge_1pct": true,
+    "rule_2b_run3_val_all_ge_0pct": true,
+    "decision": "RETAINED"
+  },
+  "official_scores": {
+    "core_plus_g05": {
+      "protocol": "dase7506-mp2-open-hard-verifier-v5",
+      "split": "validation",
+      "correct": 694,
+      "n": 798,
+      "accuracy": 86.96741854636592,
+      "scoring_seconds": 0.034778500001266366
+    },
+    "full_stack_22col": {
+      "protocol": "dase7506-mp2-open-hard-verifier-v5",
+      "split": "validation",
+      "correct": 705,
+      "n": 798,
+      "accuracy": 88.34586466165413,
+      "scoring_seconds": 0.03518629999962286
+    },
+    "full_stack_22col_post": {
+      "protocol": "dase7506-mp2-open-hard-verifier-v5",
+      "split": "validation",
+      "correct": 705,
+      "n": 798,
+      "accuracy": 88.34586466165413,
+      "scoring_seconds": 0.03597979999904055
+    }
+  }
+}

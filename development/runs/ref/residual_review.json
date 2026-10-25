@@ -1,0 +1,122 @@
+{
+  "note": "report analysis only; never used for training or selection",
+  "both_wrong_val_hard": 4,
+  "listed": 4,
+  "items": [
+    {
+      "id": "gsm8k:a43ceff49caf15e088df74a262ff9e052dd2007849dae692d80b5056583ef20f",
+      "question": "Yun had 20 paperclips initially, but then lost 12. Marion has 1/4 more than what Yun currently has, plus 7. How many paperclips does Marion have?",
+      "reference_answer": "9",
+      "candidate_answers": [
+        "9",
+        "17",
+        "17",
+        "17"
+      ],
+      "correct_candidates": [
+        0
+      ],
+      "judge_choice": 1,
+      "judge_own_answer": "17",
+      "ours_choice": 3,
+      "judge_first_errors": {
+        "0": "Interprets '1/4 more' as only 1/4 of Yun's amount, omitting the original 8 from 8 + (1/4 × 8) + 7.",
+        "1": null,
+        "2": null,
+        "3": null
+      },
+      "review": {
+        "category": "reference_or_question_ambiguity",
+        "note": "Yun has 8. '1/4 more than what Yun has, plus 7' reads naturally as 8 + 2 + 7 = 17; the reference 9 takes it as 1/4 of 8 plus 7. Judge and three candidates give 17."
+      }
+    },
+    {
+      "id": "gsm8k:fd23d86676d457a5edd2ad70cc5accd6b3e3c36e975e3b85316a5e7990357a36",
+      "question": "Andy walks 50 meters from his house to school. After school, he comes back to the house and goes to the market. If he walks 140 meters in total, how many meters is the distance between the house and the market?",
+      "reference_answer": "40",
+      "candidate_answers": [
+        null,
+        "45",
+        "40",
+        null
+      ],
+      "correct_candidates": [
+        2
+      ],
+      "judge_choice": 0,
+      "judge_own_answer": "40",
+      "ours_choice": 1,
+      "judge_first_errors": {
+        "0": null,
+        "1": "The return trip from school to the house is 50 meters, not x meters; x denotes the house-to-market distance.",
+        "2": null,
+        "3": null
+      },
+      "review": {
+        "category": "answer_format",
+        "note": "Judge picked candidate 0, whose reasoning ends at 40 but has no '####' or \\boxed{} final answer, so common.parse_answer returns None and the official scorer counts it wrong. Our system picked 45 (genuinely wrong)."
+      }
+    },
+    {
+      "id": "gsm8k:c4b2d05db43fd445c39d02bf0522dc37d2f38fa09caadd817c7179ce5591c236",
+      "question": "After negotiating for the price of a phone, Karsyn bought a phone at 20% of the initial price. If the phone's initial price was $600, calculate how much she paid after negotiating.",
+      "reference_answer": "480",
+      "candidate_answers": [
+        "720",
+        "720",
+        "120",
+        "480"
+      ],
+      "correct_candidates": [
+        3
+      ],
+      "judge_choice": 2,
+      "judge_own_answer": "120",
+      "ours_choice": 1,
+      "judge_first_errors": {
+        "0": "Step 2 incorrectly adds $120 to the initial price; $120 is already the amount paid.",
+        "1": "Step 2 incorrectly adds $600 to $120; the amount paid is simply 20% of $600.",
+        "2": null,
+        "3": "The opening statement misreads '20% of the initial price' as '20% off' the initial price."
+      },
+      "review": {
+        "category": "reference_or_question_ambiguity",
+        "note": "'bought a phone at 20% of the initial price' literally gives 0.2 x 600 = 120 (judge); the reference 480 reads it as 20% off."
+      }
+    },
+    {
+      "id": "gsm8k:23362ebace3d656a190008ccbe883f572f150f9ba5f32f98336611e050abb075",
+      "question": "A plumber is trying to decide which of three different jobs he should take to make the most money.  The first job involves fixing three toilets and three sinks at an apartment complex.  The second involves two toilets and five sinks at a different apartment complex.  The third involves fixing one toilet, two showers and three sinks at a third apartment complex.  If the plumber charges $30 to fix a sink, $40 to fix a shower and $50 to fix a toilet, what is the most money the plumber can earn if he can only choose one of these three jobs?",
+      "reference_answer": "250",
+      "candidate_answers": [
+        "250",
+        "3",
+        null,
+        "360"
+      ],
+      "correct_candidates": [
+        0
+      ],
+      "judge_choice": 1,
+      "judge_own_answer": "250",
+      "ours_choice": 1,
+      "judge_first_errors": {
+        "0": null,
+        "1": null,
+        "2": "For Job 1, 30 × 3 + 50 × 3 equals 240, not 150.",
+        "3": "The Job 1 calculation includes three showers, but Job 1 has no showers."
+      },
+      "review": {
+        "category": "parser_artifact",
+        "note": "Candidate 1 ends with \\boxed{250} (correct), but contains a markdown header '#### **Job 3**'; common.parse_answer takes the text after the last '####' and reads 3. Judge and our system both picked it; the official label marks it wrong."
+      }
+    }
+  ],
+  "summary": {
+    "reference_or_question_ambiguity": 2,
+    "answer_format": 1,
+    "parser_artifact": 1,
+    "reviewed_by": "agent, 2026-10-19",
+    "genuine_judge_reasoning_errors": 0
+  }
+}

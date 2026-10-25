@@ -1,0 +1,282 @@
+{
+  "experiment": "EXP-B10",
+  "research_question": "RQ5",
+  "sklearn": "1.7.2",
+  "columns": [
+    "is_valid",
+    "cluster_ratio",
+    "is_unique_majority",
+    "is_tied_majority",
+    "num_equations",
+    "num_correct_equations",
+    "num_wrong_equations",
+    "has_arithmetic_error",
+    "candidate_number_count",
+    "question_condition_coverage",
+    "missing_condition_count",
+    "has_missing_condition",
+    "wrong_eq_diff_mean",
+    "wrong_eq_rank",
+    "condition_coverage_diff_mean",
+    "condition_coverage_rank"
+  ],
+  "tree_params": {
+    "max_iter": 100,
+    "max_depth": 5,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "random_state": 42
+  },
+  "train_questions": 2114,
+  "fit_seconds": 0.08599933295045048,
+  "train_feature_seconds": 1.6351295839995146,
+  "m03_reference": {
+    "val_hard": {
+      "acc": 0.828169014084507,
+      "correct": 294,
+      "total": 355
+    },
+    "val_all": {
+      "acc": 0.9235588972431078,
+      "correct": 737,
+      "total": 798
+    }
+  },
+  "m04_reference": {
+    "val_hard": {
+      "acc": 0.7352112676056338,
+      "correct": 261,
+      "total": 355
+    },
+    "val_all": {
+      "acc": 0.8822055137844611,
+      "correct": 704,
+      "total": 798
+    }
+  },
+  "gates": [
+    {
+      "name": "m03_only",
+      "threshold": null,
+      "priority": 0,
+      "val_hard": {
+        "acc": 0.828169014084507,
+        "correct": 294,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.9235588972431078,
+        "correct": 737,
+        "total": 798
+      },
+      "choice_histogram_val_all": [
+        106,
+        179,
+        245,
+        268
+      ]
+    },
+    {
+      "name": "m04_only",
+      "threshold": null,
+      "priority": 1,
+      "val_hard": {
+        "acc": 0.7352112676056338,
+        "correct": 261,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.8822055137844611,
+        "correct": 704,
+        "total": 798
+      },
+      "choice_histogram_val_all": [
+        221,
+        139,
+        261,
+        177
+      ]
+    },
+    {
+      "name": "higher_confidence",
+      "threshold": null,
+      "priority": 2,
+      "val_hard": {
+        "acc": 0.7859154929577464,
+        "correct": 279,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.9047619047619048,
+        "correct": 722,
+        "total": 798
+      },
+      "choice_histogram_val_all": [
+        101,
+        180,
+        245,
+        272
+      ]
+    },
+    {
+      "name": "m04_when_m03_below",
+      "threshold": 0.5,
+      "priority": 3,
+      "val_hard": {
+        "acc": 0.8169014084507042,
+        "correct": 290,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.918546365914787,
+        "correct": 733,
+        "total": 798
+      },
+      "choice_histogram_val_all": [
+        102,
+        177,
+        245,
+        274
+      ]
+    },
+    {
+      "name": "m04_when_m03_below",
+      "threshold": 0.6,
+      "priority": 4,
+      "val_hard": {
+        "acc": 0.7859154929577464,
+        "correct": 279,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.9047619047619048,
+        "correct": 722,
+        "total": 798
+      },
+      "choice_histogram_val_all": [
+        101,
+        176,
+        244,
+        277
+      ]
+    },
+    {
+      "name": "m04_when_m03_below",
+      "threshold": 0.7,
+      "priority": 5,
+      "val_hard": {
+        "acc": 0.7718309859154929,
+        "correct": 274,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.8984962406015038,
+        "correct": 717,
+        "total": 798
+      },
+      "choice_histogram_val_all": [
+        101,
+        180,
+        242,
+        275
+      ]
+    },
+    {
+      "name": "m04_when_m03_below",
+      "threshold": 0.8,
+      "priority": 6,
+      "val_hard": {
+        "acc": 0.7492957746478873,
+        "correct": 266,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.8884711779448622,
+        "correct": 709,
+        "total": 798
+      },
+      "choice_histogram_val_all": [
+        107,
+        175,
+        246,
+        270
+      ]
+    },
+    {
+      "name": "m04_when_m03_below",
+      "threshold": 0.9,
+      "priority": 7,
+      "val_hard": {
+        "acc": 0.7408450704225352,
+        "correct": 263,
+        "total": 355
+      },
+      "val_all": {
+        "acc": 0.8847117794486216,
+        "correct": 706,
+        "total": 798
+      },
+      "choice_histogram_val_all": [
+        110,
+        173,
+        249,
+        266
+      ]
+    }
+  ],
+  "selected": {
+    "name": "m03_only",
+    "threshold": null,
+    "priority": 0,
+    "val_hard": {
+      "acc": 0.828169014084507,
+      "correct": 294,
+      "total": 355
+    },
+    "val_all": {
+      "acc": 0.9235588972431078,
+      "correct": 737,
+      "total": 798
+    },
+    "choice_histogram_val_all": [
+      106,
+      179,
+      245,
+      268
+    ]
+  },
+  "official_validation_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "validation",
+    "correct": 737,
+    "n": 798,
+    "accuracy": 92.35588972431077,
+    "scoring_seconds": 0.02832458302145824
+  },
+  "disagreement_val_hard": {
+    "questions": 213,
+    "m03_correct": 174,
+    "m04_correct": 141,
+    "both_correct": 128,
+    "both_wrong": 26,
+    "only_m03": 46,
+    "only_m04": 13
+  },
+  "resources": {
+    "feature_seconds_val_all": 0.2806151669938117,
+    "m03_seconds_val_all": 0.04206108400830999,
+    "m04_seconds_val_all": 0.0023499579983763397,
+    "combined_seconds_val_all": 0.32502620900049806,
+    "gbdt_bytes": 196898,
+    "m03_uncompressed_bytes": 1064096,
+    "b09_config_bytes": 928,
+    "b10_config_bytes": 1088,
+    "fused_uncompressed_bytes": 1263010
+  },
+  "files": {
+    "gbdt": "development/runs/exp_b10/gbdt.pkl",
+    "config": "development/runs/exp_b10/config.json",
+    "predictions": "development/runs/predictions/EXP-B10_fusion_predictions.json",
+    "score": "development/runs/scores/EXP-B10_fusion_score.json"
+  }
+}

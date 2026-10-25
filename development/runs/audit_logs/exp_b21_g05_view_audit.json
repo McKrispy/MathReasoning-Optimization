@@ -1,0 +1,211 @@
+{
+  "experiment": "EXP-B21",
+  "description": "G05 Fine-Grained Symbolic View Integration & Stacking Ablation",
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "timestamp": "2026-10-24T12:35:40Z",
+  "environment": {
+    "python": "3.12.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.7.1+cu126",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.1",
+    "device_train": "cpu",
+    "cuda": "12.6",
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": false,
+    "conda_env": "base",
+    "lightgbm": "4.7.0"
+  },
+  "model_id": "MOD-M07a",
+  "columns": [
+    "is_valid",
+    "cluster_ratio",
+    "is_unique_majority",
+    "is_tied_majority",
+    "num_equations",
+    "num_correct_equations",
+    "num_wrong_equations",
+    "has_arithmetic_error",
+    "candidate_number_count",
+    "question_condition_coverage",
+    "missing_condition_count",
+    "has_missing_condition",
+    "wrong_eq_diff_mean",
+    "wrong_eq_rank",
+    "condition_coverage_diff_mean",
+    "condition_coverage_rank",
+    "final_eq_matches_answer",
+    "equation_chain_continuity",
+    "has_parser_heading_conflict",
+    "cluster_avg_correct_eq_ratio",
+    "cluster_max_condition_coverage",
+    "cluster_min_wrong_eq"
+  ],
+  "column_count": 22,
+  "mod_m07a_coefficients": {
+    "is_valid": 1.0163465738296509,
+    "cluster_ratio": 1.0671563148498535,
+    "is_unique_majority": 0.44693443179130554,
+    "is_tied_majority": 0.16178108751773834,
+    "num_equations": 0.1488664448261261,
+    "num_correct_equations": 0.13994723558425903,
+    "num_wrong_equations": 0.030574863776564598,
+    "has_arithmetic_error": -0.12303624302148819,
+    "candidate_number_count": 0.2171238511800766,
+    "question_condition_coverage": -0.3897085189819336,
+    "missing_condition_count": 0.009132604114711285,
+    "has_missing_condition": -0.28873127698898315,
+    "wrong_eq_diff_mean": 0.1513531357049942,
+    "wrong_eq_rank": -0.017081821337342262,
+    "condition_coverage_diff_mean": 0.2178918719291687,
+    "condition_coverage_rank": 0.031233081594109535,
+    "final_eq_matches_answer": -0.09000009298324585,
+    "equation_chain_continuity": 0.0003123517381027341,
+    "has_parser_heading_conflict": -0.21608132123947144,
+    "cluster_avg_correct_eq_ratio": -0.20883731544017792,
+    "cluster_max_condition_coverage": 0.17805500328540802,
+    "cluster_min_wrong_eq": -0.1403990089893341
+  },
+  "mod_m07a_intercept": -0.19545617699623108,
+  "mod_m07a_standalone": {
+    "argmax": {
+      "val_all": {
+        "correct": 705,
+        "total": 798,
+        "accuracy": 88.34586466165413
+      },
+      "val_easy": {
+        "correct": 443,
+        "total": 443,
+        "accuracy": 100.0
+      },
+      "val_hard": {
+        "correct": 262,
+        "total": 355,
+        "accuracy": 73.80281690140845
+      }
+    },
+    "softmax_t05": {
+      "val_all": {
+        "correct": 705,
+        "total": 798,
+        "accuracy": 88.34586466165413
+      },
+      "val_easy": {
+        "correct": 443,
+        "total": 443,
+        "accuracy": 100.0
+      },
+      "val_hard": {
+        "correct": 262,
+        "total": 355,
+        "accuracy": 73.80281690140845
+      }
+    }
+  },
+  "training_oof_optimization": {
+    "historical_oof_weights": {
+      "arm_a": 0.6511475692497578,
+      "arm_b": 0.27646265357730565,
+      "tree_r5": 0.0723897771729366,
+      "linear_g05": 3.2526065174565133e-19
+    },
+    "strict_oof_weights": {
+      "arm_a": 0.640215473456259,
+      "arm_b": 0.28882685666363805,
+      "tree_r5": 0.07095766988010303,
+      "linear_g05": 2.7105054413111807e-20
+    }
+  },
+  "paired_seed_evaluation": {
+    "seed_42": {
+      "3view_baseline": {
+        "val_all": 739,
+        "val_hard": 296
+      },
+      "4view_g05": {
+        "val_all": 739,
+        "val_hard": 296
+      },
+      "delta_hard": 0,
+      "delta_all": 0
+    },
+    "seed_43": {
+      "3view_baseline": {
+        "val_all": 739,
+        "val_hard": 296
+      },
+      "4view_g05": {
+        "val_all": 739,
+        "val_hard": 296
+      },
+      "delta_hard": 0,
+      "delta_all": 0
+    },
+    "seed_44": {
+      "3view_baseline": {
+        "val_all": 740,
+        "val_hard": 297
+      },
+      "4view_g05": {
+        "val_all": 740,
+        "val_hard": 297
+      },
+      "delta_hard": 0,
+      "delta_all": 0
+    }
+  },
+  "final_ensemble_evaluation": {
+    "3view_b17_baseline": {
+      "val_all": 743,
+      "val_hard": 300,
+      "accuracy_all": 93.10776942355889,
+      "accuracy_hard": 84.50704225352112
+    },
+    "4view_g05_hist_weights": {
+      "val_all": 743,
+      "val_hard": 300,
+      "accuracy_all": 93.10776942355889,
+      "accuracy_hard": 84.50704225352112
+    },
+    "4view_g05_strict_weights": {
+      "val_all": 738,
+      "val_hard": 295,
+      "accuracy_all": 92.4812030075188,
+      "accuracy_hard": 83.09859154929578
+    }
+  },
+  "retention_gate": {
+    "rule1_paired_hard_delta_ge_3_55": {
+      "value": 0.0,
+      "passed": false
+    },
+    "rule2_positive_hard_count_ge_2": {
+      "value": 0,
+      "passed": false
+    },
+    "rule3_paired_all_delta_ge_0": {
+      "value": 0.0,
+      "passed": true
+    },
+    "rule4_ensemble_hard_gain_ge_4": {
+      "value": 0,
+      "passed": false
+    },
+    "rule5_ensemble_all_gain_ge_0": {
+      "value": 0,
+      "passed": true
+    },
+    "verdict": "REJECTED"
+  },
+  "linear_view_asset_bytes": 536,
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "validation",
+    "correct": 743,
+    "n": 798,
+    "accuracy": 93.10776942355889,
+    "scoring_seconds": 0.034999200001038844
+  },
+  "execution_seconds": 15.799031600003218
+}

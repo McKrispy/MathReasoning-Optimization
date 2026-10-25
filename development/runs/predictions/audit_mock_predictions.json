@@ -1,0 +1,39 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "split": "audit",
+  "ids": [
+    "audit_mock_0000",
+    "audit_mock_0001",
+    "audit_mock_0002",
+    "audit_mock_0003",
+    "audit_mock_0004",
+    "audit_mock_0005",
+    "audit_mock_0006",
+    "audit_mock_0007",
+    "audit_mock_0008",
+    "audit_mock_0009",
+    "audit_mock_0010",
+    "audit_mock_0011",
+    "audit_mock_0012",
+    "audit_mock_0013",
+    "audit_mock_0014"
+  ],
+  "selected": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+  ],
+  "prediction_seconds": 1.3342723000023398
+}

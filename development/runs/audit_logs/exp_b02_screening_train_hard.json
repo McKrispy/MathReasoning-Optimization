@@ -1,0 +1,1147 @@
+{
+  "dataset": "train_hard",
+  "num_questions": 2114,
+  "num_candidate_rows": 8456,
+  "total_feature_dimensions": 56,
+  "question_level_constants": [
+    {
+      "index": 5,
+      "name": "num_distinct_answers",
+      "family": "FEAT-G01",
+      "global_mean": 2.446546792984009,
+      "global_std": 0.6372465491294861
+    },
+    {
+      "index": 32,
+      "name": "question_number_count",
+      "family": "FEAT-G03",
+      "global_mean": 3.115894079208374,
+      "global_std": 1.4169880151748657
+    },
+    {
+      "index": 49,
+      "name": "has_diff_answer_other",
+      "family": "FEAT-G04",
+      "global_mean": 1.0,
+      "global_std": 0.0
+    }
+  ],
+  "near_constants": [
+    {
+      "index": 8,
+      "name": "is_negative",
+      "family": "FEAT-G01",
+      "global_mean": 0.0068590352311730385,
+      "global_std": 0.08253476023674011,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.006859035004730369,
+      "mean_within_std": 0.008856400847434998,
+      "reason": "Extremely rare trigger (non-zero ratio 0.69% < 1.0%)"
+    },
+    {
+      "index": 17,
+      "name": "doubt_count",
+      "family": "FEAT-G02",
+      "global_mean": 0.014545884914696217,
+      "global_std": 0.19490033388137817,
+      "min": 0.0,
+      "max": 8.0,
+      "nonzero_ratio": 0.008869441816461683,
+      "mean_within_std": 0.018918121233582497,
+      "reason": "Extremely rare trigger (non-zero ratio 0.89% < 1.0%)"
+    },
+    {
+      "index": 41,
+      "name": "sim_centroid",
+      "family": "FEAT-G04",
+      "global_mean": 0.9933732151985168,
+      "global_std": 0.005844819359481335,
+      "min": 0.909336268901825,
+      "max": 0.9998013377189636,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.0031695545185357332,
+      "reason": "Tiny standard deviation (0.00584 < 0.01)"
+    },
+    {
+      "index": 44,
+      "name": "sim_other_max",
+      "family": "FEAT-G04",
+      "global_mean": 0.9899398684501648,
+      "global_std": 0.008725970983505249,
+      "min": 0.8554137945175171,
+      "max": 1.0,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.004772808402776718,
+      "reason": "Tiny standard deviation (0.00873 < 0.01)"
+    },
+    {
+      "index": 46,
+      "name": "sim_other_std",
+      "family": "FEAT-G04",
+      "global_mean": 0.007008532993495464,
+      "global_std": 0.006759383250027895,
+      "min": 2.7382913685869426e-05,
+      "max": 0.08127117156982422,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.002589757554233074,
+      "reason": "Tiny standard deviation (0.00676 < 0.01)"
+    },
+    {
+      "index": 52,
+      "name": "centroid_sim_diff_mean",
+      "family": "FEAT-G04",
+      "global_mean": -6.132455099283618e-10,
+      "global_std": 0.004342092666774988,
+      "min": -0.05819433927536011,
+      "max": 0.025882422924041748,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.0031695545185357332,
+      "reason": "Tiny standard deviation (0.00434 < 0.01)"
+    }
+  ],
+  "collinear_pairs": [
+    {
+      "col1_idx": 1,
+      "col1_name": "cluster_count",
+      "col1_family": "FEAT-G01",
+      "col2_idx": 2,
+      "col2_name": "cluster_ratio",
+      "col2_family": "FEAT-G01",
+      "r": 0.9809473375566163
+    },
+    {
+      "col1_idx": 11,
+      "col1_name": "char_count",
+      "col1_family": "FEAT-G02",
+      "col2_idx": 12,
+      "col2_name": "word_count",
+      "col2_family": "FEAT-G02",
+      "r": 0.9743203649914031
+    },
+    {
+      "col1_idx": 20,
+      "col1_name": "char_count_diff_mean",
+      "col1_family": "FEAT-G02",
+      "col2_idx": 22,
+      "col2_name": "word_count_diff_mean",
+      "col2_family": "FEAT-G02",
+      "r": 0.969687736069955
+    },
+    {
+      "col1_idx": 30,
+      "col1_name": "correct_equation_ratio",
+      "col1_family": "FEAT-G03",
+      "col2_idx": 31,
+      "col2_name": "has_arithmetic_error",
+      "col2_family": "FEAT-G03",
+      "r": -0.9086753571820039
+    },
+    {
+      "col1_idx": 41,
+      "col1_name": "sim_centroid",
+      "col1_family": "FEAT-G04",
+      "col2_idx": 42,
+      "col2_name": "dist_centroid",
+      "col2_family": "FEAT-G04",
+      "r": -0.9577093297007628
+    },
+    {
+      "col1_idx": 41,
+      "col1_name": "sim_centroid",
+      "col1_family": "FEAT-G04",
+      "col2_idx": 43,
+      "col2_name": "sim_other_mean",
+      "col2_family": "FEAT-G04",
+      "r": 0.9452120306984904
+    },
+    {
+      "col1_idx": 42,
+      "col1_name": "dist_centroid",
+      "col1_family": "FEAT-G04",
+      "col2_idx": 43,
+      "col2_name": "sim_other_mean",
+      "col2_family": "FEAT-G04",
+      "r": -0.9291534800781969
+    },
+    {
+      "col1_idx": 43,
+      "col1_name": "sim_other_mean",
+      "col1_family": "FEAT-G04",
+      "col2_idx": 45,
+      "col2_name": "sim_other_min",
+      "col2_family": "FEAT-G04",
+      "r": 0.9189179647037058
+    },
+    {
+      "col1_idx": 47,
+      "col1_name": "has_same_answer_other",
+      "col1_family": "FEAT-G04",
+      "col2_idx": 48,
+      "col2_name": "sim_same_answer_mean",
+      "col2_family": "FEAT-G04",
+      "r": 0.9998397720138875
+    },
+    {
+      "col1_idx": 47,
+      "col1_name": "has_same_answer_other",
+      "col1_family": "FEAT-G04",
+      "col2_idx": 51,
+      "col2_name": "sim_answer_contrast",
+      "col2_family": "FEAT-G04",
+      "r": 0.9995588469360707
+    },
+    {
+      "col1_idx": 48,
+      "col1_name": "sim_same_answer_mean",
+      "col1_family": "FEAT-G04",
+      "col2_idx": 51,
+      "col2_name": "sim_answer_contrast",
+      "col2_family": "FEAT-G04",
+      "r": 0.9995706833783464
+    },
+    {
+      "col1_idx": 52,
+      "col1_name": "centroid_sim_diff_mean",
+      "col1_family": "FEAT-G04",
+      "col2_idx": 54,
+      "col2_name": "dist_centroid_diff_mean",
+      "col2_family": "FEAT-G04",
+      "r": -0.949962005639417
+    },
+    {
+      "col1_idx": 53,
+      "col1_name": "centroid_sim_rank",
+      "col1_family": "FEAT-G04",
+      "col2_idx": 55,
+      "col2_name": "dist_centroid_rank",
+      "col2_family": "FEAT-G04",
+      "r": -0.9999053926206244
+    }
+  ],
+  "collinear_clusters": [
+    {
+      "cluster_indices": [
+        1,
+        2
+      ],
+      "cluster_features": [
+        "cluster_count",
+        "cluster_ratio"
+      ],
+      "cluster_families": [
+        "FEAT-G01",
+        "FEAT-G01"
+      ],
+      "representative": "cluster_ratio",
+      "reason": "Normalized ratio handles variable valid answer counts across questions better than raw count"
+    },
+    {
+      "cluster_indices": [
+        11,
+        12
+      ],
+      "cluster_features": [
+        "char_count",
+        "word_count"
+      ],
+      "cluster_families": [
+        "FEAT-G02",
+        "FEAT-G02"
+      ],
+      "representative": "char_count",
+      "reason": "Direct character length offers finest-grained measurement without tokenization noise"
+    },
+    {
+      "cluster_indices": [
+        20,
+        22
+      ],
+      "cluster_features": [
+        "char_count_diff_mean",
+        "word_count_diff_mean"
+      ],
+      "cluster_families": [
+        "FEAT-G02",
+        "FEAT-G02"
+      ],
+      "representative": "char_count_diff_mean",
+      "reason": "Continuous zero-mean length deviation within question group"
+    },
+    {
+      "cluster_indices": [
+        30,
+        31
+      ],
+      "cluster_features": [
+        "correct_equation_ratio",
+        "has_arithmetic_error"
+      ],
+      "cluster_families": [
+        "FEAT-G03",
+        "FEAT-G03"
+      ],
+      "representative": "has_arithmetic_error",
+      "reason": "Highest within-problem discrimination (mean within std = 0.2110)"
+    },
+    {
+      "cluster_indices": [
+        41,
+        42,
+        43,
+        45
+      ],
+      "cluster_features": [
+        "sim_centroid",
+        "dist_centroid",
+        "sim_other_mean",
+        "sim_other_min"
+      ],
+      "cluster_families": [
+        "FEAT-G04",
+        "FEAT-G04",
+        "FEAT-G04",
+        "FEAT-G04"
+      ],
+      "representative": "sim_other_mean",
+      "reason": "Direct pairwise cosine similarity to the other 3 candidate representations"
+    },
+    {
+      "cluster_indices": [
+        47,
+        48,
+        51
+      ],
+      "cluster_features": [
+        "has_same_answer_other",
+        "sim_same_answer_mean",
+        "sim_answer_contrast"
+      ],
+      "cluster_families": [
+        "FEAT-G04",
+        "FEAT-G04",
+        "FEAT-G04"
+      ],
+      "representative": "has_same_answer_other",
+      "reason": "Highest within-problem discrimination (mean within std = 0.3431)"
+    },
+    {
+      "cluster_indices": [
+        52,
+        54
+      ],
+      "cluster_features": [
+        "centroid_sim_diff_mean",
+        "dist_centroid_diff_mean"
+      ],
+      "cluster_families": [
+        "FEAT-G04",
+        "FEAT-G04"
+      ],
+      "representative": "centroid_sim_diff_mean",
+      "reason": "Cosine similarity deviation has direct linear correlation with angle"
+    },
+    {
+      "cluster_indices": [
+        53,
+        55
+      ],
+      "cluster_features": [
+        "centroid_sim_rank",
+        "dist_centroid_rank"
+      ],
+      "cluster_families": [
+        "FEAT-G04",
+        "FEAT-G04"
+      ],
+      "representative": "centroid_sim_rank",
+      "reason": "Highest within-problem discrimination (mean within std = 1.1180)"
+    }
+  ],
+  "column_stats": [
+    {
+      "index": 0,
+      "name": "is_valid",
+      "family": "FEAT-G01",
+      "global_mean": 0.9557710289955139,
+      "global_std": 0.20560340583324432,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.9557710501419111,
+      "mean_within_std": 0.07020048052072525,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 1,
+      "name": "cluster_count",
+      "family": "FEAT-G01",
+      "global_mean": 1.853358507156372,
+      "global_std": 0.9173614978790283,
+      "min": 0.0,
+      "max": 3.0,
+      "nonzero_ratio": 0.9557710501419111,
+      "mean_within_std": 0.5852938890457153,
+      "max_within_std": 0.8660253882408142,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 2,
+      "name": "cluster_ratio",
+      "family": "FEAT-G01",
+      "global_mean": 0.47810235619544983,
+      "global_std": 0.2280307561159134,
+      "min": 0.0,
+      "max": 0.75,
+      "nonzero_ratio": 0.9557710501419111,
+      "mean_within_std": 0.15656782686710358,
+      "max_within_std": 0.2763853967189789,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 3,
+      "name": "is_unique_majority",
+      "family": "FEAT-G01",
+      "global_mean": 0.47575685381889343,
+      "global_std": 0.4994118809700012,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.47575685903500475,
+      "mean_within_std": 0.34305405616760254,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 4,
+      "name": "is_tied_majority",
+      "family": "FEAT-G01",
+      "global_mean": 0.23580889403820038,
+      "global_std": 0.4245033264160156,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.2358088930936613,
+      "mean_within_std": 0.031692251563072205,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 5,
+      "name": "num_distinct_answers",
+      "family": "FEAT-G01",
+      "global_mean": 2.446546792984009,
+      "global_std": 0.6372465491294861,
+      "min": 2.0,
+      "max": 4.0,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.0,
+      "max_within_std": 0.0,
+      "is_question_constant": true,
+      "is_near_constant": false
+    },
+    {
+      "index": 6,
+      "name": "log_magnitude",
+      "family": "FEAT-G01",
+      "global_mean": 3.9524030685424805,
+      "global_std": 2.372626543045044,
+      "min": 0.0,
+      "max": 16.11809539794922,
+      "nonzero_ratio": 0.9441816461684012,
+      "mean_within_std": 0.756053626537323,
+      "max_within_std": 6.185809135437012,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 7,
+      "name": "is_integer",
+      "family": "FEAT-G01",
+      "global_mean": 0.916863739490509,
+      "global_std": 0.27608802914619446,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.9168637653736992,
+      "mean_within_std": 0.11363602429628372,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 8,
+      "name": "is_negative",
+      "family": "FEAT-G01",
+      "global_mean": 0.0068590352311730385,
+      "global_std": 0.08253476023674011,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.006859035004730369,
+      "mean_within_std": 0.008856400847434998,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": true
+    },
+    {
+      "index": 9,
+      "name": "is_zero",
+      "family": "FEAT-G01",
+      "global_mean": 0.011589404195547104,
+      "global_std": 0.10702844709157944,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.011589403973509934,
+      "mean_within_std": 0.01601077802479267,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 10,
+      "name": "appears_in_question",
+      "family": "FEAT-G01",
+      "global_mean": 0.06492431461811066,
+      "global_std": 0.24639226496219635,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.06492431409649953,
+      "mean_within_std": 0.06973426789045334,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 11,
+      "name": "char_count",
+      "family": "FEAT-G02",
+      "global_mean": 533.7733154296875,
+      "global_std": 219.25709533691406,
+      "min": 97.0,
+      "max": 1519.0,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 90.21491241455078,
+      "max_within_std": 407.9169616699219,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 12,
+      "name": "word_count",
+      "family": "FEAT-G02",
+      "global_mean": 104.82331848144531,
+      "global_std": 43.566246032714844,
+      "min": 18.0,
+      "max": 301.0,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 17.615243911743164,
+      "max_within_std": 83.63424682617188,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 13,
+      "name": "line_count",
+      "family": "FEAT-G02",
+      "global_mean": 26.468780517578125,
+      "global_std": 13.15851879119873,
+      "min": 3.0,
+      "max": 79.0,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 6.015217304229736,
+      "max_within_std": 22.748626708984375,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 14,
+      "name": "newline_ratio",
+      "family": "FEAT-G02",
+      "global_mean": 0.04695656895637512,
+      "global_std": 0.013177420943975449,
+      "min": 0.011834319680929184,
+      "max": 0.10357142984867096,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.0075987414456903934,
+      "max_within_std": 0.025496484711766243,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 15,
+      "name": "digit_ratio",
+      "family": "FEAT-G02",
+      "global_mean": 0.07238899171352386,
+      "global_std": 0.030668241903185844,
+      "min": 0.006465517450124025,
+      "max": 0.2488262951374054,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.010028354823589325,
+      "max_within_std": 0.04848037287592888,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 16,
+      "name": "math_symbol_density",
+      "family": "FEAT-G02",
+      "global_mean": 0.08136996626853943,
+      "global_std": 0.026135195046663284,
+      "min": 0.0058139534667134285,
+      "max": 0.20592020452022552,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.015614200383424759,
+      "max_within_std": 0.057294946163892746,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 17,
+      "name": "doubt_count",
+      "family": "FEAT-G02",
+      "global_mean": 0.014545884914696217,
+      "global_std": 0.19490033388137817,
+      "min": 0.0,
+      "max": 8.0,
+      "nonzero_ratio": 0.008869441816461683,
+      "mean_within_std": 0.018918121233582497,
+      "max_within_std": 1.299038052558899,
+      "is_question_constant": false,
+      "is_near_constant": true
+    },
+    {
+      "index": 18,
+      "name": "confidence_count",
+      "family": "FEAT-G02",
+      "global_mean": 0.8054635524749756,
+      "global_std": 1.0074807405471802,
+      "min": 0.0,
+      "max": 9.0,
+      "nonzero_ratio": 0.5101702932828761,
+      "mean_within_std": 0.5525571703910828,
+      "max_within_std": 3.535533905029297,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 19,
+      "name": "step_count",
+      "family": "FEAT-G02",
+      "global_mean": 2.0780510902404785,
+      "global_std": 2.330195665359497,
+      "min": 0.0,
+      "max": 26.0,
+      "nonzero_ratio": 0.6097445600756859,
+      "mean_within_std": 1.0102097988128662,
+      "max_within_std": 7.77817440032959,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 20,
+      "name": "char_count_diff_mean",
+      "family": "FEAT-G02",
+      "global_mean": 0.0,
+      "global_std": 107.54071044921875,
+      "min": -522.25,
+      "max": 678.5,
+      "nonzero_ratio": 0.9985808893093662,
+      "mean_within_std": 90.21491241455078,
+      "max_within_std": 407.9169616699219,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 21,
+      "name": "char_count_rank",
+      "family": "FEAT-G02",
+      "global_mean": 1.5,
+      "global_std": 1.1180340051651,
+      "min": 0.0,
+      "max": 3.0,
+      "nonzero_ratio": 0.75,
+      "mean_within_std": 1.1180341243743896,
+      "max_within_std": 1.1180340051651,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 22,
+      "name": "word_count_diff_mean",
+      "family": "FEAT-G02",
+      "global_mean": 0.0,
+      "global_std": 21.174854278564453,
+      "min": -100.25,
+      "max": 143.25,
+      "nonzero_ratio": 0.9925496688741722,
+      "mean_within_std": 17.615243911743164,
+      "max_within_std": 83.63424682617188,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 23,
+      "name": "word_count_rank",
+      "family": "FEAT-G02",
+      "global_mean": 1.5,
+      "global_std": 1.1180340051651,
+      "min": 0.0,
+      "max": 3.0,
+      "nonzero_ratio": 0.75,
+      "mean_within_std": 1.1180341243743896,
+      "max_within_std": 1.1180340051651,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 24,
+      "name": "doubt_diff_mean",
+      "family": "FEAT-G02",
+      "global_mean": 0.0,
+      "global_std": 0.11900227516889572,
+      "min": -1.25,
+      "max": 2.25,
+      "nonzero_ratio": 0.030274361400189215,
+      "mean_within_std": 0.018918121233582497,
+      "max_within_std": 1.299038052558899,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 25,
+      "name": "confidence_diff_mean",
+      "family": "FEAT-G02",
+      "global_mean": 0.0,
+      "global_std": 0.7033126950263977,
+      "min": -4.0,
+      "max": 6.0,
+      "nonzero_ratio": 0.739356669820246,
+      "mean_within_std": 0.5525571703910828,
+      "max_within_std": 3.535533905029297,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 26,
+      "name": "math_density_diff_mean",
+      "family": "FEAT-G02",
+      "global_mean": 1.024278578620752e-10,
+      "global_std": 0.01772484742105007,
+      "min": -0.07385362684726715,
+      "max": 0.08898954093456268,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.015614202246069908,
+      "max_within_std": 0.057294946163892746,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 27,
+      "name": "num_equations",
+      "family": "FEAT-G03",
+      "global_mean": 2.172776699066162,
+      "global_std": 1.5837757587432861,
+      "min": 0.0,
+      "max": 11.0,
+      "nonzero_ratio": 0.8396404919583728,
+      "mean_within_std": 0.8632622957229614,
+      "max_within_std": 4.0,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 28,
+      "name": "num_correct_equations",
+      "family": "FEAT-G03",
+      "global_mean": 1.7524834871292114,
+      "global_std": 1.4862563610076904,
+      "min": 0.0,
+      "max": 9.0,
+      "nonzero_ratio": 0.7617076631977294,
+      "mean_within_std": 0.8334240317344666,
+      "max_within_std": 4.0,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 29,
+      "name": "num_wrong_equations",
+      "family": "FEAT-G03",
+      "global_mean": 0.42029327154159546,
+      "global_std": 0.9084303379058838,
+      "min": 0.0,
+      "max": 8.0,
+      "nonzero_ratio": 0.22906811731315044,
+      "mean_within_std": 0.40747568011283875,
+      "max_within_std": 3.269174098968506,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 30,
+      "name": "correct_equation_ratio",
+      "family": "FEAT-G03",
+      "global_mean": 0.8460472226142883,
+      "global_std": 0.31081679463386536,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.9220671712393567,
+      "mean_within_std": 0.14872078597545624,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 31,
+      "name": "has_arithmetic_error",
+      "family": "FEAT-G03",
+      "global_mean": 0.2290681153535843,
+      "global_std": 0.4202331602573395,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.22906811731315044,
+      "mean_within_std": 0.2110237032175064,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 32,
+      "name": "question_number_count",
+      "family": "FEAT-G03",
+      "global_mean": 3.115894079208374,
+      "global_std": 1.4169880151748657,
+      "min": 0.0,
+      "max": 11.0,
+      "nonzero_ratio": 0.978713339640492,
+      "mean_within_std": 0.0,
+      "max_within_std": 0.0,
+      "is_question_constant": true,
+      "is_near_constant": false
+    },
+    {
+      "index": 33,
+      "name": "candidate_number_count",
+      "family": "FEAT-G03",
+      "global_mean": 8.087748527526855,
+      "global_std": 2.728508710861206,
+      "min": 1.0,
+      "max": 22.0,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.9934242367744446,
+      "max_within_std": 5.5452680587768555,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 34,
+      "name": "question_condition_coverage",
+      "family": "FEAT-G03",
+      "global_mean": 0.9735891819000244,
+      "global_std": 0.10259287059307098,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.9984626300851467,
+      "mean_within_std": 0.0222731102257967,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 35,
+      "name": "missing_condition_count",
+      "family": "FEAT-G03",
+      "global_mean": 0.09567171335220337,
+      "global_std": 0.37696218490600586,
+      "min": 0.0,
+      "max": 7.0,
+      "nonzero_ratio": 0.07651371807000946,
+      "mean_within_std": 0.07871198654174805,
+      "max_within_std": 2.1650636196136475,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 36,
+      "name": "has_missing_condition",
+      "family": "FEAT-G03",
+      "global_mean": 0.07651371508836746,
+      "global_std": 0.265818327665329,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.07651371807000946,
+      "mean_within_std": 0.06477192789316177,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 37,
+      "name": "wrong_eq_diff_mean",
+      "family": "FEAT-G03",
+      "global_mean": 0.0,
+      "global_std": 0.6417919397354126,
+      "min": -3.5,
+      "max": 4.5,
+      "nonzero_ratio": 0.4916035950804163,
+      "mean_within_std": 0.40747568011283875,
+      "max_within_std": 3.269174098968506,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 38,
+      "name": "wrong_eq_rank",
+      "family": "FEAT-G03",
+      "global_mean": 1.5,
+      "global_std": 1.1180340051651,
+      "min": 0.0,
+      "max": 3.0,
+      "nonzero_ratio": 0.75,
+      "mean_within_std": 1.1180341243743896,
+      "max_within_std": 1.1180340051651,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 39,
+      "name": "condition_coverage_diff_mean",
+      "family": "FEAT-G03",
+      "global_mean": -2.502323626085712e-10,
+      "global_std": 0.06256924569606781,
+      "min": -0.75,
+      "max": 0.5625,
+      "nonzero_ratio": 0.1491248817407758,
+      "mean_within_std": 0.02227310836315155,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 40,
+      "name": "condition_coverage_rank",
+      "family": "FEAT-G03",
+      "global_mean": 1.5,
+      "global_std": 1.1180340051651,
+      "min": 0.0,
+      "max": 3.0,
+      "nonzero_ratio": 0.75,
+      "mean_within_std": 1.1180341243743896,
+      "max_within_std": 1.1180340051651,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 41,
+      "name": "sim_centroid",
+      "family": "FEAT-G04",
+      "global_mean": 0.9933732151985168,
+      "global_std": 0.005844819359481335,
+      "min": 0.909336268901825,
+      "max": 0.9998013377189636,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.0031695545185357332,
+      "max_within_std": 0.033774372190237045,
+      "is_question_constant": false,
+      "is_near_constant": true
+    },
+    {
+      "index": 42,
+      "name": "dist_centroid",
+      "family": "FEAT-G04",
+      "global_mean": 0.10721524059772491,
+      "global_std": 0.041222505271434784,
+      "min": 0.019936908036470413,
+      "max": 0.4201117753982544,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.024947112426161766,
+      "max_within_std": 0.11404380947351456,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 43,
+      "name": "sim_other_mean",
+      "family": "FEAT-G04",
+      "global_mean": 0.9824074506759644,
+      "global_std": 0.011797720566391945,
+      "min": 0.8397478461265564,
+      "max": 0.9993950724601746,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.004185470752418041,
+      "max_within_std": 0.04357028380036354,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 44,
+      "name": "sim_other_max",
+      "family": "FEAT-G04",
+      "global_mean": 0.9899398684501648,
+      "global_std": 0.008725970983505249,
+      "min": 0.8554137945175171,
+      "max": 1.0,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.004772808402776718,
+      "max_within_std": 0.05946320667862892,
+      "is_question_constant": false,
+      "is_near_constant": true
+    },
+    {
+      "index": 45,
+      "name": "sim_other_min",
+      "family": "FEAT-G04",
+      "global_mean": 0.9737351536750793,
+      "global_std": 0.018497586250305176,
+      "min": 0.7968894243240356,
+      "max": 0.999279797077179,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.004558299668133259,
+      "max_within_std": 0.04650067910552025,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 46,
+      "name": "sim_other_std",
+      "family": "FEAT-G04",
+      "global_mean": 0.007008532993495464,
+      "global_std": 0.006759383250027895,
+      "min": 2.7382913685869426e-05,
+      "max": 0.08127117156982422,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.002589757554233074,
+      "max_within_std": 0.024685008451342583,
+      "is_question_constant": false,
+      "is_near_constant": true
+    },
+    {
+      "index": 47,
+      "name": "has_same_answer_other",
+      "family": "FEAT-G04",
+      "global_mean": 0.5836092829704285,
+      "global_std": 0.4929599165916443,
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero_ratio": 0.5836092715231788,
+      "mean_within_std": 0.34305405616760254,
+      "max_within_std": 0.5,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 48,
+      "name": "sim_same_answer_mean",
+      "family": "FEAT-G04",
+      "global_mean": 0.5755446553230286,
+      "global_std": 0.4862258732318878,
+      "min": 0.0,
+      "max": 0.999897301197052,
+      "nonzero_ratio": 0.5836092715231788,
+      "mean_within_std": 0.33899542689323425,
+      "max_within_std": 0.4998581111431122,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 49,
+      "name": "has_diff_answer_other",
+      "family": "FEAT-G04",
+      "global_mean": 1.0,
+      "global_std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.0,
+      "max_within_std": 0.0,
+      "is_question_constant": true,
+      "is_near_constant": false
+    },
+    {
+      "index": 50,
+      "name": "sim_diff_answer_mean",
+      "family": "FEAT-G04",
+      "global_mean": 0.9808207750320435,
+      "global_std": 0.0142477722838521,
+      "min": 0.7968894243240356,
+      "max": 0.9996308088302612,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.004776212852448225,
+      "max_within_std": 0.06937283277511597,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 51,
+      "name": "sim_answer_contrast",
+      "family": "FEAT-G04",
+      "global_mean": -0.40527603030204773,
+      "global_std": 0.48623690009117126,
+      "min": -0.9993740916252136,
+      "max": 0.17225104570388794,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.3398597538471222,
+      "max_within_std": 0.5068992972373962,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 52,
+      "name": "centroid_sim_diff_mean",
+      "family": "FEAT-G04",
+      "global_mean": -6.132455099283618e-10,
+      "global_std": 0.004342092666774988,
+      "min": -0.05819433927536011,
+      "max": 0.025882422924041748,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.0031695545185357332,
+      "max_within_std": 0.033774372190237045,
+      "is_question_constant": false,
+      "is_near_constant": true
+    },
+    {
+      "index": 53,
+      "name": "centroid_sim_rank",
+      "family": "FEAT-G04",
+      "global_mean": 1.5,
+      "global_std": 1.1180340051651,
+      "min": 0.0,
+      "max": 3.0,
+      "nonzero_ratio": 0.75,
+      "mean_within_std": 1.1180341243743896,
+      "max_within_std": 1.1180340051651,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 54,
+      "name": "dist_centroid_diff_mean",
+      "family": "FEAT-G04",
+      "global_mean": -9.73615355004398e-11,
+      "global_std": 0.02886083535850048,
+      "min": -0.11352276057004929,
+      "max": 0.19454924762248993,
+      "nonzero_ratio": 1.0,
+      "mean_within_std": 0.024947112426161766,
+      "max_within_std": 0.11404380947351456,
+      "is_question_constant": false,
+      "is_near_constant": false
+    },
+    {
+      "index": 55,
+      "name": "dist_centroid_rank",
+      "family": "FEAT-G04",
+      "global_mean": 1.5,
+      "global_std": 1.1180340051651,
+      "min": 0.0,
+      "max": 3.0,
+      "nonzero_ratio": 0.75,
+      "mean_within_std": 1.1180341243743896,
+      "max_within_std": 1.1180340051651,
+      "is_question_constant": false,
+      "is_near_constant": false
+    }
+  ]
+}
