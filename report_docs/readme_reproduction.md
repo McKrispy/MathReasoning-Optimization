@@ -30,7 +30,11 @@ development/tests/        Historical development tests
 development/runs/         Experiment results, predictions, weights and audits
 development/requirements.txt  Additional training/test dependencies
 development/publication_manifest.json  Archive copy hashes and normalization note
-Final_Report.md           Empty report placeholder; not a finished report
+readme.md                 Repository introduction; the only file at the repository root
+report_docs/readme_reproduction.md  This file: installation, commands and checks
+report_docs/Final_Report.md  Method, experiments and analysis
+report_docs/architecture.png  Frozen inference diagram
+report_docs/calibration_diagnostics.png  Calibration figure used by the report
 ```
 
 The original `code/README.md` and `guide/GUIDE.md` describe the official protocol. The original package manifest still records the original empty submission template. That single template is intentionally replaced; `frozen/manifest.json` records the current wrapper. Official `predict.py`, `common.py`, `score_predictions.py`, `check_data.py`, supplied data and the remaining official files are unchanged.
@@ -124,4 +128,4 @@ Structured experiment results, candidate choices and learned checkpoints are inc
 
 ## 8. Attribution and report status
 
-AI assistance supported implementation, experiment planning and documentation. The author is responsible for understanding the method and reporting the results. Supplied GSM8K/Qwen attribution and the supplied data license remain in `code/data/LICENSE.txt` and `code/data/NOTICE.txt`. `Final_Report.md` is intentionally empty for now and must be completed separately before the final coursework submission.
+AI assistance supported implementation, experiment planning and documentation. The author is responsible for understanding the method and reporting the results. Supplied GSM8K/Qwen attribution and the supplied data license remain in `code/data/LICENSE.txt` and `code/data/NOTICE.txt`. The method, experiments and analysis are in [Final_Report.md](Final_Report.md).
