@@ -1,7 +1,7 @@
 # Best-of-N Selection of Mathematical Inferences under Constrainted Resource
 ## From Answer Consensus to Cross-Candidate Comparison and Heterogeneous Soft Fusion
 
-**Jieren Guan · DASE7506 MP2 · 26 October 2026**
+**Jieren Guan · 3036837966 · DASE7506 MP2 · 26 October 2026**
 
 ### Abstract
 
@@ -42,12 +42,12 @@ The final method is **three-view Soft Stacking**: three scorers are trained sepa
 
 **Arm B, structure-enhanced attention.** This arm uses the same network, but concatenates each candidate's 1,024-dimensional vector with four consensus dimensions and twelve arithmetic and number-coverage dimensions, giving a 1,040-dimensional input. The structural features are normalised with a mean and standard deviation fitted on the training split. The arm is there so that explicit answer consensus and reasoning checks can supply information the fixed vectors may not have made prominent.
 
-Both arms take supervision from whether the final answer is correct. They do not need step-level reasoning labels. Let the four scores of a question be \(s_1,\ldots,s_4\), the set of correct candidates be \(C^+\), and the candidate label be \(y_j\). The training objective is
+Both arms take supervision from whether the final answer is correct. They do not need step-level reasoning labels. Let the four scores of a question be $s_1,\ldots,s_4$, the set of correct candidates be $C^+$, and the candidate label be $y_j$. The training objective is
 
-\[
+$$
 \mathcal L=-\log\frac{\sum_{c\in C^+}e^{s_c}}{\sum_{j=1}^{4}e^{s_j}}
 +\lambda\sum_{j=1}^{4}\operatorname{BCE}(\sigma(s_j),y_j),\qquad\lambda=1.
-\]
+$$
 
 The first term encourages the scores to be assigned to any correct candidate, without making correct solutions compete with each other. The second term gives each of the four candidates its own binary supervision. Each model is trained for 10 epochs on all training questions, then fine-tuned for 8 epochs on training Hard. The optimiser is AdamW, with learning rates 0.001 and 0.0003 in the two stages and a batch size of 256. Arm A and Arm B are each trained with seeds 42, 43 and 44. Within an arm, the three models' raw scores are averaged first. [E3]
 
@@ -55,11 +55,11 @@ The first term encourages the scores to be assigned to any correct candidate, wi
 
 **Fusion across arms.** The raw scores of the three arms have different scales. The system first z-scores the four scores of each arm within the question, then fuses them with a convex combination fitted on out-of-fold training scores:
 
-\[
+$$
 z_c=0.6519944\,\widetilde s^A_c+0.2773941\,\widetilde s^B_c +0.0706115\,\widetilde s^{R5}_c.
-\]
+$$
 
-Here \(\widetilde s_c\) is the standardised score. Out-of-fold scores are the model's predictions on the training questions it did not see while fitting, and they reduce the overfitting that comes from fitting directly to in-sample training predictions. The full-precision weights are stored in the frozen configuration. The difference between the historical out-of-fold implementation and the strict refit is discussed in Section 7.
+Here $\widetilde s_c$ is the standardised score. Out-of-fold scores are the model's predictions on the training questions it did not see while fitting, and they reduce the overfitting that comes from fitting directly to in-sample training predictions. The full-precision weights are stored in the frozen configuration. The difference between the historical out-of-fold implementation and the strict refit is discussed in Section 7.
 
 Finally, the system lowers the scores of candidates that are unparseable or that have a specified parse conflict. It turns the fused scores into within-question weights with a softmax at temperature 0.5, groups candidates with the same final numeric answer into an answer cluster, and sums the weights inside the cluster. It selects the cluster with the largest total weight, then returns the candidate with the highest score inside that cluster. The rule keeps a judgement of each individual solution and also uses the consensus of several candidates supporting the same answer. The experimental basis for validity handling and aggregation is in RQ2 and RQ4.
 
@@ -145,11 +145,11 @@ Calibration also has to be evaluated together with the final selection rule. The
 
 The final system uses a within-question softmax and groups candidates by final answer:
 
-\[
+$$
 p_c=\frac{e^{z_c/T}}{\sum_j e^{z_j/T}},\qquad P(A)=\sum_{c:a_c=A}p_c.
-\]
+$$
 
-Here \(a_c\) is the candidate's official parsed answer, and \(P(A)\) is the total weight of the answer cluster. If two candidates both answer 12, their weights jointly support the answer 12. The rule makes a continuous trade-off between independent quality scores and majority voting. It also agrees in direction with the training term that increases the total mass on correct candidates. The final system, however, standardises scores, applies validity handling and uses temperature 0.5, so the training loss and the final decision are not identical. Giving repeated answers more support is a consensus bias, and the aggregated weight has not been shown to be a calibrated probability of correctness.
+Here $a_c$ is the candidate's official parsed answer, and $P(A)$ is the total weight of the answer cluster. If two candidates both answer 12, their weights jointly support the answer 12. The rule makes a continuous trade-off between independent quality scores and majority voting. It also agrees in direction with the training term that increases the total mass on correct candidates. The final system, however, standardises scores, applies validity handling and uses temperature 0.5, so the training loss and the final decision are not identical. Giving repeated answers more support is a consensus bias, and the aggregated weight has not been shown to be a calibrated probability of correctness.
 
 ## 7. RQ5: When does more computation pay off?
 
