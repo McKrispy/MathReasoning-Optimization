@@ -46,7 +46,7 @@ Both arms take supervision from whether the final answer is correct. They do not
 
 $$
 \mathcal L=-\log\frac{\sum_{c\in C^+}e^{s_c}}{\sum_{j=1}^{4}e^{s_j}}
-+\lambda\sum_{j=1}^{4}\operatorname{BCE}(\sigma(s_j),y_j),\qquad\lambda=1.
++\lambda\sum_{j=1}^{4}\mathrm{BCE}(\sigma(s_j),y_j),\qquad\lambda=1.
 $$
 
 The first term encourages the scores to be assigned to any correct candidate, without making correct solutions compete with each other. The second term gives each of the four candidates its own binary supervision. Each model is trained for 10 epochs on all training questions, then fine-tuned for 8 epochs on training Hard. The optimiser is AdamW, with learning rates 0.001 and 0.0003 in the two stages and a batch size of 256. Arm A and Arm B are each trained with seeds 42, 43 and 44. Within an arm, the three models' raw scores are averaged first. [E3]
